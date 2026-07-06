@@ -1,0 +1,33 @@
+[package]
+name = "omni-keymap-extract"
+description = "CLI extractor that queries native platform APIs and parses Android layout files to emit normalized OmniKeymap JSON layouts."
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+repository.workspace = true
+
+[dependencies]
+omni-keymap-core = { path = "../omni-keymap-core", version = "0.1.0" }
+
+anyhow = { workspace = true }
+clap = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+
+[dev-dependencies]
+tempfile = "3"
+
+[target.'cfg(target_os = "linux")'.dependencies]
+xkbcommon = { version = "0.6", features = ["wayland"] }
+
+[target.'cfg(target_os = "windows")'.dependencies]
+windows-sys = { version = "0.59", features = [
+    "Win32_Foundation",
+    "Win32_UI_Input_KeyboardAndMouse",
+    "Win32_UI_WindowsAndMessaging",
+] }
+
+[target.'cfg(target_os = "macos")'.dependencies]
+core-foundation = "0.10"
+core-graphics-types = "0.1"

@@ -1,0 +1,8 @@
+# Rust build artifacts
+/target
+
+# mdBook generated output
+/docs/book
+
+# Cargo lock for libraries is fine to commit; this is a workspace with binaries
+# so Cargo.lock is committed.
