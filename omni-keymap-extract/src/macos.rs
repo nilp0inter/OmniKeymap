@@ -78,7 +78,6 @@ mod imp {
         dictionary::CFDictionary,
         string::{CFString, CFStringRef},
     };
-    use core_foundation::base::{CFCopyTypeID, CFGetTypeID, CFTypeID};
     use std::ffi::c_void;
     use std::os::raw::{c_char, c_uchar, c_uint, c_ulong, c_ushort, c_void as c_void_t};
     use std::ptr::{null, null_mut};

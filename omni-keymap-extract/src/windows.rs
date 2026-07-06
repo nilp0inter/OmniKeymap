@@ -19,11 +19,6 @@
 
 use anyhow::{Result, anyhow};
 
-#[cfg(target_os = "windows")]
-use anyhow::Context;
-#[cfg(target_os = "windows")]
-use std::collections::HashMap;
-/// The four modifier states we probe.
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
 #[cfg(any(target_os = "windows", test))]
 enum ModState {
@@ -49,14 +44,17 @@ impl ModState {
 
 #[cfg(target_os = "windows")]
 mod imp {
-    use super::*;
+    use super::ModState;
+    use crate::w3c_keys::{W3C_KEYS, W3cKey};
+    use anyhow::Context;
+    use std::collections::HashMap;
     use windows_sys::Win32::Foundation::CloseHandle;
     use windows_sys::Win32::UI::Input::KeyboardAndMouse::{
         GetKeyboardLayout, GetKeyboardLayoutList, GetKeyboardLayoutNameW, LoadKeyboardLayoutW,
         MapVirtualKeyExW, ToUnicodeEx, UnloadKeyboardLayout, HKL, MAPVK_VSC_TO_VK_EX,
         VK_CONTROL, VK_MENU, VK_SHIFT,
     };
-    use windows_sys::core::{PCWSTR, PWSTR};
+
 
     const KBD_STATE_LEN: usize = 256;
 
@@ -66,7 +64,7 @@ mod imp {
         // prevents it from activating the layout in the shell.
         let wide: Vec<u16> = klid.encode_utf16().chain(std::iter::once(0)).collect();
         let hkl = unsafe {
-            LoadKeyboardLayoutW(PCWSTR(wide.as_ptr()), 0x00000080)
+            LoadKeyboardLayoutW(wide.as_ptr(), 0x00000080)
         };
         if hkl.is_null() {
             Err(anyhow!("LoadKeyboardLayoutW failed for KLID `{}`", klid))
@@ -78,7 +76,7 @@ mod imp {
     /// Map an `HKL` to its KLID string via `GetKeyboardLayoutNameW`.
     fn layout_name(hkl: HKL) -> Result<String> {
         let mut buf = [0u16; 16];
-        let ok = unsafe { GetKeyboardLayoutNameW(PWSTR(buf.as_mut_ptr())) };
+        let ok = unsafe { GetKeyboardLayoutNameW(buf.as_mut_ptr()) };
         if ok == 0 {
             return Err(anyhow!("GetKeyboardLayoutNameW failed"));
         }
@@ -121,7 +119,7 @@ mod imp {
                 vk,
                 scancode,
                 state.as_ptr(),
-                PWSTR(buf.as_mut_ptr()),
+                buf.as_mut_ptr(),
                 buf.len() as i32,
                 0,
                 hkl,
@@ -148,7 +146,7 @@ mod imp {
                 vk,
                 scancode,
                 state.as_ptr(),
-                PWSTR(buf.as_mut_ptr()),
+                buf.as_mut_ptr(),
                 buf.len() as i32,
                 0,
                 hkl,
@@ -192,7 +190,7 @@ mod imp {
                 dead_vk,
                 dead_scancode,
                 dead_state.as_ptr(),
-                PWSTR(dead_buf.as_mut_ptr()),
+                dead_buf.as_mut_ptr(),
                 dead_buf.len() as i32,
                 0,
                 hkl,
@@ -206,7 +204,7 @@ mod imp {
                 base_vk,
                 base_scancode,
                 base_state.as_ptr(),
-                PWSTR(out_buf.as_mut_ptr()),
+                out_buf.as_mut_ptr(),
                 out_buf.len() as i32,
                 0,
                 hkl,
@@ -220,7 +218,7 @@ mod imp {
                 0x20,
                 0,
                 clear_state.as_ptr(),
-                PWSTR(clear_buf.as_mut_ptr()),
+                clear_buf.as_mut_ptr(),
                 clear_buf.len() as i32,
                 0,
                 hkl,
