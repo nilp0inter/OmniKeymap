@@ -74,13 +74,11 @@ mod imp {
     use super::*;
     use core_foundation::{
         base::{CFRelease, TCFType},
-        boolean::CFBoolean,
-        dictionary::CFDictionary,
         string::{CFString, CFStringRef},
     };
     use std::ffi::c_void;
-    use std::os::raw::{c_char, c_uchar, c_uint, c_ulong, c_ushort, c_void as c_void_t};
-    use std::ptr::{null, null_mut};
+    use std::os::raw::{c_char, c_uint, c_ulong, c_void as c_void_t};
+    use std::ptr::null;
 
     // ---- Raw Carbon / HIToolbox FFI -------------------------------------------
 
@@ -352,7 +350,7 @@ mod imp {
                 if id_ref.is_null() {
                     continue;
                 }
-                let cfstr = CFString::wrap_under_create_rule(id_ref as CFStringRef);
+                let cfstr = CFString::wrap_under_get_rule(id_ref as CFStringRef);
                 if cfstr.to_string() == source_id {
                     return Ok(source);
                 }
@@ -364,19 +362,12 @@ mod imp {
 
     /// Enumerate installed keyboard-layout input sources.
     fn enumerate_input_sources() -> Result<TISInputSourceIteratorRef> {
-        // Build a filter dictionary { kTISPropertyInputSourceType == kTISTypeKeyboardLayout }.
-        let type_key = cfstring("TISPropertyInputSourceType");
-        let type_val = cfstring(K_TIS_TYPE_KEYBOARD_LAYOUT);
-        let filter = unsafe {
-            let keys = [type_key as *const c_void];
-            let vals = [type_val as *const c_void];
-            CFDictionaryCreate(null(), keys.as_ptr(), vals.as_ptr(), 1, null(), null())
-        };
-        if filter.is_null() {
-            return Err(anyhow!("CFDictionaryCreate failed for TIS filter"));
-        }
-        let list = unsafe { TISCreateInputSourceList(filter, 0u8) };
-        unsafe { CFRelease(filter as *const c_void) };
+        // Passing NULL asks HIToolbox for all input sources. Filtering by a
+        // CFDictionary is brittle across macOS runner images because the
+        // kTIS* constants are exported CFString objects, not just their
+        // string contents. We filter usable keyboard layouts later by checking
+        // for Unicode key-layout data.
+        let list = unsafe { TISCreateInputSourceList(null(), 1u8) };
         if list.is_null() {
             Err(anyhow!("TISCreateInputSourceList returned null"))
         } else {
@@ -481,7 +472,7 @@ mod imp {
                 let source_id = if id_ref.is_null() {
                     format!("unknown-{}", i)
                 } else {
-                    let cfstr = CFString::wrap_under_create_rule(id_ref as CFStringRef);
+                    let cfstr = CFString::wrap_under_get_rule(id_ref as CFStringRef);
                     cfstr.to_string()
                 };
                 // Strip the `com.apple.keylayout.` prefix for a cleaner file name.
@@ -540,19 +531,6 @@ mod imp {
         Ok(summary)
     }
 
-    // ---- FFI helpers not exposed by core-foundation ---------------------------
-
-    // CFDictionaryCreate is not wrapped by the core-foundation crate's Dict; declare it here.
-    extern "C" {
-        fn CFDictionaryCreate(
-            alloc: *const c_void,
-            keys: *const *const c_void,
-            values: *const *const c_void,
-            num_values: c_ulong,
-            key_callbacks: *const c_void,
-            value_callbacks: *const c_void,
-        ) -> CFDictionaryRef;
-    }
 }
 
 #[cfg(not(target_os = "macos"))]
