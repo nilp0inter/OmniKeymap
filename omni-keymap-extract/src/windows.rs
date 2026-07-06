@@ -46,7 +46,7 @@ impl ModState {
 mod imp {
     use super::ModState;
     use crate::w3c_keys::{W3C_KEYS, W3cKey};
-    use anyhow::Context;
+    use anyhow::{anyhow, Context, Result};
     use std::collections::HashMap;
     use windows_sys::Win32::Foundation::CloseHandle;
     use windows_sys::Win32::UI::Input::KeyboardAndMouse::{
@@ -162,7 +162,7 @@ mod imp {
                     0x20, // VK_SPACE
                     0,
                     space_state.as_ptr(),
-                    PWSTR(clear_buf.as_mut_ptr()),
+                    clear_buf.as_mut_ptr(),
                     clear_buf.len() as i32,
                     0,
                     hkl,
