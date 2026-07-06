@@ -92,10 +92,16 @@ Windows extraction uses [`windows-sys`][windows-sys] to call `MapVirtualKeyExW` 
 Dead keys are detected when `ToUnicodeEx` returns a negative result; the extractor then simulates
 combinations of the dead key with all other standard keys.
 
-Windows extraction only runs on a Windows host. Build with:
+Windows extraction only runs on a Windows host. Extract a single layout by KLID:
 
 ```powershell
 cargo run -p omni-keymap-extract -- --platform windows --layout 00000409 --out-dir database\windows
+```
+
+Extract every **installed** Windows layout (`--all` enumerates via `GetKeyboardLayoutList`):
+
+```powershell
+cargo run -p omni-keymap-extract -- --platform windows --all --out-dir database\windows
 ```
 
 ## macOS
@@ -104,10 +110,17 @@ macOS extraction uses Carbon's `UCKeyTranslate` via the current keyboard layout 
 each W3C keycode it queries under Shift, Option, and Shift+Option, tracking the
 `deadKeyState` output parameter to drive second-stage composition.
 
-macOS extraction only runs on a macOS host. Build with:
+macOS extraction only runs on a macOS host. Extract a single layout by input-source ID
+(e.g. `com.apple.keylayout.US`):
 
 ```sh
-cargo run -p omni-keymap-extract -- --platform macos --layout U.S. --out-dir database/macos
+cargo run -p omni-keymap-extract -- --platform macos --layout com.apple.keylayout.US --out-dir database/macos
+```
+
+Extract every **installed** macOS layout (`--all` enumerates via `TISCreateInputSourceList`):
+
+```sh
+cargo run -p omni-keymap-extract -- --platform macos --all --out-dir database/macos
 ```
 
 ## Android (offline)
@@ -129,6 +142,27 @@ cargo run -p omni-keymap-extract -- \
 
 `.kl` and `.kcm` files can be obtained from the [AOSP `frameworks/base`][aosp-kbd] repository
 (`data/keyboards/`).
+
+## Regenerating all databases via CI
+
+The repository ships a GitHub Actions workflow (`.github/workflows/regenerate-databases.yml`)
+that regenerates the Linux, Windows, and macOS databases on their native runners in parallel and
+opens a pull request with the result. Trigger it from the **Actions** tab → **Regenerate layout
+databases** → **Run workflow**.
+
+Each runner executes `omni-keymap-extract --platform <os> --all --out-dir database/<os>`; the PR
+collector job merges the three artifacts into `database/{linux,windows,macos}/` and commits.
+
+| Platform | `--all` enumeration source                         |
+|----------|---------------------------------------------------|
+| Linux    | `evdev.lst` rules file (every declared layout/variant) |
+| Windows  | `GetKeyboardLayoutList` (every installed layout)     |
+| macOS    | `TISCreateInputSourceList` (every installed layout)   |
+
+> **Note:** Windows and macOS `--all` extract *installed* layouts — the set depends on the
+> runner's OS image. To capture a layout that isn't installed by default, install it on the
+> runner first (e.g. via a workflow step) or extract it manually on a machine that has it.
+
 
 ## Contributing a layout
 

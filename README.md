@@ -105,18 +105,30 @@ cargo run -p omni-keymap-extract -- \
     --out-dir database/android
 ```
 
-### Extract every Linux layout at once
+### Extract every layout at once (`--all`)
+
+`--all` extracts every layout available on the current host into `database/<platform>/`:
 
 ```sh
-# Extract all layouts and variants from evdev.lst into database/linux/
+# Linux: every layout/variant from evdev.lst (xkbcommon)
 cargo run -p omni-keymap-extract -- --platform linux --all --out-dir database/linux
+
+# Windows: every installed layout (GetKeyboardLayoutList)
+cargo run -p omni-keymap-extract -- --platform windows --all --out-dir database/windows
+
+# macOS: every installed layout (TISCreateInputSourceList)
+cargo run -p omni-keymap-extract -- --platform macos --all --out-dir database/macos
 ```
 
-On NixOS, set `XKB_CONFIG_ROOT` to the `xkeyboard-config` data directory (see
-[`docs/src/extraction.md`](docs/src/extraction.md) for the full invocation.
+On NixOS for Linux, set `XKB_CONFIG_ROOT` to the `xkeyboard-config` data directory (see
+[`docs/src/extraction.md`](docs/src/extraction.md) for the full invocation).
 
-Windows and macOS extraction is supported on those hosts only; see
-[`docs/src/extraction.md`](docs/src/extraction.md) for platform-specific details.
+### Regenerate all databases via CI
+
+The `Regenerate layout databases` GitHub Actions workflow runs `--all` on `ubuntu-latest`,
+`windows-latest`, and `macos-latest` runners in parallel and opens a PR with the merged result.
+Trigger it from the **Actions** tab → **Run workflow**. See
+[`docs/src/extraction.md`](docs/src/extraction.md) for details.
 
 ## Documentation
 

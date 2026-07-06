@@ -78,12 +78,16 @@ pub struct Cli {
 fn main() -> Result<()> {
     let cli = Cli::parse();
     if cli.all {
-        if cli.platform != Platform::Linux {
-            return Err(anyhow::anyhow!(
-                "--all is only supported for --platform linux"
-            ));
-        }
-        let summary = batch::extract_all(&cli.out_dir)?;
+        let summary = match cli.platform {
+            Platform::Linux => batch::extract_all(&cli.out_dir)?,
+            Platform::Windows => windows::extract_all(&cli.out_dir)?,
+            Platform::Macos => macos::extract_all(&cli.out_dir)?,
+            Platform::Android => {
+                return Err(anyhow::anyhow!(
+                    "--all is not supported for --platform android (use --android-kl/--android-kcm)"
+                ));
+            }
+        };
         eprintln!("{}", summary);
         return Ok(());
     }
