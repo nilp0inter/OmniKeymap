@@ -77,7 +77,7 @@ mod imp {
         string::{CFString, CFStringRef},
     };
     use std::ffi::c_void;
-    use std::os::raw::{c_char, c_uint, c_ulong, c_void as c_void_t};
+    use std::os::raw::{c_uint, c_ulong, c_void as c_void_t};
     use std::ptr::null;
 
     // ---- Raw Carbon / HIToolbox FFI -------------------------------------------
@@ -86,11 +86,6 @@ mod imp {
     const K_UC_KEY_OUTPUT_NO_KEY: u32 = 0xFFFFFFFE;
     const K_UC_KEY_OUTPUT_DEAD_KEY: u32 = 0xFFFFFFFF;
 
-    // TIS property keys (CFString constants from HIToolbox/TISInputSource.h).
-    const K_TIS_PROPERTY_UNICODE_KEY_LAYOUT_DATA: &str =
-        "TISPropertyUnicodeKeyLayoutData";
-    const K_TIS_PROPERTY_INPUT_SOURCE_ID: &str = "TISPropertyInputSourceID";
-    const K_TIS_PROPERTY_LOCALIZED_NAME: &str = "TISPropertyLocalizedName";
 
     // Carbon InputSource type for keyboard layouts.
     const K_TIS_TYPE_KEYBOARD_LAYOUT: &str = "TISKeyboardLayout";
@@ -153,6 +148,13 @@ mod imp {
             property_key: CFStringRef,
         ) -> u32;
 
+        // Exported CFString constants from HIToolbox.framework. These are the actual
+        // constant objects TISGetInputSourceProperty compares against; building a CFString
+        // with the same text content is NOT equivalent (property lookup is by identity).
+        static kTISPropertyInputSourceID: CFStringRef;
+        static kTISPropertyLocalizedName: CFStringRef;
+        static kTISPropertyUnicodeKeyLayoutData: CFStringRef;
+
         fn CFArrayGetCount(the_array: *const c_void) -> c_ulong;
         fn CFArrayGetValueAtIndex(
             the_array: *const c_void,
@@ -160,37 +162,16 @@ mod imp {
         ) -> *const c_void;
         fn CFDataGetBytePtr(the_data: *const c_void) -> *const u8;
         fn CFDataGetLength(the_data: *const c_void) -> c_ulong;
-        fn CFStringCreateWithCString(
-            alloc: *const c_void,
-            cstr: *const c_char,
-            encoding: u32,
-        ) -> CFStringRef;
     }
 
     type Boolean = u8;
     type CFDictionaryRef = *const c_void;
 
-    const KCF_STRING_ENCODING_UTF8: u32 = 0x08000100;
-
-    /// Build a CFString from a Rust string (returns a ref the caller must release).
-    fn cfstring(s: &str) -> CFStringRef {
-        let bytes = s.as_bytes();
-        unsafe {
-            let cs = std::ffi::CString::new(bytes).unwrap();
-            CFStringCreateWithCString(
-                null(),
-                cs.as_ptr(),
-                KCF_STRING_ENCODING_UTF8,
-            )
-        }
-    }
 
     /// Get the `UCKeyboardLayout*` for the given input source, if it has one.
     fn keyboard_layout_data(source: TISInputSourceRef) -> Option<*const UCKeyboardLayout> {
-        let key = cfstring(K_TIS_PROPERTY_UNICODE_KEY_LAYOUT_DATA);
         unsafe {
-            let raw = TISGetInputSourceProperty(source, key);
-            CFRelease(key as *const c_void);
+            let raw = TISGetInputSourceProperty(source, kTISPropertyUnicodeKeyLayoutData);
             if raw.is_null() {
                 return None;
             }
@@ -345,9 +326,7 @@ mod imp {
             let count = CFArrayGetCount(list as *const c_void);
             for i in 0..count {
                 let source = CFArrayGetValueAtIndex(list as *const c_void, i) as TISInputSourceRef;
-                let id_key = cfstring(K_TIS_PROPERTY_INPUT_SOURCE_ID);
-                let id_ref = TISGetInputSourceProperty(source, id_key);
-                CFRelease(id_key as *const c_void);
+                let id_ref = TISGetInputSourceProperty(source, kTISPropertyInputSourceID);
                 if id_ref.is_null() {
                     continue;
                 }
@@ -379,9 +358,7 @@ mod imp {
     /// Read the `kTISPropertyLocalizedName` of a TIS input source.
     fn read_localized_name(source: TISInputSourceRef) -> Option<String> {
         unsafe {
-            let key = cfstring(K_TIS_PROPERTY_LOCALIZED_NAME);
-            let name_ref = TISGetInputSourceProperty(source, key);
-            CFRelease(key as *const c_void);
+            let name_ref = TISGetInputSourceProperty(source, kTISPropertyLocalizedName);
             if name_ref.is_null() {
                 return None;
             }
@@ -488,9 +465,7 @@ mod imp {
                 let source =
                     CFArrayGetValueAtIndex(list as *const c_void, i) as TISInputSourceRef;
                 // Get the input source ID to use as the layout name.
-                let id_key = cfstring(K_TIS_PROPERTY_INPUT_SOURCE_ID);
-                let id_ref = TISGetInputSourceProperty(source, id_key);
-                CFRelease(id_key as *const c_void);
+                let id_ref = TISGetInputSourceProperty(source, kTISPropertyInputSourceID);
                 let source_id = if id_ref.is_null() {
                     format!("unknown-{}", i)
                 } else {
