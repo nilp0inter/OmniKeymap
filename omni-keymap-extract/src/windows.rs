@@ -17,7 +17,7 @@
 //! `--all` enumerates registered keyboard layout KLIDs from
 //! `HKLM\SYSTEM\CurrentControlSet\Control\Keyboard Layouts`.
 
-use anyhow::{anyhow, Result};
+use anyhow::Result;
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
 #[cfg(any(target_os = "windows", test))]
@@ -470,6 +470,7 @@ mod imp {
 #[cfg(not(target_os = "windows"))]
 mod imp {
     use super::*;
+    use anyhow::anyhow;
     use std::path::Path;
     pub fn extract(_layout: &str, _variant: Option<&str>) -> Result<omni_keymap_core::LayoutFile> {
         Err(anyhow!(
