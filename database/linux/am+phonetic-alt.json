@@ -3,48 +3,25 @@
     "platform": "linux",
     "layout_name": "am",
     "layout_variant": "phonetic-alt",
-    "extracted_on": "2026-07-07T00:41:27Z"
+    "display_name": "Armenian (alt. phonetic)",
+    "extracted_on": "2026-07-07T01:15:28Z"
   },
   "mappings": {
-    "Չ": [
+    "՝": [
       {
         "sequence": [
           {
-            "key": "Digit9",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "Դ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyD",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "շ": [
-      {
-        "sequence": [
-          {
-            "key": "Backslash",
+            "key": "Backquote",
             "modifiers": []
           }
         ]
       }
     ],
-    "Ֆ": [
+    "Ո": [
       {
         "sequence": [
           {
-            "key": "KeyF",
+            "key": "KeyW",
             "modifiers": [
               "Shift"
             ]
@@ -52,11 +29,41 @@
         ]
       }
     ],
-    "\"": [
+    "լ": [
       {
         "sequence": [
           {
-            "key": "Quote",
+            "key": "KeyL",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "ն": [
+      {
+        "sequence": [
+          {
+            "key": "KeyN",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "ե": [
+      {
+        "sequence": [
+          {
+            "key": "KeyE",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "Ձ": [
+      {
+        "sequence": [
+          {
+            "key": "Digit4",
             "modifiers": [
               "Shift"
             ]
@@ -64,14 +71,58 @@
         ]
       }
     ],
-    "Փ": [
+    "Ն": [
       {
         "sequence": [
           {
-            "key": "Digit3",
+            "key": "KeyN",
             "modifiers": [
               "Shift"
             ]
+          }
+        ]
+      }
+    ],
+    "ժ": [
+      {
+        "sequence": [
+          {
+            "key": "Equal",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "Տ": [
+      {
+        "sequence": [
+          {
+            "key": "KeyT",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "Բ": [
+      {
+        "sequence": [
+          {
+            "key": "KeyB",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "մ": [
+      {
+        "sequence": [
+          {
+            "key": "KeyM",
+            "modifiers": []
           }
         ]
       }
@@ -86,61 +137,41 @@
         ]
       }
     ],
-    "դ": [
+    "․": [
       {
         "sequence": [
           {
-            "key": "KeyD",
+            "key": "Period",
             "modifiers": []
           }
         ]
       }
     ],
-    "կ": [
+    "ր": [
       {
         "sequence": [
           {
-            "key": "KeyK",
+            "key": "Digit8",
             "modifiers": []
           }
         ]
       }
     ],
-    "օ": [
+    "թ": [
       {
         "sequence": [
           {
-            "key": "KeyO",
+            "key": "Digit2",
             "modifiers": []
           }
         ]
       }
     ],
-    "՝": [
+    "Ի": [
       {
         "sequence": [
           {
-            "key": "Backquote",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "ո": [
-      {
-        "sequence": [
-          {
-            "key": "KeyW",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "Պ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyP",
+            "key": "KeyI",
             "modifiers": [
               "Shift"
             ]
@@ -148,11 +179,56 @@
         ]
       }
     ],
-    "Կ": [
+    "¦": [
       {
         "sequence": [
           {
-            "key": "KeyK",
+            "key": "IntlBackslash",
+            "modifiers": [
+              "Shift",
+              "AltGraph"
+            ]
+          }
+        ]
+      }
+    ],
+    "բ": [
+      {
+        "sequence": [
+          {
+            "key": "KeyB",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "|": [
+      {
+        "sequence": [
+          {
+            "key": "IntlBackslash",
+            "modifiers": [
+              "AltGraph"
+            ]
+          }
+        ]
+      }
+    ],
+    "ց": [
+      {
+        "sequence": [
+          {
+            "key": "KeyC",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "Ե": [
+      {
+        "sequence": [
+          {
+            "key": "KeyE",
             "modifiers": [
               "Shift"
             ]
@@ -172,21 +248,11 @@
         ]
       }
     ],
-    "ր": [
+    "՜": [
       {
         "sequence": [
           {
-            "key": "Digit8",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "Ր": [
-      {
-        "sequence": [
-          {
-            "key": "Digit8",
+            "key": "Backquote",
             "modifiers": [
               "Shift"
             ]
@@ -194,11 +260,21 @@
         ]
       }
     ],
-    "Յ": [
+    "ը": [
       {
         "sequence": [
           {
-            "key": "KeyJ",
+            "key": "KeyY",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "Ս": [
+      {
+        "sequence": [
+          {
+            "key": "KeyS",
             "modifiers": [
               "Shift"
             ]
@@ -206,31 +282,43 @@
         ]
       }
     ],
-    "ղ": [
+    "Կ": [
       {
         "sequence": [
           {
-            "key": "KeyX",
+            "key": "KeyK",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "ի": [
+      {
+        "sequence": [
+          {
+            "key": "KeyI",
             "modifiers": []
           }
         ]
       }
     ],
-    "վ": [
+    "ա": [
       {
         "sequence": [
           {
-            "key": "KeyV",
+            "key": "KeyA",
             "modifiers": []
           }
         ]
       }
     ],
-    "«": [
+    "Դ": [
       {
         "sequence": [
           {
-            "key": "Comma",
+            "key": "KeyD",
             "modifiers": [
               "Shift"
             ]
@@ -250,11 +338,21 @@
         ]
       }
     ],
-    "Ը": [
+    "՛": [
       {
         "sequence": [
           {
-            "key": "KeyY",
+            "key": "Quote",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "Ր": [
+      {
+        "sequence": [
+          {
+            "key": "Digit8",
             "modifiers": [
               "Shift"
             ]
@@ -262,53 +360,31 @@
         ]
       }
     ],
-    "է": [
+    "ջ": [
       {
         "sequence": [
           {
-            "key": "Digit1",
+            "key": "Digit5",
             "modifiers": []
           }
         ]
       }
     ],
-    "ծ": [
+    "ո": [
       {
         "sequence": [
           {
-            "key": "BracketRight",
+            "key": "KeyW",
             "modifiers": []
           }
         ]
       }
     ],
-    "Ռ": [
+    "ֆ": [
       {
         "sequence": [
           {
-            "key": "KeyR",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "թ": [
-      {
-        "sequence": [
-          {
-            "key": "Digit2",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "ը": [
-      {
-        "sequence": [
-          {
-            "key": "KeyY",
+            "key": "KeyF",
             "modifiers": []
           }
         ]
@@ -326,45 +402,21 @@
         ]
       }
     ],
-    "Ո": [
+    "հ": [
       {
         "sequence": [
           {
-            "key": "KeyW",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "Ա": [
-      {
-        "sequence": [
-          {
-            "key": "KeyA",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "ս": [
-      {
-        "sequence": [
-          {
-            "key": "KeyS",
+            "key": "KeyH",
             "modifiers": []
           }
         ]
       }
     ],
-    "Հ": [
+    "Մ": [
       {
         "sequence": [
           {
-            "key": "KeyH",
+            "key": "KeyM",
             "modifiers": [
               "Shift"
             ]
@@ -372,26 +424,22 @@
         ]
       }
     ],
-    "Ղ": [
+    " ": [
       {
         "sequence": [
           {
-            "key": "KeyX",
-            "modifiers": [
-              "Shift"
-            ]
+            "key": "Space",
+            "modifiers": []
           }
         ]
       }
     ],
-    "Ի": [
+    "/": [
       {
         "sequence": [
           {
-            "key": "KeyI",
-            "modifiers": [
-              "Shift"
-            ]
+            "key": "Slash",
+            "modifiers": []
           }
         ]
       }
@@ -418,99 +466,11 @@
         ]
       }
     ],
-    "Ծ": [
+    "յ": [
       {
         "sequence": [
           {
-            "key": "BracketRight",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "Ց": [
-      {
-        "sequence": [
-          {
-            "key": "KeyC",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "?": [
-      {
-        "sequence": [
-          {
-            "key": "IntlBackslash",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "գ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyG",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "ձ": [
-      {
-        "sequence": [
-          {
-            "key": "Digit4",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "խ": [
-      {
-        "sequence": [
-          {
-            "key": "BracketLeft",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "Գ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyG",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "Թ": [
-      {
-        "sequence": [
-          {
-            "key": "Digit2",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "ռ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyR",
+            "key": "KeyJ",
             "modifiers": []
           }
         ]
@@ -526,34 +486,11 @@
         ]
       }
     ],
-    "/": [
+    "Շ": [
       {
         "sequence": [
           {
-            "key": "Slash",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "¦": [
-      {
-        "sequence": [
-          {
-            "key": "IntlBackslash",
-            "modifiers": [
-              "Shift",
-              "AltGraph"
-            ]
-          }
-        ]
-      }
-    ],
-    "Ժ": [
-      {
-        "sequence": [
-          {
-            "key": "Equal",
+            "key": "Backslash",
             "modifiers": [
               "Shift"
             ]
@@ -561,21 +498,21 @@
         ]
       }
     ],
-    "ե": [
+    "ս": [
       {
         "sequence": [
           {
-            "key": "KeyE",
+            "key": "KeyS",
             "modifiers": []
           }
         ]
       }
     ],
-    "Բ": [
+    "Փ": [
       {
         "sequence": [
           {
-            "key": "KeyB",
+            "key": "Digit3",
             "modifiers": [
               "Shift"
             ]
@@ -583,49 +520,21 @@
         ]
       }
     ],
-    "ջ": [
+    "և": [
       {
         "sequence": [
           {
-            "key": "Digit5",
+            "key": "Digit7",
             "modifiers": []
           }
         ]
       }
     ],
-    "ժ": [
+    "Ը": [
       {
         "sequence": [
           {
-            "key": "Equal",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "ւ": [
-      {
-        "sequence": [
-          {
-            "key": "Digit6",
-            "modifiers": []
-          }
-        ]
-      },
-      {
-        "sequence": [
-          {
-            "key": "KeyU",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "Տ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyT",
+            "key": "KeyY",
             "modifiers": [
               "Shift"
             ]
@@ -645,11 +554,81 @@
         ]
       }
     ],
-    "ք": [
+    "Պ": [
       {
         "sequence": [
           {
-            "key": "KeyQ",
+            "key": "KeyP",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "Թ": [
+      {
+        "sequence": [
+          {
+            "key": "Digit2",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "Զ": [
+      {
+        "sequence": [
+          {
+            "key": "KeyZ",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "«": [
+      {
+        "sequence": [
+          {
+            "key": "Comma",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "Ջ": [
+      {
+        "sequence": [
+          {
+            "key": "Digit5",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "տ": [
+      {
+        "sequence": [
+          {
+            "key": "KeyT",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "խ": [
+      {
+        "sequence": [
+          {
+            "key": "BracketLeft",
             "modifiers": []
           }
         ]
@@ -667,11 +646,11 @@
         ]
       }
     ],
-    "֏": [
+    "Յ": [
       {
         "sequence": [
           {
-            "key": "Digit7",
+            "key": "KeyJ",
             "modifiers": [
               "Shift"
             ]
@@ -679,11 +658,207 @@
         ]
       }
     ],
-    "Ե": [
+    "Չ": [
       {
         "sequence": [
           {
-            "key": "KeyE",
+            "key": "Digit9",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "չ": [
+      {
+        "sequence": [
+          {
+            "key": "Digit9",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "ձ": [
+      {
+        "sequence": [
+          {
+            "key": "Digit4",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "Ֆ": [
+      {
+        "sequence": [
+          {
+            "key": "KeyF",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "ք": [
+      {
+        "sequence": [
+          {
+            "key": "KeyQ",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "ճ": [
+      {
+        "sequence": [
+          {
+            "key": "Digit0",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "Ռ": [
+      {
+        "sequence": [
+          {
+            "key": "KeyR",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "շ": [
+      {
+        "sequence": [
+          {
+            "key": "Backslash",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "Ա": [
+      {
+        "sequence": [
+          {
+            "key": "KeyA",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "Ծ": [
+      {
+        "sequence": [
+          {
+            "key": "BracketRight",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "կ": [
+      {
+        "sequence": [
+          {
+            "key": "KeyK",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "»": [
+      {
+        "sequence": [
+          {
+            "key": "Period",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "փ": [
+      {
+        "sequence": [
+          {
+            "key": "Digit3",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "?": [
+      {
+        "sequence": [
+          {
+            "key": "IntlBackslash",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "Ժ": [
+      {
+        "sequence": [
+          {
+            "key": "Equal",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "ծ": [
+      {
+        "sequence": [
+          {
+            "key": "BracketRight",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "է": [
+      {
+        "sequence": [
+          {
+            "key": "Digit1",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "։": [
+      {
+        "sequence": [
+          {
+            "key": "Semicolon",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "Հ": [
+      {
+        "sequence": [
+          {
+            "key": "KeyH",
             "modifiers": [
               "Shift"
             ]
@@ -711,41 +886,63 @@
         ]
       }
     ],
-    "ա": [
+    "օ": [
       {
         "sequence": [
           {
-            "key": "KeyA",
+            "key": "KeyO",
             "modifiers": []
           }
         ]
       }
     ],
-    "փ": [
+    "Խ": [
       {
         "sequence": [
           {
-            "key": "Digit3",
+            "key": "BracketLeft",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "ռ": [
+      {
+        "sequence": [
+          {
+            "key": "KeyR",
             "modifiers": []
           }
         ]
       }
     ],
-    "չ": [
+    "պ": [
       {
         "sequence": [
           {
-            "key": "Digit9",
+            "key": "KeyP",
             "modifiers": []
           }
         ]
       }
     ],
-    "Է": [
+    "գ": [
       {
         "sequence": [
           {
-            "key": "Digit1",
+            "key": "KeyG",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "Գ": [
+      {
+        "sequence": [
+          {
+            "key": "KeyG",
             "modifiers": [
               "Shift"
             ]
@@ -765,11 +962,11 @@
         ]
       }
     ],
-    "Ջ": [
+    "Ղ": [
       {
         "sequence": [
           {
-            "key": "Digit5",
+            "key": "KeyX",
             "modifiers": [
               "Shift"
             ]
@@ -777,21 +974,61 @@
         ]
       }
     ],
-    "պ": [
+    "Ց": [
       {
         "sequence": [
           {
-            "key": "KeyP",
+            "key": "KeyC",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "վ": [
+      {
+        "sequence": [
+          {
+            "key": "KeyV",
             "modifiers": []
           }
         ]
       }
     ],
-    "։": [
+    "ղ": [
       {
         "sequence": [
           {
-            "key": "Semicolon",
+            "key": "KeyX",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "ւ": [
+      {
+        "sequence": [
+          {
+            "key": "Digit6",
+            "modifiers": []
+          }
+        ]
+      },
+      {
+        "sequence": [
+          {
+            "key": "KeyU",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "֏": [
+      {
+        "sequence": [
+          {
+            "key": "Digit7",
             "modifiers": [
               "Shift"
             ]
@@ -799,11 +1036,43 @@
         ]
       }
     ],
-    "Զ": [
+    "Է": [
       {
         "sequence": [
           {
-            "key": "KeyZ",
+            "key": "Digit1",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    ",": [
+      {
+        "sequence": [
+          {
+            "key": "Comma",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "դ": [
+      {
+        "sequence": [
+          {
+            "key": "KeyD",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "\"": [
+      {
+        "sequence": [
+          {
+            "key": "Quote",
             "modifiers": [
               "Shift"
             ]
@@ -819,274 +1088,6 @@
             "modifiers": [
               "Shift"
             ]
-          }
-        ]
-      }
-    ],
-    "և": [
-      {
-        "sequence": [
-          {
-            "key": "Digit7",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "լ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyL",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    ",": [
-      {
-        "sequence": [
-          {
-            "key": "Comma",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "ֆ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyF",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "․": [
-      {
-        "sequence": [
-          {
-            "key": "Period",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "|": [
-      {
-        "sequence": [
-          {
-            "key": "IntlBackslash",
-            "modifiers": [
-              "AltGraph"
-            ]
-          }
-        ]
-      }
-    ],
-    "Խ": [
-      {
-        "sequence": [
-          {
-            "key": "BracketLeft",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "ն": [
-      {
-        "sequence": [
-          {
-            "key": "KeyN",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "Ձ": [
-      {
-        "sequence": [
-          {
-            "key": "Digit4",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "յ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyJ",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "՛": [
-      {
-        "sequence": [
-          {
-            "key": "Quote",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "տ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyT",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "մ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyM",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "Ն": [
-      {
-        "sequence": [
-          {
-            "key": "KeyN",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "»": [
-      {
-        "sequence": [
-          {
-            "key": "Period",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "ց": [
-      {
-        "sequence": [
-          {
-            "key": "KeyC",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "Շ": [
-      {
-        "sequence": [
-          {
-            "key": "Backslash",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "բ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyB",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "ճ": [
-      {
-        "sequence": [
-          {
-            "key": "Digit0",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "ի": [
-      {
-        "sequence": [
-          {
-            "key": "KeyI",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "Մ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyM",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "Ս": [
-      {
-        "sequence": [
-          {
-            "key": "KeyS",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    " ": [
-      {
-        "sequence": [
-          {
-            "key": "Space",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "՜": [
-      {
-        "sequence": [
-          {
-            "key": "Backquote",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "հ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyH",
-            "modifiers": []
           }
         ]
       }

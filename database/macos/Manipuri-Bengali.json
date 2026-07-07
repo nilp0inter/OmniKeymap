@@ -2,14 +2,29 @@
   "metadata": {
     "platform": "macos",
     "layout_name": "Manipuri-Bengali",
-    "extracted_on": "2026-07-07T00:41:29Z"
+    "display_name": "Manipuri (Bangla) – InScript",
+    "extracted_on": "2026-07-07T01:15:16Z"
   },
   "mappings": {
-    "ঃ": [
+    "্দ": [
       {
         "sequence": [
           {
-            "key": "Minus",
+            "key": "KeyD",
+            "modifiers": []
+          },
+          {
+            "key": "KeyO",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "ঠ": [
+      {
+        "sequence": [
+          {
+            "key": "Quote",
             "modifiers": [
               "Shift"
             ]
@@ -17,23 +32,34 @@
         ]
       }
     ],
-    "ং": [
+    "চ": [
       {
         "sequence": [
           {
-            "key": "KeyX",
+            "key": "Semicolon",
             "modifiers": []
           }
         ]
       }
     ],
-    "অ্যা": [
+    "±": [
       {
         "sequence": [
           {
-            "key": "Digit1",
+            "key": "IntlBackslash",
             "modifiers": [
               "Shift"
+            ]
+          }
+        ]
+      },
+      {
+        "sequence": [
+          {
+            "key": "IntlBackslash",
+            "modifiers": [
+              "Shift",
+              "Alt"
             ]
           }
         ]
@@ -49,31 +75,21 @@
         ]
       }
     ],
-    "০": [
+    "ন": [
       {
         "sequence": [
           {
-            "key": "Digit0",
+            "key": "KeyV",
             "modifiers": []
           }
         ]
       }
     ],
-    "স": [
+    "৶": [
       {
         "sequence": [
           {
-            "key": "KeyM",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "]": [
-      {
-        "sequence": [
-          {
-            "key": "Digit0",
+            "key": "Digit3",
             "modifiers": [
               "Shift",
               "Alt"
@@ -82,14 +98,117 @@
         ]
       }
     ],
-    "|": [
+    "৯": [
       {
         "sequence": [
           {
-            "key": "Backslash",
+            "key": "Digit9",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "্ূ": [
+      {
+        "sequence": [
+          {
+            "key": "KeyD",
+            "modifiers": []
+          },
+          {
+            "key": "KeyT",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "'": [
+      {
+        "sequence": [
+          {
+            "key": "Quote",
             "modifiers": [
-              "Shift",
               "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "ত": [
+      {
+        "sequence": [
+          {
+            "key": "KeyL",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    ",": [
+      {
+        "sequence": [
+          {
+            "key": "Comma",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "্ং": [
+      {
+        "sequence": [
+          {
+            "key": "KeyD",
+            "modifiers": []
+          },
+          {
+            "key": "KeyX",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "-": [
+      {
+        "sequence": [
+          {
+            "key": "Minus",
+            "modifiers": []
+          }
+        ]
+      },
+      {
+        "sequence": [
+          {
+            "key": "Minus",
+            "modifiers": [
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "্৫": [
+      {
+        "sequence": [
+          {
+            "key": "KeyD",
+            "modifiers": []
+          },
+          {
+            "key": "Digit5",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "ঝ": [
+      {
+        "sequence": [
+          {
+            "key": "KeyP",
+            "modifiers": [
+              "Shift"
             ]
           }
         ]
@@ -107,43 +226,50 @@
         ]
       }
     ],
-    "২": [
+    "্ক": [
       {
         "sequence": [
           {
-            "key": "Digit2",
+            "key": "KeyD",
+            "modifiers": []
+          },
+          {
+            "key": "KeyK",
             "modifiers": []
           }
         ]
       }
     ],
-    "§": [
+    "৹": [
       {
         "sequence": [
           {
-            "key": "IntlBackslash",
-            "modifiers": []
-          }
-        ]
-      },
-      {
-        "sequence": [
-          {
-            "key": "IntlBackslash",
+            "key": "Digit6",
             "modifiers": [
+              "Shift",
               "Alt"
             ]
           }
         ]
       }
     ],
-    "ৣ": [
+    "হ": [
       {
         "sequence": [
           {
-            "key": "KeyR",
+            "key": "KeyU",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "(": [
+      {
+        "sequence": [
+          {
+            "key": "Digit9",
             "modifiers": [
-              "Alt"
+              "Shift"
             ]
           }
         ]
@@ -159,19 +285,72 @@
         ]
       }
     ],
-    "₹": [
+    "ট": [
       {
         "sequence": [
           {
-            "key": "Backquote",
+            "key": "Quote",
             "modifiers": []
           }
         ]
-      },
+      }
+    ],
+    "্,": [
       {
         "sequence": [
           {
-            "key": "Digit4",
+            "key": "KeyD",
+            "modifiers": []
+          },
+          {
+            "key": "Comma",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "্ ": [
+      {
+        "sequence": [
+          {
+            "key": "KeyD",
+            "modifiers": []
+          },
+          {
+            "key": "Space",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "^": [
+      {
+        "sequence": [
+          {
+            "key": "KeyY",
+            "modifiers": [
+              "Shift",
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "র": [
+      {
+        "sequence": [
+          {
+            "key": "KeyJ",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    ";": [
+      {
+        "sequence": [
+          {
+            "key": "Semicolon",
             "modifiers": [
               "Alt"
             ]
@@ -179,31 +358,7 @@
         ]
       }
     ],
-    ")": [
-      {
-        "sequence": [
-          {
-            "key": "Digit0",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "ভ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyY",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "্ী": [
+    "্§": [
       {
         "sequence": [
           {
@@ -211,17 +366,41 @@
             "modifiers": []
           },
           {
-            "key": "KeyR",
+            "key": "IntlBackslash",
             "modifiers": []
           }
         ]
       }
     ],
-    "ঢ": [
+    "্ড": [
       {
         "sequence": [
+          {
+            "key": "KeyD",
+            "modifiers": []
+          },
           {
             "key": "BracketLeft",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "া": [
+      {
+        "sequence": [
+          {
+            "key": "KeyE",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "ঈ": [
+      {
+        "sequence": [
+          {
+            "key": "KeyR",
             "modifiers": [
               "Shift"
             ]
@@ -229,13 +408,40 @@
         ]
       }
     ],
-    "্/": [
+    "ূ": [
       {
         "sequence": [
           {
-            "key": "KeyD",
+            "key": "KeyT",
             "modifiers": []
-          },
+          }
+        ]
+      }
+    ],
+    "_": [
+      {
+        "sequence": [
+          {
+            "key": "Minus",
+            "modifiers": [
+              "Shift",
+              "Alt"
+            ]
+          }
+        ]
+      },
+      {
+        "sequence": [
+          {
+            "key": "IntlRo",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "/": [
+      {
+        "sequence": [
           {
             "key": "Backslash",
             "modifiers": []
@@ -243,11 +449,190 @@
         ]
       }
     ],
-    "=": [
+    "ঙ": [
+      {
+        "sequence": [
+          {
+            "key": "KeyU",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "়": [
       {
         "sequence": [
           {
             "key": "BracketRight",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "ৡ": [
+      {
+        "sequence": [
+          {
+            "key": "KeyR",
+            "modifiers": [
+              "Shift",
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "ফ": [
+      {
+        "sequence": [
+          {
+            "key": "KeyH",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "ঔ": [
+      {
+        "sequence": [
+          {
+            "key": "KeyQ",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "৷": [
+      {
+        "sequence": [
+          {
+            "key": "Digit4",
+            "modifiers": [
+              "Shift",
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "্৯": [
+      {
+        "sequence": [
+          {
+            "key": "KeyD",
+            "modifiers": []
+          },
+          {
+            "key": "Digit9",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "ঢ়": [
+      {
+        "sequence": [
+          {
+            "key": "BracketLeft",
+            "modifiers": [
+              "Shift",
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "৫": [
+      {
+        "sequence": [
+          {
+            "key": "Digit5",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "৮": [
+      {
+        "sequence": [
+          {
+            "key": "Digit8",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "থ": [
+      {
+        "sequence": [
+          {
+            "key": "KeyL",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "৵": [
+      {
+        "sequence": [
+          {
+            "key": "Digit2",
+            "modifiers": [
+              "Shift",
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "ঋ": [
+      {
+        "sequence": [
+          {
+            "key": "Equal",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "ু": [
+      {
+        "sequence": [
+          {
+            "key": "KeyG",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    ":": [
+      {
+        "sequence": [
+          {
+            "key": "Semicolon",
+            "modifiers": [
+              "Shift",
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "‍": [
+      {
+        "sequence": [
+          {
+            "key": "Digit1",
             "modifiers": [
               "Alt"
             ]
@@ -278,112 +663,6 @@
         ]
       }
     ],
-    "ঌ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyF",
-            "modifiers": [
-              "Shift",
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "_": [
-      {
-        "sequence": [
-          {
-            "key": "Minus",
-            "modifiers": [
-              "Shift",
-              "Alt"
-            ]
-          }
-        ]
-      },
-      {
-        "sequence": [
-          {
-            "key": "IntlRo",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "র": [
-      {
-        "sequence": [
-          {
-            "key": "KeyJ",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "থ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyL",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "॥": [
-      {
-        "sequence": [
-          {
-            "key": "Period",
-            "modifiers": [
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "্র": [
-      {
-        "sequence": [
-          {
-            "key": "Digit3",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      },
-      {
-        "sequence": [
-          {
-            "key": "KeyD",
-            "modifiers": []
-          },
-          {
-            "key": "KeyJ",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "্জ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyD",
-            "modifiers": []
-          },
-          {
-            "key": "KeyP",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
     "ৄ": [
       {
         "sequence": [
@@ -396,21 +675,11 @@
         ]
       }
     ],
-    "া": [
+    "অ": [
       {
         "sequence": [
           {
-            "key": "KeyE",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "ঈ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyR",
+            "key": "KeyD",
             "modifiers": [
               "Shift"
             ]
@@ -418,35 +687,23 @@
         ]
       }
     ],
-    "্§": [
+    "ষ": [
       {
         "sequence": [
           {
-            "key": "KeyD",
-            "modifiers": []
-          },
-          {
-            "key": "IntlBackslash",
-            "modifiers": []
+            "key": "Comma",
+            "modifiers": [
+              "Shift"
+            ]
           }
         ]
       }
     ],
-    "৯": [
+    "৲": [
       {
         "sequence": [
           {
-            "key": "Digit9",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "ঢ়": [
-      {
-        "sequence": [
-          {
-            "key": "BracketLeft",
+            "key": "Comma",
             "modifiers": [
               "Shift",
               "Alt"
@@ -455,19 +712,49 @@
         ]
       }
     ],
-    "উ": [
+    "‍্য": [
       {
         "sequence": [
           {
-            "key": "KeyG",
+            "key": "Slash",
             "modifiers": [
-              "Shift"
+              "Alt"
             ]
           }
         ]
       }
     ],
-    "্ক": [
+    "৩": [
+      {
+        "sequence": [
+          {
+            "key": "Digit3",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "১": [
+      {
+        "sequence": [
+          {
+            "key": "Digit1",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "গ": [
+      {
+        "sequence": [
+          {
+            "key": "KeyI",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "্": [
       {
         "sequence": [
           {
@@ -475,27 +762,7 @@
             "modifiers": []
           },
           {
-            "key": "KeyK",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "৫": [
-      {
-        "sequence": [
-          {
-            "key": "Digit5",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "-": [
-      {
-        "sequence": [
-          {
-            "key": "Minus",
+            "key": "KeyZ",
             "modifiers": []
           }
         ]
@@ -503,10 +770,12 @@
       {
         "sequence": [
           {
-            "key": "Minus",
-            "modifiers": [
-              "Alt"
-            ]
+            "key": "KeyD",
+            "modifiers": []
+          },
+          {
+            "key": "IntlYen",
+            "modifiers": []
           }
         ]
       }
@@ -523,7 +792,7 @@
         ]
       }
     ],
-    "্২": [
+    "্/": [
       {
         "sequence": [
           {
@@ -531,7 +800,190 @@
             "modifiers": []
           },
           {
-            "key": "Digit2",
+            "key": "Backslash",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "্ী": [
+      {
+        "sequence": [
+          {
+            "key": "KeyD",
+            "modifiers": []
+          },
+          {
+            "key": "KeyR",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "ভ": [
+      {
+        "sequence": [
+          {
+            "key": "KeyY",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "ড": [
+      {
+        "sequence": [
+          {
+            "key": "BracketLeft",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "ৈ": [
+      {
+        "sequence": [
+          {
+            "key": "KeyW",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "্৮": [
+      {
+        "sequence": [
+          {
+            "key": "KeyD",
+            "modifiers": []
+          },
+          {
+            "key": "Digit8",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "ম": [
+      {
+        "sequence": [
+          {
+            "key": "KeyC",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "জ্ঞ": [
+      {
+        "sequence": [
+          {
+            "key": "Digit5",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "ঌ": [
+      {
+        "sequence": [
+          {
+            "key": "KeyF",
+            "modifiers": [
+              "Shift",
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "ৌ": [
+      {
+        "sequence": [
+          {
+            "key": "KeyQ",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    ">": [
+      {
+        "sequence": [
+          {
+            "key": "KeyM",
+            "modifiers": [
+              "Shift",
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "ঐ": [
+      {
+        "sequence": [
+          {
+            "key": "KeyW",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "্ল": [
+      {
+        "sequence": [
+          {
+            "key": "KeyD",
+            "modifiers": []
+          },
+          {
+            "key": "KeyN",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "<": [
+      {
+        "sequence": [
+          {
+            "key": "KeyM",
+            "modifiers": [
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "]": [
+      {
+        "sequence": [
+          {
+            "key": "Digit0",
+            "modifiers": [
+              "Shift",
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "্ি": [
+      {
+        "sequence": [
+          {
+            "key": "KeyD",
+            "modifiers": []
+          },
+          {
+            "key": "KeyF",
             "modifiers": []
           }
         ]
@@ -551,45 +1003,11 @@
         ]
       }
     ],
-    "৩": [
-      {
-        "sequence": [
-          {
-            "key": "Digit3",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "্দ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyD",
-            "modifiers": []
-          },
-          {
-            "key": "KeyO",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "৬": [
+    "ত্র": [
       {
         "sequence": [
           {
             "key": "Digit6",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "ষ": [
-      {
-        "sequence": [
-          {
-            "key": "Comma",
             "modifiers": [
               "Shift"
             ]
@@ -597,11 +1015,21 @@
         ]
       }
     ],
-    "শ্র": [
+    "৪": [
       {
         "sequence": [
           {
-            "key": "Digit8",
+            "key": "Digit4",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "ধ": [
+      {
+        "sequence": [
+          {
+            "key": "KeyO",
             "modifiers": [
               "Shift"
             ]
@@ -609,24 +1037,13 @@
         ]
       }
     ],
-    "ূ": [
+    "শ": [
       {
         "sequence": [
           {
-            "key": "KeyT",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "৴": [
-      {
-        "sequence": [
-          {
-            "key": "Digit1",
+            "key": "KeyM",
             "modifiers": [
-              "Shift",
-              "Alt"
+              "Shift"
             ]
           }
         ]
@@ -644,6 +1061,34 @@
         ]
       }
     ],
+    "্২": [
+      {
+        "sequence": [
+          {
+            "key": "KeyD",
+            "modifiers": []
+          },
+          {
+            "key": "Digit2",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "্-": [
+      {
+        "sequence": [
+          {
+            "key": "KeyD",
+            "modifiers": []
+          },
+          {
+            "key": "Minus",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
     "+": [
       {
         "sequence": [
@@ -653,6 +1098,72 @@
               "Shift",
               "Alt"
             ]
+          }
+        ]
+      }
+    ],
+    "ৠ": [
+      {
+        "sequence": [
+          {
+            "key": "Equal",
+            "modifiers": [
+              "Shift",
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "=": [
+      {
+        "sequence": [
+          {
+            "key": "BracketRight",
+            "modifiers": [
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "্ৃ": [
+      {
+        "sequence": [
+          {
+            "key": "KeyD",
+            "modifiers": []
+          },
+          {
+            "key": "Equal",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "৸": [
+      {
+        "sequence": [
+          {
+            "key": "Digit5",
+            "modifiers": [
+              "Shift",
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "্₹": [
+      {
+        "sequence": [
+          {
+            "key": "KeyD",
+            "modifiers": []
+          },
+          {
+            "key": "Backquote",
+            "modifiers": []
           }
         ]
       }
@@ -671,12 +1182,479 @@
         ]
       }
     ],
+    "্গ": [
+      {
+        "sequence": [
+          {
+            "key": "KeyD",
+            "modifiers": []
+          },
+          {
+            "key": "KeyI",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "্জ": [
+      {
+        "sequence": [
+          {
+            "key": "KeyD",
+            "modifiers": []
+          },
+          {
+            "key": "KeyP",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "ঢ": [
+      {
+        "sequence": [
+          {
+            "key": "BracketLeft",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "এ": [
+      {
+        "sequence": [
+          {
+            "key": "KeyS",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "৺": [
+      {
+        "sequence": [
+          {
+            "key": "KeyX",
+            "modifiers": [
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "্১": [
+      {
+        "sequence": [
+          {
+            "key": "KeyD",
+            "modifiers": []
+          },
+          {
+            "key": "Digit1",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "্ট": [
+      {
+        "sequence": [
+          {
+            "key": "KeyD",
+            "modifiers": []
+          },
+          {
+            "key": "Quote",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "্_": [
+      {
+        "sequence": [
+          {
+            "key": "KeyD",
+            "modifiers": []
+          },
+          {
+            "key": "IntlRo",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "৭": [
+      {
+        "sequence": [
+          {
+            "key": "Digit7",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "ঞ": [
+      {
+        "sequence": [
+          {
+            "key": "BracketRight",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "$": [
+      {
+        "sequence": [
+          {
+            "key": "Digit3",
+            "modifiers": [
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "র্": [
+      {
+        "sequence": [
+          {
+            "key": "Digit4",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "?": [
+      {
+        "sequence": [
+          {
+            "key": "Backslash",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      },
+      {
+        "sequence": [
+          {
+            "key": "Slash",
+            "modifiers": [
+              "Shift",
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "₹": [
+      {
+        "sequence": [
+          {
+            "key": "Backquote",
+            "modifiers": []
+          }
+        ]
+      },
+      {
+        "sequence": [
+          {
+            "key": "Digit4",
+            "modifiers": [
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "{": [
+      {
+        "sequence": [
+          {
+            "key": "Digit9",
+            "modifiers": [
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "ল": [
+      {
+        "sequence": [
+          {
+            "key": "KeyN",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "স": [
+      {
+        "sequence": [
+          {
+            "key": "KeyM",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "২": [
+      {
+        "sequence": [
+          {
+            "key": "Digit2",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
     "ে": [
       {
         "sequence": [
           {
             "key": "KeyS",
             "modifiers": []
+          }
+        ]
+      }
+    ],
+    "ী": [
+      {
+        "sequence": [
+          {
+            "key": "KeyR",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "#": [
+      {
+        "sequence": [
+          {
+            "key": "KeyE",
+            "modifiers": [
+              "Shift",
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "%": [
+      {
+        "sequence": [
+          {
+            "key": "KeyT",
+            "modifiers": [
+              "Shift",
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "্স": [
+      {
+        "sequence": [
+          {
+            "key": "KeyD",
+            "modifiers": []
+          },
+          {
+            "key": "KeyM",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "৬": [
+      {
+        "sequence": [
+          {
+            "key": "Digit6",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "ি": [
+      {
+        "sequence": [
+          {
+            "key": "KeyF",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "|": [
+      {
+        "sequence": [
+          {
+            "key": "Backslash",
+            "modifiers": [
+              "Shift",
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "্ত": [
+      {
+        "sequence": [
+          {
+            "key": "KeyD",
+            "modifiers": []
+          },
+          {
+            "key": "KeyL",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "্হ": [
+      {
+        "sequence": [
+          {
+            "key": "KeyD",
+            "modifiers": []
+          },
+          {
+            "key": "KeyU",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "ৃ": [
+      {
+        "sequence": [
+          {
+            "key": "Equal",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "ব": [
+      {
+        "sequence": [
+          {
+            "key": "KeyY",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "য": [
+      {
+        "sequence": [
+          {
+            "key": "Slash",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "্চ": [
+      {
+        "sequence": [
+          {
+            "key": "KeyD",
+            "modifiers": []
+          },
+          {
+            "key": "Semicolon",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "ক্ষ": [
+      {
+        "sequence": [
+          {
+            "key": "Digit7",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "্য": [
+      {
+        "sequence": [
+          {
+            "key": "KeyD",
+            "modifiers": []
+          },
+          {
+            "key": "Slash",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "ঁ": [
+      {
+        "sequence": [
+          {
+            "key": "KeyX",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "ই": [
+      {
+        "sequence": [
+          {
+            "key": "KeyF",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "\"": [
+      {
+        "sequence": [
+          {
+            "key": "Quote",
+            "modifiers": [
+              "Shift",
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "॥": [
+      {
+        "sequence": [
+          {
+            "key": "Period",
+            "modifiers": [
+              "Alt"
+            ]
           }
         ]
       }
@@ -725,7 +1703,17 @@
         ]
       }
     ],
-    "্‍": [
+    "০": [
+      {
+        "sequence": [
+          {
+            "key": "Digit0",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "্ম": [
       {
         "sequence": [
           {
@@ -733,25 +1721,48 @@
             "modifiers": []
           },
           {
-            "key": "BracketRight",
+            "key": "KeyC",
             "modifiers": []
           }
         ]
       }
     ],
-    "}": [
+    "ো": [
       {
         "sequence": [
           {
-            "key": "Digit0",
+            "key": "KeyA",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "।": [
+      {
+        "sequence": [
+          {
+            "key": "Period",
             "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "&": [
+      {
+        "sequence": [
+          {
+            "key": "KeyU",
+            "modifiers": [
+              "Shift",
               "Alt"
             ]
           }
         ]
       }
     ],
-    "্": [
+    "্ৈ": [
       {
         "sequence": [
           {
@@ -759,19 +1770,7 @@
             "modifiers": []
           },
           {
-            "key": "KeyZ",
-            "modifiers": []
-          }
-        ]
-      },
-      {
-        "sequence": [
-          {
-            "key": "KeyD",
-            "modifiers": []
-          },
-          {
-            "key": "IntlYen",
+            "key": "KeyW",
             "modifiers": []
           }
         ]
@@ -784,6 +1783,95 @@
             "key": "KeyD",
             "modifiers": []
           },
+          {
+            "key": "KeyB",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "্৪": [
+      {
+        "sequence": [
+          {
+            "key": "KeyD",
+            "modifiers": []
+          },
+          {
+            "key": "Digit4",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "ৎ": [
+      {
+        "sequence": [
+          {
+            "key": "KeyL",
+            "modifiers": [
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "্৩": [
+      {
+        "sequence": [
+          {
+            "key": "KeyD",
+            "modifiers": []
+          },
+          {
+            "key": "Digit3",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "অ্যা": [
+      {
+        "sequence": [
+          {
+            "key": "Digit1",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "৴": [
+      {
+        "sequence": [
+          {
+            "key": "Digit1",
+            "modifiers": [
+              "Shift",
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "্ো": [
+      {
+        "sequence": [
+          {
+            "key": "KeyD",
+            "modifiers": []
+          },
+          {
+            "key": "KeyA",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "ৱ": [
+      {
+        "sequence": [
           {
             "key": "KeyB",
             "modifiers": []
@@ -804,146 +1892,11 @@
         ]
       }
     ],
-    "্স": [
-      {
-        "sequence": [
-          {
-            "key": "KeyD",
-            "modifiers": []
-          },
-          {
-            "key": "KeyM",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "{": [
-      {
-        "sequence": [
-          {
-            "key": "Digit9",
-            "modifiers": [
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "ছ": [
-      {
-        "sequence": [
-          {
-            "key": "Semicolon",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "৺": [
-      {
-        "sequence": [
-          {
-            "key": "KeyX",
-            "modifiers": [
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "৷": [
-      {
-        "sequence": [
-          {
-            "key": "Digit4",
-            "modifiers": [
-              "Shift",
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "জ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyP",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "্ূ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyD",
-            "modifiers": []
-          },
-          {
-            "key": "KeyT",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "খ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyK",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "৶": [
-      {
-        "sequence": [
-          {
-            "key": "Digit3",
-            "modifiers": [
-              "Shift",
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "ৡ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyR",
-            "modifiers": [
-              "Shift",
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "ড": [
+    "ড়": [
       {
         "sequence": [
           {
             "key": "BracketLeft",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "$": [
-      {
-        "sequence": [
-          {
-            "key": "Digit3",
             "modifiers": [
               "Alt"
             ]
@@ -951,26 +1904,26 @@
         ]
       }
     ],
-    ":": [
+    ")": [
       {
         "sequence": [
           {
-            "key": "Semicolon",
+            "key": "Digit0",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "!": [
+      {
+        "sequence": [
+          {
+            "key": "KeyQ",
             "modifiers": [
               "Shift",
               "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "শ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyM",
-            "modifiers": [
-              "Shift"
             ]
           }
         ]
@@ -988,51 +1941,56 @@
         ]
       }
     ],
-    "%": [
+    "প": [
       {
         "sequence": [
           {
-            "key": "KeyT",
+            "key": "KeyH",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "ছ": [
+      {
+        "sequence": [
+          {
+            "key": "Semicolon",
             "modifiers": [
-              "Shift",
-              "Alt"
+              "Shift"
             ]
           }
         ]
       }
     ],
-    "হ": [
+    "ং": [
       {
         "sequence": [
           {
-            "key": "KeyU",
+            "key": "KeyX",
             "modifiers": []
           }
         ]
       }
     ],
-    "‍্য": [
+    "জ": [
       {
         "sequence": [
           {
-            "key": "Slash",
+            "key": "KeyP",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "উ": [
+      {
+        "sequence": [
+          {
+            "key": "KeyG",
             "modifiers": [
-              "Alt"
+              "Shift"
             ]
-          }
-        ]
-      }
-    ],
-    "্ড": [
-      {
-        "sequence": [
-          {
-            "key": "KeyD",
-            "modifiers": []
-          },
-          {
-            "key": "BracketLeft",
-            "modifiers": []
           }
         ]
       }
@@ -1049,11 +2007,11 @@
         ]
       }
     ],
-    "এ": [
+    "ণ": [
       {
         "sequence": [
           {
-            "key": "KeyS",
+            "key": "KeyC",
             "modifiers": [
               "Shift"
             ]
@@ -1061,226 +2019,11 @@
         ]
       }
     ],
-    "্_": [
+    "আ": [
       {
         "sequence": [
           {
-            "key": "KeyD",
-            "modifiers": []
-          },
-          {
-            "key": "IntlRo",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "্₹": [
-      {
-        "sequence": [
-          {
-            "key": "KeyD",
-            "modifiers": []
-          },
-          {
-            "key": "Backquote",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "‍": [
-      {
-        "sequence": [
-          {
-            "key": "Digit1",
-            "modifiers": [
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "৮": [
-      {
-        "sequence": [
-          {
-            "key": "Digit8",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "়": [
-      {
-        "sequence": [
-          {
-            "key": "BracketRight",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "্চ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyD",
-            "modifiers": []
-          },
-          {
-            "key": "Semicolon",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "ৃ": [
-      {
-        "sequence": [
-          {
-            "key": "Equal",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "্ো": [
-      {
-        "sequence": [
-          {
-            "key": "KeyD",
-            "modifiers": []
-          },
-          {
-            "key": "KeyA",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "'": [
-      {
-        "sequence": [
-          {
-            "key": "Quote",
-            "modifiers": [
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "্ি": [
-      {
-        "sequence": [
-          {
-            "key": "KeyD",
-            "modifiers": []
-          },
-          {
-            "key": "KeyF",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "ফ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyH",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "/": [
-      {
-        "sequence": [
-          {
-            "key": "Backslash",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "ঽ": [
-      {
-        "sequence": [
-          {
-            "key": "Period",
-            "modifiers": [
-              "Shift",
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "য": [
-      {
-        "sequence": [
-          {
-            "key": "Slash",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "ঔ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyQ",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "ঐ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyW",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "গ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyI",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "(": [
-      {
-        "sequence": [
-          {
-            "key": "Digit9",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "অ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyD",
+            "key": "KeyE",
             "modifiers": [
               "Shift"
             ]
@@ -1302,7 +2045,51 @@
         ]
       }
     ],
-    "্ৃ": [
+    "ৣ": [
+      {
+        "sequence": [
+          {
+            "key": "KeyR",
+            "modifiers": [
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "ঃ": [
+      {
+        "sequence": [
+          {
+            "key": "Minus",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "§": [
+      {
+        "sequence": [
+          {
+            "key": "IntlBackslash",
+            "modifiers": []
+          }
+        ]
+      },
+      {
+        "sequence": [
+          {
+            "key": "IntlBackslash",
+            "modifiers": [
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "্৬": [
       {
         "sequence": [
           {
@@ -1310,41 +2097,17 @@
             "modifiers": []
           },
           {
-            "key": "Equal",
+            "key": "Digit6",
             "modifiers": []
           }
         ]
       }
     ],
-    "৪": [
+    "ঽ": [
       {
         "sequence": [
           {
-            "key": "Digit4",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "্৩": [
-      {
-        "sequence": [
-          {
-            "key": "KeyD",
-            "modifiers": []
-          },
-          {
-            "key": "Digit3",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "\"": [
-      {
-        "sequence": [
-          {
-            "key": "Quote",
+            "key": "Period",
             "modifiers": [
               "Shift",
               "Alt"
@@ -1353,56 +2116,23 @@
         ]
       }
     ],
-    "্হ": [
+    "ঘ": [
       {
         "sequence": [
           {
-            "key": "KeyD",
-            "modifiers": []
-          },
-          {
-            "key": "KeyU",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "্ং": [
-      {
-        "sequence": [
-          {
-            "key": "KeyD",
-            "modifiers": []
-          },
-          {
-            "key": "KeyX",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "৲": [
-      {
-        "sequence": [
-          {
-            "key": "Comma",
+            "key": "KeyI",
             "modifiers": [
-              "Shift",
-              "Alt"
+              "Shift"
             ]
           }
         ]
       }
     ],
-    "্৯": [
+    "ক": [
       {
         "sequence": [
           {
-            "key": "KeyD",
-            "modifiers": []
-          },
-          {
-            "key": "Digit9",
+            "key": "KeyK",
             "modifiers": []
           }
         ]
@@ -1422,7 +2152,7 @@
         ]
       }
     ],
-    "্ম": [
+    "্ু": [
       {
         "sequence": [
           {
@@ -1430,35 +2160,21 @@
             "modifiers": []
           },
           {
-            "key": "KeyC",
+            "key": "KeyG",
             "modifiers": []
           }
         ]
       }
     ],
-    "ৠ": [
+    "[": [
       {
         "sequence": [
           {
-            "key": "Equal",
+            "key": "Digit9",
             "modifiers": [
               "Shift",
               "Alt"
             ]
-          }
-        ]
-      }
-    ],
-    "্৮": [
-      {
-        "sequence": [
-          {
-            "key": "KeyD",
-            "modifiers": []
-          },
-          {
-            "key": "Digit8",
-            "modifiers": []
           }
         ]
       }
@@ -1477,7 +2193,7 @@
         ]
       }
     ],
-    "্৫": [
+    "্‍": [
       {
         "sequence": [
           {
@@ -1485,98 +2201,20 @@
             "modifiers": []
           },
           {
-            "key": "Digit5",
+            "key": "BracketRight",
             "modifiers": []
           }
         ]
       }
     ],
-    "ত্র": [
+    "শ্র": [
       {
         "sequence": [
           {
-            "key": "Digit6",
+            "key": "Digit8",
             "modifiers": [
               "Shift"
             ]
-          }
-        ]
-      }
-    ],
-    "্ ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyD",
-            "modifiers": []
-          },
-          {
-            "key": "Space",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "ও": [
-      {
-        "sequence": [
-          {
-            "key": "KeyA",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "চ": [
-      {
-        "sequence": [
-          {
-            "key": "Semicolon",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "ৎ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyL",
-            "modifiers": [
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "ৌ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyQ",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "ি": [
-      {
-        "sequence": [
-          {
-            "key": "KeyF",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "ম": [
-      {
-        "sequence": [
-          {
-            "key": "KeyC",
-            "modifiers": []
           }
         ]
       }
@@ -1595,75 +2233,6 @@
         ]
       }
     ],
-    "ু": [
-      {
-        "sequence": [
-          {
-            "key": "KeyG",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "?": [
-      {
-        "sequence": [
-          {
-            "key": "Backslash",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      },
-      {
-        "sequence": [
-          {
-            "key": "Slash",
-            "modifiers": [
-              "Shift",
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "্য": [
-      {
-        "sequence": [
-          {
-            "key": "KeyD",
-            "modifiers": []
-          },
-          {
-            "key": "Slash",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "প": [
-      {
-        "sequence": [
-          {
-            "key": "KeyH",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "ঠ": [
-      {
-        "sequence": [
-          {
-            "key": "Quote",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
     "্ে": [
       {
         "sequence": [
@@ -1673,145 +2242,6 @@
           },
           {
             "key": "KeyS",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "ণ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyC",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "্১": [
-      {
-        "sequence": [
-          {
-            "key": "KeyD",
-            "modifiers": []
-          },
-          {
-            "key": "Digit1",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "৸": [
-      {
-        "sequence": [
-          {
-            "key": "Digit5",
-            "modifiers": [
-              "Shift",
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "আ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyE",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "্৪": [
-      {
-        "sequence": [
-          {
-            "key": "KeyD",
-            "modifiers": []
-          },
-          {
-            "key": "Digit4",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "৭": [
-      {
-        "sequence": [
-          {
-            "key": "Digit7",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "্-": [
-      {
-        "sequence": [
-          {
-            "key": "KeyD",
-            "modifiers": []
-          },
-          {
-            "key": "Minus",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "ৱ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyB",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "ই": [
-      {
-        "sequence": [
-          {
-            "key": "KeyF",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "্ত": [
-      {
-        "sequence": [
-          {
-            "key": "KeyD",
-            "modifiers": []
-          },
-          {
-            "key": "KeyL",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "্৭": [
-      {
-        "sequence": [
-          {
-            "key": "KeyD",
-            "modifiers": []
-          },
-          {
-            "key": "Digit7",
             "modifiers": []
           }
         ]
@@ -1829,109 +2259,13 @@
         ]
       }
     ],
-    "<": [
-      {
-        "sequence": [
-          {
-            "key": "KeyM",
-            "modifiers": [
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "&": [
-      {
-        "sequence": [
-          {
-            "key": "KeyU",
-            "modifiers": [
-              "Shift",
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "ট": [
-      {
-        "sequence": [
-          {
-            "key": "Quote",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "ঋ": [
-      {
-        "sequence": [
-          {
-            "key": "Equal",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "্ট": [
+    "্ব": [
       {
         "sequence": [
           {
             "key": "KeyD",
             "modifiers": []
           },
-          {
-            "key": "Quote",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "ক্ষ": [
-      {
-        "sequence": [
-          {
-            "key": "Digit7",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "্ু": [
-      {
-        "sequence": [
-          {
-            "key": "KeyD",
-            "modifiers": []
-          },
-          {
-            "key": "KeyG",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "#": [
-      {
-        "sequence": [
-          {
-            "key": "KeyE",
-            "modifiers": [
-              "Shift",
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "ব": [
-      {
-        "sequence": [
           {
             "key": "KeyY",
             "modifiers": []
@@ -1939,39 +2273,26 @@
         ]
       }
     ],
-    "্৬": [
+    "খ": [
       {
         "sequence": [
           {
-            "key": "KeyD",
-            "modifiers": []
-          },
-          {
-            "key": "Digit6",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "৹": [
-      {
-        "sequence": [
-          {
-            "key": "Digit6",
+            "key": "KeyK",
             "modifiers": [
-              "Shift",
-              "Alt"
+              "Shift"
             ]
           }
         ]
       }
     ],
-    "ত": [
+    "}": [
       {
         "sequence": [
           {
-            "key": "KeyL",
-            "modifiers": []
+            "key": "Digit0",
+            "modifiers": [
+              "Alt"
+            ]
           }
         ]
       }
@@ -2017,11 +2338,11 @@
         ]
       }
     ],
-    "জ্ঞ": [
+    "ও": [
       {
         "sequence": [
           {
-            "key": "Digit5",
+            "key": "KeyA",
             "modifiers": [
               "Shift"
             ]
@@ -2029,60 +2350,11 @@
         ]
       }
     ],
-    "ড়": [
+    "্র": [
       {
         "sequence": [
           {
-            "key": "BracketLeft",
-            "modifiers": [
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "ধ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyO",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "ঁ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyX",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    ">": [
-      {
-        "sequence": [
-          {
-            "key": "KeyM",
-            "modifiers": [
-              "Shift",
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "±": [
-      {
-        "sequence": [
-          {
-            "key": "IntlBackslash",
+            "key": "Digit3",
             "modifiers": [
               "Shift"
             ]
@@ -2092,29 +2364,17 @@
       {
         "sequence": [
           {
-            "key": "IntlBackslash",
-            "modifiers": [
-              "Shift",
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "^": [
-      {
-        "sequence": [
+            "key": "KeyD",
+            "modifiers": []
+          },
           {
-            "key": "KeyY",
-            "modifiers": [
-              "Shift",
-              "Alt"
-            ]
+            "key": "KeyJ",
+            "modifiers": []
           }
         ]
       }
     ],
-    "্গ": [
+    "্৭": [
       {
         "sequence": [
           {
@@ -2122,266 +2382,7 @@
             "modifiers": []
           },
           {
-            "key": "KeyI",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "!": [
-      {
-        "sequence": [
-          {
-            "key": "KeyQ",
-            "modifiers": [
-              "Shift",
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "[": [
-      {
-        "sequence": [
-          {
-            "key": "Digit9",
-            "modifiers": [
-              "Shift",
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "ক": [
-      {
-        "sequence": [
-          {
-            "key": "KeyK",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "ঞ": [
-      {
-        "sequence": [
-          {
-            "key": "BracketRight",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "্,": [
-      {
-        "sequence": [
-          {
-            "key": "KeyD",
-            "modifiers": []
-          },
-          {
-            "key": "Comma",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "ৈ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyW",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "ঝ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyP",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "্ব": [
-      {
-        "sequence": [
-          {
-            "key": "KeyD",
-            "modifiers": []
-          },
-          {
-            "key": "KeyY",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "৵": [
-      {
-        "sequence": [
-          {
-            "key": "Digit2",
-            "modifiers": [
-              "Shift",
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "১": [
-      {
-        "sequence": [
-          {
-            "key": "Digit1",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "্ৈ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyD",
-            "modifiers": []
-          },
-          {
-            "key": "KeyW",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    ";": [
-      {
-        "sequence": [
-          {
-            "key": "Semicolon",
-            "modifiers": [
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "।": [
-      {
-        "sequence": [
-          {
-            "key": "Period",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "ী": [
-      {
-        "sequence": [
-          {
-            "key": "KeyR",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "ন": [
-      {
-        "sequence": [
-          {
-            "key": "KeyV",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "ঘ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyI",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "র্": [
-      {
-        "sequence": [
-          {
-            "key": "Digit4",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "ো": [
-      {
-        "sequence": [
-          {
-            "key": "KeyA",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "্ল": [
-      {
-        "sequence": [
-          {
-            "key": "KeyD",
-            "modifiers": []
-          },
-          {
-            "key": "KeyN",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    ",": [
-      {
-        "sequence": [
-          {
-            "key": "Comma",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "ঙ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyU",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "ল": [
-      {
-        "sequence": [
-          {
-            "key": "KeyN",
+            "key": "Digit7",
             "modifiers": []
           }
         ]

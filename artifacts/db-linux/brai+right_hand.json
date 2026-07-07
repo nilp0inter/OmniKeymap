@@ -3,39 +3,10 @@
     "platform": "linux",
     "layout_name": "brai",
     "layout_variant": "right_hand",
-    "extracted_on": "2026-07-07T00:41:27Z"
+    "display_name": "Braille (right-handed)",
+    "extracted_on": "2026-07-07T01:15:29Z"
   },
   "mappings": {
-    " ": [
-      {
-        "sequence": [
-          {
-            "key": "Space",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "<": [
-      {
-        "sequence": [
-          {
-            "key": "IntlBackslash",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "\\": [
-      {
-        "sequence": [
-          {
-            "key": "Backslash",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
     "|": [
       {
         "sequence": [
@@ -58,6 +29,16 @@
         ]
       }
     ],
+    "<": [
+      {
+        "sequence": [
+          {
+            "key": "IntlBackslash",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
     ">": [
       {
         "sequence": [
@@ -66,6 +47,26 @@
             "modifiers": [
               "Shift"
             ]
+          }
+        ]
+      }
+    ],
+    "\\": [
+      {
+        "sequence": [
+          {
+            "key": "Backslash",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    " ": [
+      {
+        "sequence": [
+          {
+            "key": "Space",
+            "modifiers": []
           }
         ]
       }

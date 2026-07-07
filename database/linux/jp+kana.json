@@ -3,41 +3,10 @@
     "platform": "linux",
     "layout_name": "jp",
     "layout_variant": "kana",
-    "extracted_on": "2026-07-07T00:41:28Z"
+    "display_name": "Japanese (Kana)",
+    "extracted_on": "2026-07-07T01:15:30Z"
   },
   "mappings": {
-    "ッ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyZ",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "フ": [
-      {
-        "sequence": [
-          {
-            "key": "Digit2",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "オ": [
-      {
-        "sequence": [
-          {
-            "key": "Digit6",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
     "ヨ": [
       {
         "sequence": [
@@ -48,42 +17,78 @@
         ]
       }
     ],
-    "ツ": [
+    "・": [
       {
         "sequence": [
           {
-            "key": "KeyZ",
+            "key": "Slash",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "リ": [
+      {
+        "sequence": [
+          {
+            "key": "KeyL",
             "modifiers": []
           }
         ]
       }
     ],
-    "ユ": [
+    "タ": [
       {
         "sequence": [
           {
-            "key": "Digit8",
+            "key": "KeyQ",
             "modifiers": []
           }
         ]
       }
     ],
-    "テ": [
+    "イ": [
       {
         "sequence": [
           {
-            "key": "KeyW",
+            "key": "KeyE",
             "modifiers": []
           }
         ]
       }
     ],
-    "コ": [
+    "ア": [
       {
         "sequence": [
           {
-            "key": "KeyB",
+            "key": "Digit3",
             "modifiers": []
+          }
+        ]
+      }
+    ],
+    "|": [
+      {
+        "sequence": [
+          {
+            "key": "IntlBackslash",
+            "modifiers": [
+              "AltGraph"
+            ]
+          }
+        ]
+      }
+    ],
+    "、": [
+      {
+        "sequence": [
+          {
+            "key": "Comma",
+            "modifiers": [
+              "Shift"
+            ]
           }
         ]
       }
@@ -108,12 +113,44 @@
         ]
       }
     ],
-    "ス": [
+    "フ": [
       {
         "sequence": [
           {
-            "key": "KeyR",
+            "key": "Digit2",
             "modifiers": []
+          }
+        ]
+      }
+    ],
+    "オ": [
+      {
+        "sequence": [
+          {
+            "key": "Digit6",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "ラ": [
+      {
+        "sequence": [
+          {
+            "key": "KeyO",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "。": [
+      {
+        "sequence": [
+          {
+            "key": "Period",
+            "modifiers": [
+              "Shift"
+            ]
           }
         ]
       }
@@ -123,6 +160,28 @@
         "sequence": [
           {
             "key": "Digit0",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "ヌ": [
+      {
+        "sequence": [
+          {
+            "key": "Digit1",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "ゥ": [
+      {
+        "sequence": [
+          {
+            "key": "Digit4",
             "modifiers": [
               "Shift"
             ]
@@ -152,11 +211,71 @@
         ]
       }
     ],
-    "サ": [
+    "ネ": [
       {
         "sequence": [
           {
-            "key": "KeyX",
+            "key": "Comma",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "ワ": [
+      {
+        "sequence": [
+          {
+            "key": "Digit0",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "ミ": [
+      {
+        "sequence": [
+          {
+            "key": "KeyN",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "ホ": [
+      {
+        "sequence": [
+          {
+            "key": "Minus",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    " ": [
+      {
+        "sequence": [
+          {
+            "key": "Space",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "゜": [
+      {
+        "sequence": [
+          {
+            "key": "BracketRight",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "エ": [
+      {
+        "sequence": [
+          {
+            "key": "Digit5",
             "modifiers": []
           }
         ]
@@ -174,61 +293,61 @@
         ]
       }
     ],
-    "ホ": [
+    "コ": [
       {
         "sequence": [
           {
-            "key": "Minus",
+            "key": "KeyB",
             "modifiers": []
           }
         ]
       }
     ],
-    "ナ": [
+    "ユ": [
       {
         "sequence": [
           {
-            "key": "KeyU",
+            "key": "Digit8",
             "modifiers": []
           }
         ]
       }
     ],
-    "キ": [
+    "ヤ": [
       {
         "sequence": [
           {
-            "key": "KeyG",
+            "key": "Digit7",
             "modifiers": []
           }
         ]
       }
     ],
-    "セ": [
+    "ノ": [
       {
         "sequence": [
           {
-            "key": "KeyP",
+            "key": "KeyK",
             "modifiers": []
           }
         ]
       }
     ],
-    "ヒ": [
+    "サ": [
       {
         "sequence": [
           {
-            "key": "KeyV",
+            "key": "KeyX",
             "modifiers": []
           }
         ]
       }
     ],
-    "<": [
+    "レ": [
       {
         "sequence": [
           {
-            "key": "IntlBackslash",
+            "key": "Semicolon",
             "modifiers": []
           }
         ]
@@ -246,74 +365,31 @@
         ]
       }
     ],
-    "タ": [
+    "チ": [
       {
         "sequence": [
           {
-            "key": "KeyQ",
+            "key": "KeyA",
             "modifiers": []
           }
         ]
       }
     ],
-    "ン": [
+    "ハ": [
       {
         "sequence": [
           {
-            "key": "KeyY",
+            "key": "KeyF",
             "modifiers": []
           }
         ]
       }
     ],
-    "ア": [
+    "「": [
       {
         "sequence": [
           {
-            "key": "Digit3",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "ク": [
-      {
-        "sequence": [
-          {
-            "key": "KeyH",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "リ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyL",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "¦": [
-      {
-        "sequence": [
-          {
-            "key": "IntlBackslash",
-            "modifiers": [
-              "Shift",
-              "AltGraph"
-            ]
-          }
-        ]
-      }
-    ],
-    "ィ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyE",
+            "key": "BracketRight",
             "modifiers": [
               "Shift"
             ]
@@ -321,85 +397,11 @@
         ]
       }
     ],
-    "ケ": [
+    "ッ": [
       {
         "sequence": [
           {
-            "key": "Quote",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "|": [
-      {
-        "sequence": [
-          {
-            "key": "IntlBackslash",
-            "modifiers": [
-              "AltGraph"
-            ]
-          }
-        ]
-      }
-    ],
-    "ム": [
-      {
-        "sequence": [
-          {
-            "key": "Backslash",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "ノ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyK",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "・": [
-      {
-        "sequence": [
-          {
-            "key": "Slash",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "ミ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyN",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "ネ": [
-      {
-        "sequence": [
-          {
-            "key": "Comma",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "ェ": [
-      {
-        "sequence": [
-          {
-            "key": "Digit5",
+            "key": "KeyZ",
             "modifiers": [
               "Shift"
             ]
@@ -419,118 +421,6 @@
         ]
       }
     ],
-    "ラ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyO",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "マ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyJ",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "ロ": [
-      {
-        "sequence": [
-          {
-            "key": "IntlRo",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    " ": [
-      {
-        "sequence": [
-          {
-            "key": "Space",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "チ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyA",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "レ": [
-      {
-        "sequence": [
-          {
-            "key": "Semicolon",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "カ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyT",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "ト": [
-      {
-        "sequence": [
-          {
-            "key": "KeyS",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "ル": [
-      {
-        "sequence": [
-          {
-            "key": "Period",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "ワ": [
-      {
-        "sequence": [
-          {
-            "key": "Digit0",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "ゥ": [
-      {
-        "sequence": [
-          {
-            "key": "Digit4",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
     "シ": [
       {
         "sequence": [
@@ -541,11 +431,11 @@
         ]
       }
     ],
-    "メ": [
+    "ヘ": [
       {
         "sequence": [
           {
-            "key": "Slash",
+            "key": "Equal",
             "modifiers": []
           }
         ]
@@ -563,11 +453,94 @@
         ]
       }
     ],
-    "エ": [
+    "ヒ": [
       {
         "sequence": [
           {
-            "key": "Digit5",
+            "key": "KeyV",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "ク": [
+      {
+        "sequence": [
+          {
+            "key": "KeyH",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "ト": [
+      {
+        "sequence": [
+          {
+            "key": "KeyS",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "メ": [
+      {
+        "sequence": [
+          {
+            "key": "Slash",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "¦": [
+      {
+        "sequence": [
+          {
+            "key": "IntlBackslash",
+            "modifiers": [
+              "Shift",
+              "AltGraph"
+            ]
+          }
+        ]
+      }
+    ],
+    "ン": [
+      {
+        "sequence": [
+          {
+            "key": "KeyY",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "ム": [
+      {
+        "sequence": [
+          {
+            "key": "Backslash",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "マ": [
+      {
+        "sequence": [
+          {
+            "key": "KeyJ",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "゛": [
+      {
+        "sequence": [
+          {
+            "key": "BracketLeft",
             "modifiers": []
           }
         ]
@@ -585,16 +558,6 @@
         ]
       }
     ],
-    "ヌ": [
-      {
-        "sequence": [
-          {
-            "key": "Digit1",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
     ">": [
       {
         "sequence": [
@@ -607,53 +570,21 @@
         ]
       }
     ],
-    "モ": [
+    "ロ": [
       {
         "sequence": [
           {
-            "key": "KeyM",
+            "key": "IntlRo",
             "modifiers": []
           }
         ]
       }
     ],
-    "゛": [
-      {
-        "sequence": [
-          {
-            "key": "BracketLeft",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "。": [
-      {
-        "sequence": [
-          {
-            "key": "Period",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "イ": [
+    "ィ": [
       {
         "sequence": [
           {
             "key": "KeyE",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "「": [
-      {
-        "sequence": [
-          {
-            "key": "BracketRight",
             "modifiers": [
               "Shift"
             ]
@@ -661,33 +592,11 @@
         ]
       }
     ],
-    "゜": [
+    "ツ": [
       {
         "sequence": [
           {
-            "key": "BracketRight",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "、": [
-      {
-        "sequence": [
-          {
-            "key": "Comma",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "ヘ": [
-      {
-        "sequence": [
-          {
-            "key": "Equal",
+            "key": "KeyZ",
             "modifiers": []
           }
         ]
@@ -703,21 +612,113 @@
         ]
       }
     ],
-    "ハ": [
+    "<": [
       {
         "sequence": [
           {
-            "key": "KeyF",
+            "key": "IntlBackslash",
             "modifiers": []
           }
         ]
       }
     ],
-    "ヤ": [
+    "ル": [
       {
         "sequence": [
           {
-            "key": "Digit7",
+            "key": "Period",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "ナ": [
+      {
+        "sequence": [
+          {
+            "key": "KeyU",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "モ": [
+      {
+        "sequence": [
+          {
+            "key": "KeyM",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "ェ": [
+      {
+        "sequence": [
+          {
+            "key": "Digit5",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "セ": [
+      {
+        "sequence": [
+          {
+            "key": "KeyP",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "ケ": [
+      {
+        "sequence": [
+          {
+            "key": "Quote",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "ス": [
+      {
+        "sequence": [
+          {
+            "key": "KeyR",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "カ": [
+      {
+        "sequence": [
+          {
+            "key": "KeyT",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "キ": [
+      {
+        "sequence": [
+          {
+            "key": "KeyG",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "テ": [
+      {
+        "sequence": [
+          {
+            "key": "KeyW",
             "modifiers": []
           }
         ]
