@@ -98,7 +98,7 @@ Windows extraction only runs on a Windows host. Extract a single layout by KLID:
 cargo run -p omni-keymap-extract -- --platform windows --layout 00000409 --out-dir database\windows
 ```
 
-Extract every **installed** Windows layout (`--all` enumerates via `GetKeyboardLayoutList`):
+Extract every registered Windows KLID (`--all` enumerates the `HKLM\SYSTEM\CurrentControlSet\Control\Keyboard Layouts` registry key):
 
 ```powershell
 cargo run -p omni-keymap-extract -- --platform windows --all --out-dir database\windows
@@ -156,12 +156,13 @@ collector job merges the three artifacts into `database/{linux,windows,macos}/` 
 | Platform | `--all` enumeration source                         |
 |----------|---------------------------------------------------|
 | Linux    | `evdev.lst` rules file (every declared layout/variant) |
-| Windows  | `GetKeyboardLayoutList` (every installed layout)     |
+| Windows  | `HKLM\SYSTEM\CurrentControlSet\Control\Keyboard Layouts` registry KLID subkeys |
 | macOS    | `TISCreateInputSourceList` (every installed layout)   |
 
-> **Note:** Windows and macOS `--all` extract *installed* layouts — the set depends on the
-> runner's OS image. To capture a layout that isn't installed by default, install it on the
-> runner first (e.g. via a workflow step) or extract it manually on a machine that has it.
+> **Note:** Windows `--all` extracts every registered KLID that `LoadKeyboardLayoutW` can load.
+> macOS `--all` extracts installed input sources, so the macOS set depends on the runner's OS
+> image. To capture a macOS layout that isn't installed by default, install it on the runner first
+> or extract it manually on a machine that has it.
 
 
 ## Contributing a layout

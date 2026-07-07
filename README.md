@@ -113,7 +113,7 @@ cargo run -p omni-keymap-extract -- \
 # Linux: every layout/variant from evdev.lst (xkbcommon)
 cargo run -p omni-keymap-extract -- --platform linux --all --out-dir database/linux
 
-# Windows: every installed layout (GetKeyboardLayoutList)
+# Windows: every registered KLID under HKLM Keyboard Layouts
 cargo run -p omni-keymap-extract -- --platform windows --all --out-dir database/windows
 
 # macOS: every installed layout (TISCreateInputSourceList)

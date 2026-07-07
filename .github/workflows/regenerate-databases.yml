@@ -4,7 +4,7 @@
 # the generated JSON, and opens a pull request with the updated database.
 #
 # On Linux:   reads evdev.lst from the system xkeyboard-config and extracts every XKB layout.
-# On Windows: enumerates installed keyboard layouts via GetKeyboardLayoutList.
+# On Windows: enumerates registered keyboard layout KLIDs from HKLM.
 # On macOS:   enumerates installed keyboard layouts via TISCreateInputSourceList.
 #
 # The three runners run in parallel; the PR collector waits for all of them.
@@ -101,6 +101,6 @@ jobs:
             ([run #${{ github.run_id }}](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})).
 
             - Linux: extracted via `--platform linux --all` (evdev.lst / xkbcommon)
-            - Windows: extracted via `--platform windows --all` (GetKeyboardLayoutList / ToUnicodeEx)
+            - Windows: extracted via `--platform windows --all` (HKLM Keyboard Layouts KLIDs / ToUnicodeEx)
             - macOS: extracted via `--platform macos --all` (TISCreateInputSourceList / UCKeyTranslate)
           labels: database, automated

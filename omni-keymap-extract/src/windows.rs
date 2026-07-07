@@ -14,10 +14,10 @@
 //! character, recording it as a two-element [`Keystroke`] sequence. After each dead-key probe
 //! we feed the dead key once more (with a space character) to clear the lingering dead state.
 //!
-//! `--all` enumerates installed keyboard layouts via `GetKeyboardLayoutList` and maps each
-//! `HKL` to its KLID string via `GetKeyboardLayoutNameW`.
+//! `--all` enumerates registered keyboard layout KLIDs from
+//! `HKLM\SYSTEM\CurrentControlSet\Control\Keyboard Layouts`.
 
-use anyhow::{Result, anyhow};
+use anyhow::{anyhow, Result};
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
 #[cfg(any(target_os = "windows", test))]
@@ -42,30 +42,43 @@ impl ModState {
     }
 }
 
+#[cfg(any(target_os = "windows", test))]
+fn is_windows_klid(value: &str) -> bool {
+    value.len() == 8 && value.chars().all(|ch| ch.is_ascii_hexdigit())
+}
+
 #[cfg(target_os = "windows")]
 mod imp {
     use super::ModState;
-    use crate::w3c_keys::{W3C_KEYS, W3cKey};
+    use crate::w3c_keys::{W3cKey, W3C_KEYS};
     use anyhow::{anyhow, Context, Result};
     use std::collections::HashMap;
-    use windows_sys::Win32::Foundation::CloseHandle;
-    use windows_sys::Win32::UI::Input::KeyboardAndMouse::{
-        GetKeyboardLayout, GetKeyboardLayoutList, GetKeyboardLayoutNameW, LoadKeyboardLayoutW,
-        MapVirtualKeyExW, ToUnicodeEx, UnloadKeyboardLayout, HKL, MAPVK_VSC_TO_VK_EX,
-        VK_CONTROL, VK_MENU, VK_SHIFT,
+    use windows_sys::Win32::Foundation::{ERROR_NO_MORE_ITEMS, ERROR_SUCCESS};
+    use windows_sys::Win32::System::Registry::{
+        RegCloseKey, RegEnumKeyExW, RegOpenKeyExW, HKEY_LOCAL_MACHINE, KEY_READ,
     };
-
+    use windows_sys::Win32::UI::Input::KeyboardAndMouse::{
+        LoadKeyboardLayoutW, MapVirtualKeyExW, ToUnicodeEx, UnloadKeyboardLayout, HKL,
+        MAPVK_VSC_TO_VK_EX, VK_CONTROL, VK_MENU, VK_SHIFT,
+    };
 
     const KBD_STATE_LEN: usize = 256;
 
+    const WINDOWS_KEYBOARD_LAYOUTS_KEY: &str = r"SYSTEM\CurrentControlSet\Control\Keyboard Layouts";
+    const KLF_NOTELLSHELL: u32 = 0x00000080;
+    const KLF_SUBSTITUTE_OK: u32 = 0x00000002;
+
+    fn wide_null(value: &str) -> Vec<u16> {
+        value.encode_utf16().chain(std::iter::once(0)).collect()
+    }
+
     /// Translate a KLID string like `"00000409"` into a loaded `HKL`.
     fn load_layout(klid: &str) -> Result<HKL> {
-        // LoadKeyboardLayoutW expects a wide string KLID; the KLF_NOTELLSHELL flag (0x00000080)
-        // prevents it from activating the layout in the shell.
-        let wide: Vec<u16> = klid.encode_utf16().chain(std::iter::once(0)).collect();
-        let hkl = unsafe {
-            LoadKeyboardLayoutW(wide.as_ptr(), 0x00000080)
-        };
+        // LoadKeyboardLayoutW expects a wide string KLID. KLF_NOTELLSHELL avoids shell
+        // notification; KLF_SUBSTITUTE_OK allows Windows' configured substitutions.
+        let wide = wide_null(klid);
+        let hkl =
+            unsafe { LoadKeyboardLayoutW(wide.as_ptr(), KLF_NOTELLSHELL | KLF_SUBSTITUTE_OK) };
         if hkl.is_null() {
             Err(anyhow!("LoadKeyboardLayoutW failed for KLID `{}`", klid))
         } else {
@@ -73,15 +86,61 @@ mod imp {
         }
     }
 
-    /// Map an `HKL` to its KLID string via `GetKeyboardLayoutNameW`.
-    fn layout_name(hkl: HKL) -> Result<String> {
-        let mut buf = [0u16; 16];
-        let ok = unsafe { GetKeyboardLayoutNameW(buf.as_mut_ptr()) };
-        if ok == 0 {
-            return Err(anyhow!("GetKeyboardLayoutNameW failed"));
+    /// Enumerate every keyboard layout registered under HKLM.
+    fn registered_layout_klids() -> Result<Vec<String>> {
+        let subkey = wide_null(WINDOWS_KEYBOARD_LAYOUTS_KEY);
+        let mut key = std::ptr::null_mut();
+        let status =
+            unsafe { RegOpenKeyExW(HKEY_LOCAL_MACHINE, subkey.as_ptr(), 0, KEY_READ, &mut key) };
+        if status != ERROR_SUCCESS {
+            return Err(anyhow!(
+                "RegOpenKeyExW `{}` failed with status {}",
+                WINDOWS_KEYBOARD_LAYOUTS_KEY,
+                status
+            ));
         }
-        let len = buf.iter().position(|&c| c == 0).unwrap_or(buf.len());
-        Ok(String::from_utf16_lossy(&buf[..len]))
+
+        let mut layouts = Vec::new();
+        let mut index = 0;
+        loop {
+            let mut name = [0u16; 256];
+            let mut name_len = name.len() as u32;
+            let status = unsafe {
+                RegEnumKeyExW(
+                    key,
+                    index,
+                    name.as_mut_ptr(),
+                    &mut name_len,
+                    std::ptr::null_mut(),
+                    std::ptr::null_mut(),
+                    std::ptr::null_mut(),
+                    std::ptr::null_mut(),
+                )
+            };
+            if status == ERROR_NO_MORE_ITEMS {
+                break;
+            }
+            if status != ERROR_SUCCESS {
+                unsafe { RegCloseKey(key) };
+                return Err(anyhow!(
+                    "RegEnumKeyExW `{}` failed at index {} with status {}",
+                    WINDOWS_KEYBOARD_LAYOUTS_KEY,
+                    index,
+                    status
+                ));
+            }
+
+            let klid = String::from_utf16_lossy(&name[..name_len as usize]).to_uppercase();
+            if super::is_windows_klid(&klid) {
+                layouts.push(klid);
+            }
+            index += 1;
+        }
+        unsafe { RegCloseKey(key) };
+
+        layouts.sort();
+        layouts.dedup();
+        Ok(layouts)
     }
 
     /// Build a 256-byte keyboard state array for the given modifier combination.
@@ -255,14 +314,23 @@ mod imp {
         let mut mappings: HashMap<String, Vec<omni_keymap_core::Keystroke>> = HashMap::new();
         let mut dead_sources: Vec<(u32, u32, ModState)> = Vec::new(); // (vk, scancode, mstate)
 
-        for W3cKey { code, windows_scancode, .. } in W3C_KEYS {
+        for W3cKey {
+            code,
+            windows_scancode,
+            ..
+        } in W3C_KEYS
+        {
             let sc = *windows_scancode;
             let vk = unsafe { MapVirtualKeyExW(sc, MAPVK_VSC_TO_VK_EX, hkl) };
             if vk == 0 {
                 continue;
             }
-            for mstate in [ModState::None, ModState::Shift, ModState::AltGr, ModState::ShiftAltGr]
-            {
+            for mstate in [
+                ModState::None,
+                ModState::Shift,
+                ModState::AltGr,
+                ModState::ShiftAltGr,
+            ] {
                 if let Some(out) = translate(vk, sc, hkl, mstate) {
                     let mods = mstate.w3c_modifiers();
                     mappings
@@ -286,7 +354,12 @@ mod imp {
             if dead_code.is_empty() {
                 continue;
             }
-            for W3cKey { code: base_code, windows_scancode: base_sc, .. } in W3C_KEYS {
+            for W3cKey {
+                code: base_code,
+                windows_scancode: base_sc,
+                ..
+            } in W3C_KEYS
+            {
                 if *base_sc == *dead_sc {
                     continue;
                 }
@@ -294,14 +367,9 @@ mod imp {
                 if base_vk == 0 {
                     continue;
                 }
-                if let Some(out) = compose_dead(
-                    *dead_vk,
-                    *dead_sc,
-                    *dead_mstate,
-                    base_vk,
-                    *base_sc,
-                    hkl,
-                ) {
+                if let Some(out) =
+                    compose_dead(*dead_vk, *dead_sc, *dead_mstate, base_vk, *base_sc, hkl)
+                {
                     if out.is_empty() {
                         continue;
                     }
@@ -329,42 +397,24 @@ mod imp {
         })
     }
 
-    /// Enumerate every installed Windows keyboard layout and extract each.
+    /// Enumerate every registered Windows keyboard layout KLID and extract each loadable layout.
     pub fn extract_all(out_dir: &std::path::Path) -> Result<crate::batch::BatchSummary> {
         use std::path::PathBuf;
-        let mut layouts: Vec<HKL> = Vec::new();
-        // First call with a null buffer returns the count.
-        let count = unsafe { GetKeyboardLayoutList(0, std::ptr::null_mut()) };
-        if count <= 0 {
-            return Err(anyhow!("GetKeyboardLayoutList returned no layouts"));
+
+        let layouts = registered_layout_klids()?;
+        if layouts.is_empty() {
+            return Err(anyhow!(
+                "no KLID subkeys found under HKLM\\{}",
+                WINDOWS_KEYBOARD_LAYOUTS_KEY
+            ));
         }
-        layouts.resize_with(count as usize, || std::ptr::null_mut());
-        let got = unsafe { GetKeyboardLayoutList(count, layouts.as_mut_ptr()) };
-        if got <= 0 {
-            return Err(anyhow!("GetKeyboardLayoutList failed on second call"));
-        }
-        layouts.truncate(got as usize);
 
         let mut summary = crate::batch::BatchSummary::default();
         std::fs::create_dir_all(out_dir)
             .with_context(|| format!("creating output directory {}", out_dir.display()))?;
-        for hkl in layouts {
-            let klid = match layout_name(hkl) {
-                Ok(k) => k,
-                Err(e) => {
-                    summary.failures.push(crate::batch::BatchItem {
-                        layout: format!("{:p}", hkl),
-                        variant: None,
-                        status: crate::batch::BatchStatus::Skipped {
-                            error: format!("GetKeyboardLayoutNameW: {}", e),
-                        },
-                    });
-                    summary.skipped += 1;
-                    continue;
-                }
-            };
-            let file = match extract_with_hkl(hkl, &klid, None) {
-                Ok(f) => f,
+        for klid in layouts {
+            let hkl = match load_layout(&klid) {
+                Ok(hkl) => hkl,
                 Err(e) => {
                     summary.failures.push(crate::batch::BatchItem {
                         layout: klid.clone(),
@@ -377,6 +427,24 @@ mod imp {
                     continue;
                 }
             };
+
+            let file = match extract_with_hkl(hkl, &klid, None) {
+                Ok(f) => f,
+                Err(e) => {
+                    unsafe { UnloadKeyboardLayout(hkl) };
+                    summary.failures.push(crate::batch::BatchItem {
+                        layout: klid.clone(),
+                        variant: None,
+                        status: crate::batch::BatchStatus::Skipped {
+                            error: e.to_string(),
+                        },
+                    });
+                    summary.skipped += 1;
+                    continue;
+                }
+            };
+            unsafe { UnloadKeyboardLayout(hkl) };
+
             let n = file.mappings.len();
             let path: PathBuf = out_dir.join(format!("{}.json", klid));
             let raw = serde_json::to_string_pretty(&file)
@@ -395,7 +463,6 @@ mod imp {
             summary.ok += 1;
             summary.total_mappings += n;
         }
-        let _ = CloseHandle; // referenced to ensure the Foundation import is used
         Ok(summary)
     }
 }
@@ -405,11 +472,15 @@ mod imp {
     use super::*;
     use std::path::Path;
     pub fn extract(_layout: &str, _variant: Option<&str>) -> Result<omni_keymap_core::LayoutFile> {
-        Err(anyhow!("windows extraction is only supported on Windows hosts"))
+        Err(anyhow!(
+            "windows extraction is only supported on Windows hosts"
+        ))
     }
     #[allow(dead_code)]
     pub fn extract_all(_out_dir: &Path) -> Result<crate::batch::BatchSummary> {
-        Err(anyhow!("windows extraction is only supported on Windows hosts"))
+        Err(anyhow!(
+            "windows extraction is only supported on Windows hosts"
+        ))
     }
 }
 
@@ -418,7 +489,7 @@ pub fn extract(layout: &str, variant: Option<&str>) -> Result<omni_keymap_core::
     imp::extract(layout, variant)
 }
 
-/// Public entry: enumerate and extract every installed Windows keyboard layout.
+/// Public entry: enumerate and extract every registered Windows keyboard layout.
 pub fn extract_all(out_dir: &std::path::Path) -> Result<crate::batch::BatchSummary> {
     imp::extract_all(out_dir)
 }
@@ -434,5 +505,14 @@ mod tests {
             ModState::ShiftAltGr.w3c_modifiers(),
             vec!["Shift".to_string(), "AltGraph".to_string()]
         );
+    }
+
+    #[test]
+    fn klid_filter_accepts_eight_hex_digits_only() {
+        assert!(is_windows_klid("00000409"));
+        assert!(is_windows_klid("0001040C"));
+        assert!(!is_windows_klid("Preload"));
+        assert!(!is_windows_klid("0000040"));
+        assert!(!is_windows_klid("0000040Z"));
     }
 }
