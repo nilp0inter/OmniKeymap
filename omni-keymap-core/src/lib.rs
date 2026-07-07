@@ -42,14 +42,24 @@ pub type Alternatives = Vec<Keystroke>;
 pub struct LayoutMetadata {
     /// Origin platform: `windows`, `macos`, `linux`, or `android`.
     pub platform: String,
-    /// Layout name, e.g. `us`, `fr`, `de`.
+    /// Layout identifier, e.g. `us`, `fr`, `de` on Linux. On Windows this is the
+    /// 8-digit KLID (e.g. `00000409`); on macOS the input-source ID (e.g.
+    /// `com.apple.keylayout.US`). The identifier is the canonical, locale-independent
+    /// name accepted by the platform's native loader.
     pub layout_name: String,
     /// Optional layout variant, e.g. `nodeadkeys`, `intl`. `null`/absent means no variant.
     #[serde(default, skip_serializing_if = "Option::is_none")]
     pub layout_variant: Option<String>,
+    /// Optional human-readable display name sourced from the platform. On Windows this
+    /// is the registry `Layout Text` value (e.g. `US`, `Arabic (101)`, `German`).
+    /// `null`/absent when the platform does not provide one or extraction could not
+    /// resolve it.
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub display_name: Option<String>,
     /// ISO-8601 timestamp marking when the layout was extracted.
     pub extracted_on: String,
 }
+
 
 /// The full in-memory representation of a single layout JSON file.
 #[derive(Debug, Clone, PartialEq, Eq, Serialize, Deserialize)]
@@ -341,6 +351,7 @@ mod tests {
                 platform: "linux".to_string(),
                 layout_name: "us".to_string(),
                 layout_variant: Some("intl".to_string()),
+                display_name: Some("English (US, intl)".to_string()),
                 extracted_on: "2026-07-06T22:42:04Z".to_string(),
             },
             mappings,
@@ -462,6 +473,28 @@ mod tests {
         });
         std::fs::write(&path, bad.to_string()).unwrap();
         assert!(KeymapDb::load_file(&path).is_err());
+    }
+
+    #[test]
+    fn display_name_optional_field_round_trips() {
+        let mut layout = us_layout();
+        layout.metadata.display_name = None;
+        let raw = serde_json::to_string(&layout).unwrap();
+        assert!(
+            !raw.contains("display_name"),
+            "absent display_name should be skipped: {raw}"
+        );
+        let back: LayoutFile = serde_json::from_str(&raw).unwrap();
+        assert_eq!(back.metadata.display_name, None);
+
+        layout.metadata.display_name = Some("English (United States)".to_string());
+        let raw2 = serde_json::to_string(&layout).unwrap();
+        assert!(raw2.contains("\"display_name\":\"English (United States)\""));
+        let back2: LayoutFile = serde_json::from_str(&raw2).unwrap();
+        assert_eq!(
+            back2.metadata.display_name.as_deref(),
+            Some("English (United States)")
+        );
     }
 
     #[test]

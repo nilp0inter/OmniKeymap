@@ -135,7 +135,8 @@ mod imp {
                 platform: "linux".to_string(),
                 layout_name: layout.to_string(),
                 layout_variant: variant.map(|s| s.to_string()),
-                extracted_on: crate::now_iso8601(),
+            display_name: None,
+            extracted_on: crate::now_iso8601(),
             },
             mappings,
         })

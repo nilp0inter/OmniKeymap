@@ -17,15 +17,16 @@ schema.
 | Field            | Type                | Required | Description                                                    |
 |------------------|---------------------|----------|----------------------------------------------------------------|
 | `platform`       | string              | yes      | One of `windows`, `macos`, `linux`, `android`.                  |
-| `layout_name`    | string              | yes      | Layout identifier, e.g. `us`, `fr`, `de`.                      |
-| `layout_variant` | string \| null      | no       | Variant, e.g. `intl`, `nodeadkeys`. `null` means no variant.    |
+| `layout_name`    | string              | yes      | Canonical layout identifier. On Linux/macOS the user-facing name (e.g. `us`, `com.apple.keylayout.US`); on Windows the 8-digit KLID (e.g. `00000409`). |
+| `layout_variant` | string \| null      | no       | Variant, e.g. `intl`, `nodeadkeys`. `null`/absent means no variant. |
+| `display_name`   | string \| null      | no       | Human-friendly layout label. On Windows this is the registry `Layout Text` value (e.g. `US`, `Arabic (101)`, `German`). `null`/absent when the platform does not provide one. |
 | `extracted_on`   | string              | yes      | ISO-8601 UTC timestamp of extraction, e.g. `2026-07-06T22:42:04Z`. |
 
 ```json
 {
-  "platform": "linux",
-  "layout_name": "us",
-  "layout_variant": "intl",
+  "platform": "windows",
+  "layout_name": "00000409",
+  "display_name": "US",
   "extracted_on": "2026-07-06T22:42:04Z"
 }
 ```

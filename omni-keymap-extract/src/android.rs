@@ -348,6 +348,7 @@ pub fn build_layout(
             platform: "android".to_string(),
             layout_name: "android".to_string(),
             layout_variant: None,
+            display_name: None,
             extracted_on: crate::now_iso8601(),
         },
         mappings,

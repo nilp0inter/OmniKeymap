@@ -53,13 +53,14 @@ mod imp {
     use crate::w3c_keys::{W3cKey, W3C_KEYS};
     use anyhow::{anyhow, Context, Result};
     use std::collections::HashMap;
-    use windows_sys::Win32::Foundation::{ERROR_NO_MORE_ITEMS, ERROR_SUCCESS};
+    use windows_sys::Win32::Foundation::ERROR_NO_MORE_ITEMS;
     use windows_sys::Win32::System::Registry::{
-        RegCloseKey, RegEnumKeyExW, RegOpenKeyExW, HKEY_LOCAL_MACHINE, KEY_READ,
+        HKEY, HKEY_LOCAL_MACHINE, KEY_READ, RegCloseKey, RegEnumKeyExW, RegOpenKeyExW,
+        RegQueryValueExW,
     };
     use windows_sys::Win32::UI::Input::KeyboardAndMouse::{
-        LoadKeyboardLayoutW, MapVirtualKeyExW, ToUnicodeEx, UnloadKeyboardLayout, HKL,
-        MAPVK_VSC_TO_VK_EX, VK_CONTROL, VK_MENU, VK_SHIFT,
+        HKL, LoadKeyboardLayoutW, MAPVK_VSC_TO_VK_EX, MapVirtualKeyExW, ToUnicodeEx,
+        UnloadKeyboardLayout, VK_CONTROL, VK_MENU, VK_SHIFT,
     };
 
     const KBD_STATE_LEN: usize = 256;
@@ -70,6 +71,80 @@ mod imp {
 
     fn wide_null(value: &str) -> Vec<u16> {
         value.encode_utf16().chain(std::iter::once(0)).collect()
+    }
+
+    const LAYOUT_TEXT_VALUE: &str = "Layout Text";
+
+    /// Read the per-KLID `Layout Text` value from the registry. Returns `None` when the value is
+    /// missing or not a string; returns `Some(name)` with leading/trailing whitespace trimmed.
+    fn read_layout_text(klid: &str) -> Result<Option<String>> {
+        let mut layout_key: HKEY = std::ptr::null_mut();
+        let subkey_path = format!("{}\\{}", WINDOWS_KEYBOARD_LAYOUTS_KEY, klid);
+        let wide_path = wide_null(&subkey_path);
+        let status = unsafe {
+            RegOpenKeyExW(
+                HKEY_LOCAL_MACHINE,
+                wide_path.as_ptr(),
+                0,
+                KEY_READ,
+                &mut layout_key,
+            )
+        };
+        if status != 0 {
+            // Any non-zero status means the subkey does not exist or is inaccessible.
+            return Ok(None);
+        }
+
+        let value_name = wide_null(LAYOUT_TEXT_VALUE);
+        let mut data_len: u32 = 0;
+        let status = unsafe {
+            RegQueryValueExW(
+                layout_key,
+                value_name.as_ptr(),
+                std::ptr::null_mut(),
+                std::ptr::null_mut(),
+                std::ptr::null_mut(),
+                &mut data_len,
+            )
+        };
+        if status != 0 {
+            unsafe { RegCloseKey(layout_key) };
+            return Ok(None);
+        }
+        if data_len == 0 {
+            unsafe { RegCloseKey(layout_key) };
+            return Ok(None);
+        }
+
+        let mut buf: Vec<u8> = vec![0u8; data_len as usize];
+        let status = unsafe {
+            RegQueryValueExW(
+                layout_key,
+                value_name.as_ptr(),
+                std::ptr::null_mut(),
+                std::ptr::null_mut(),
+                buf.as_mut_ptr(),
+                &mut data_len,
+            )
+        };
+        unsafe { RegCloseKey(layout_key) };
+        if status != 0 {
+            return Ok(None);
+        }
+
+        // REG_SZ is stored as a UTF-16LE string followed by a NUL terminator. Convert to
+        // UTF-8 and drop trailing NULs.
+        let wide: Vec<u16> = buf
+            .chunks_exact(2)
+            .map(|c| u16::from_le_bytes([c[0], c[1]]))
+            .collect();
+        let trimmed_len = wide.iter().position(|&c| c == 0).unwrap_or(wide.len());
+        let s = String::from_utf16_lossy(&wide[..trimmed_len]).trim().to_string();
+        if s.is_empty() {
+            Ok(None)
+        } else {
+            Ok(Some(s))
+        }
     }
 
     /// Translate a KLID string like `"00000409"` into a loaded `HKL`.
@@ -296,9 +371,10 @@ mod imp {
 
     /// Extract a single Windows layout by KLID (e.g. `"00000409"`) into a [`LayoutFile`].
     pub fn extract(layout: &str, variant: Option<&str>) -> Result<omni_keymap_core::LayoutFile> {
+        let display_name = read_layout_text(layout).unwrap_or(None);
         let hkl = load_layout(layout)
             .with_context(|| format!("loading Windows keyboard layout KLID `{}`", layout))?;
-        let result = extract_with_hkl(hkl, layout, variant);
+        let result = extract_with_hkl(hkl, layout, variant, display_name);
         // Unload the layout we loaded. (The system default layout must not be unloaded, but
         // LoadKeyboardLayoutW always loads a *new* handle that is safe to unload.)
         unsafe { UnloadKeyboardLayout(hkl) };
@@ -310,6 +386,7 @@ mod imp {
         hkl: HKL,
         layout: &str,
         variant: Option<&str>,
+        display_name: Option<String>,
     ) -> Result<omni_keymap_core::LayoutFile> {
         let mut mappings: HashMap<String, Vec<omni_keymap_core::Keystroke>> = HashMap::new();
         let mut dead_sources: Vec<(u32, u32, ModState)> = Vec::new(); // (vk, scancode, mstate)
@@ -391,6 +468,7 @@ mod imp {
                 platform: "windows".to_string(),
                 layout_name: layout.to_string(),
                 layout_variant: variant.map(|s| s.to_string()),
+                display_name,
                 extracted_on: crate::now_iso8601(),
             },
             mappings,
@@ -427,8 +505,9 @@ mod imp {
                     continue;
                 }
             };
+            let display_name = read_layout_text(&klid).unwrap_or(None);
 
-            let file = match extract_with_hkl(hkl, &klid, None) {
+            let file = match extract_with_hkl(hkl, &klid, None, display_name) {
                 Ok(f) => f,
                 Err(e) => {
                     unsafe { UnloadKeyboardLayout(hkl) };
