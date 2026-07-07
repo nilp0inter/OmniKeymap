@@ -104,7 +104,7 @@ fn run_extraction(cli: &Cli, layout_name: &str) -> Result<LayoutFile> {
     match cli.platform {
         Platform::Windows => windows::extract(layout_name, cli.layout_variant.as_deref()),
         Platform::Macos => macos::extract(layout_name, cli.layout_variant.as_deref()),
-        Platform::Linux => linux::extract(layout_name, cli.layout_variant.as_deref()),
+        Platform::Linux => linux::extract(layout_name, cli.layout_variant.as_deref(), None),
         Platform::Android => {
             let kl = cli
                 .android_kl

@@ -334,7 +334,8 @@ mod imp {
     pub fn extract(layout: &str, variant: Option<&str>) -> Result<omni_keymap_core::LayoutFile> {
         let source = find_input_source_by_id(layout)
             .with_context(|| format!("finding macOS input source `{}`", layout))?;
-        extract_from_source(source, layout, variant)
+        let display_name = read_localized_name(source);
+        extract_from_source(source, layout, variant, display_name)
     }
 
     /// Find a TIS input source by its `TISPropertyInputSourceID`.
@@ -375,11 +376,31 @@ mod imp {
         }
     }
 
+    /// Read the `kTISPropertyLocalizedName` of a TIS input source.
+    fn read_localized_name(source: TISInputSourceRef) -> Option<String> {
+        unsafe {
+            let key = cfstring(K_TIS_PROPERTY_LOCALIZED_NAME);
+            let name_ref = TISGetInputSourceProperty(source, key);
+            CFRelease(key as *const c_void);
+            if name_ref.is_null() {
+                return None;
+            }
+            let cfstr = CFString::wrap_under_get_rule(name_ref as CFStringRef);
+            let s = cfstr.to_string();
+            if s.is_empty() {
+                None
+            } else {
+                Some(s)
+            }
+        }
+    }
+
     /// Extract a layout from a `TISInputSourceRef`.
     fn extract_from_source(
         source: TISInputSourceRef,
         layout: &str,
         variant: Option<&str>,
+        display_name: Option<String>,
     ) -> Result<omni_keymap_core::LayoutFile> {
         let layout_ptr = keyboard_layout_data(source)
             .ok_or_else(|| anyhow!("input source `{}` has no UCKeyboardLayout data", layout))?;
@@ -446,7 +467,7 @@ mod imp {
                 platform: "macos".to_string(),
                 layout_name: layout.to_string(),
                 layout_variant: variant.map(|s| s.to_string()),
-                display_name: None,
+                display_name,
                 extracted_on: crate::now_iso8601(),
             },
             mappings,
@@ -482,7 +503,8 @@ mod imp {
                     .unwrap_or(&source_id)
                     .to_string();
 
-                let file = extract_from_source(source, &stem, None);
+                let display_name = read_localized_name(source);
+                let file = extract_from_source(source, &stem, None, display_name);
                 match file {
                     Ok(f) => {
                         let n = f.mappings.len();

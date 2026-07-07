@@ -30,6 +30,7 @@ mod imp {
     pub fn extract(
         layout: &str,
         variant: Option<&str>,
+        display_name: Option<String>,
     ) -> Result<omni_keymap_core::LayoutFile> {
         let ctx = xkb::Context::new(xkb::CONTEXT_NO_FLAGS);
         let keymap = xkb::Keymap::new_from_names(
@@ -135,7 +136,7 @@ mod imp {
                 platform: "linux".to_string(),
                 layout_name: layout.to_string(),
                 layout_variant: variant.map(|s| s.to_string()),
-            display_name: None,
+                display_name,
             extracted_on: crate::now_iso8601(),
             },
             mappings,
@@ -184,6 +185,7 @@ mod imp {
     pub fn extract(
         _layout: &str,
         _variant: Option<&str>,
+        _display_name: Option<String>,
     ) -> Result<omni_keymap_core::LayoutFile> {
         Err(anyhow!("linux extraction is only supported on Linux hosts"))
     }
@@ -193,8 +195,9 @@ mod imp {
 pub fn extract(
     layout: &str,
     variant: Option<&str>,
+    display_name: Option<String>,
 ) -> Result<omni_keymap_core::LayoutFile> {
-    imp::extract(layout, variant)
+    imp::extract(layout, variant, display_name)
 }
 
 #[cfg(test)]

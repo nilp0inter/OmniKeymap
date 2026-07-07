@@ -228,13 +228,17 @@ pub fn extract_all(out_dir: &Path) -> Result<BatchSummary> {
 
     for layout in &evdev.layouts {
         // Base layout (no variant).
-        let item = extract_one(out_dir, &layout.name, None);
+        let item = extract_one(out_dir, &layout.name, None, Some(layout.description.clone()));
         record(&mut summary, &item);
 
         // Every variant registered against this layout.
         if let Some(vars) = variants_by_layout.get(&layout.name) {
             for v in vars {
-                let item = extract_one(out_dir, &layout.name, Some(&v.variant));
+                let display_name = match v.description.is_empty() {
+                    true => None,
+                    false => Some(v.description.clone()),
+                };
+                let item = extract_one(out_dir, &layout.name, Some(&v.variant), display_name);
                 record(&mut summary, &item);
             }
         }
@@ -242,8 +246,13 @@ pub fn extract_all(out_dir: &Path) -> Result<BatchSummary> {
     Ok(summary)
 }
 
-fn extract_one(out_dir: &Path, layout: &str, variant: Option<&str>) -> BatchItem {
-    match crate::linux::extract(layout, variant) {
+fn extract_one(
+    out_dir: &Path,
+    layout: &str,
+    variant: Option<&str>,
+    display_name: Option<String>,
+) -> BatchItem {
+    match crate::linux::extract(layout, variant, display_name.clone()) {
         Ok(file) => {
             let file_stem = match variant {
                 Some(v) if !v.is_empty() => format!("{}+{}", layout, v),
