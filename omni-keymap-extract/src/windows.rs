@@ -53,7 +53,7 @@ mod imp {
     use crate::w3c_keys::{W3cKey, W3C_KEYS};
     use anyhow::{anyhow, Context, Result};
     use std::collections::HashMap;
-    use windows_sys::Win32::Foundation::ERROR_NO_MORE_ITEMS;
+    use windows_sys::Win32::Foundation::{ERROR_NO_MORE_ITEMS, ERROR_SUCCESS};
     use windows_sys::Win32::System::Registry::{
         HKEY, HKEY_LOCAL_MACHINE, KEY_READ, RegCloseKey, RegEnumKeyExW, RegOpenKeyExW,
         RegQueryValueExW,
@@ -90,7 +90,7 @@ mod imp {
                 &mut layout_key,
             )
         };
-        if status != 0 {
+        if status != ERROR_SUCCESS {
             // Any non-zero status means the subkey does not exist or is inaccessible.
             return Ok(None);
         }
@@ -107,7 +107,7 @@ mod imp {
                 &mut data_len,
             )
         };
-        if status != 0 {
+        if status != ERROR_SUCCESS {
             unsafe { RegCloseKey(layout_key) };
             return Ok(None);
         }
@@ -128,7 +128,7 @@ mod imp {
             )
         };
         unsafe { RegCloseKey(layout_key) };
-        if status != 0 {
+        if status != ERROR_SUCCESS {
             return Ok(None);
         }
 

@@ -446,6 +446,7 @@ mod imp {
                 platform: "macos".to_string(),
                 layout_name: layout.to_string(),
                 layout_variant: variant.map(|s| s.to_string()),
+                display_name: None,
                 extracted_on: crate::now_iso8601(),
             },
             mappings,
