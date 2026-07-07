@@ -2,44 +2,26 @@
   "metadata": {
     "platform": "macos",
     "layout_name": "Urdu",
-    "extracted_on": "2026-07-07T00:41:29Z"
+    "display_name": "Urdu",
+    "extracted_on": "2026-07-07T01:15:16Z"
   },
   "mappings": {
-    "٫": [
+    "ٍ": [
       {
         "sequence": [
           {
-            "key": "Period",
+            "key": "KeyI",
             "modifiers": [
+              "Shift",
               "Alt"
             ]
-          }
-        ]
-      }
-    ],
-    "ا": [
-      {
-        "sequence": [
-          {
-            "key": "KeyA",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    " ": [
-      {
-        "sequence": [
-          {
-            "key": "Space",
-            "modifiers": []
           }
         ]
       },
       {
         "sequence": [
           {
-            "key": "Space",
+            "key": "Backslash",
             "modifiers": [
               "Shift"
             ]
@@ -47,24 +29,99 @@
         ]
       }
     ],
-    "؏": [
+    "،": [
+      {
+        "sequence": [
+          {
+            "key": "Comma",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "'": [
+      {
+        "sequence": [
+          {
+            "key": "Quote",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "ٗ": [
+      {
+        "sequence": [
+          {
+            "key": "KeyP",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "ف": [
+      {
+        "sequence": [
+          {
+            "key": "KeyF",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "0": [
+      {
+        "sequence": [
+          {
+            "key": "Digit0",
+            "modifiers": [
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "؀": [
+      {
+        "sequence": [
+          {
+            "key": "Backquote",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    ".": [
+      {
+        "sequence": [
+          {
+            "key": "Period",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "9": [
       {
         "sequence": [
           {
             "key": "Digit9",
             "modifiers": [
-              "Shift",
               "Alt"
             ]
           }
         ]
       }
     ],
-    "ذ": [
+    "ح": [
       {
         "sequence": [
           {
-            "key": "KeyZ",
+            "key": "KeyH",
             "modifiers": [
               "Shift"
             ]
@@ -72,14 +129,58 @@
         ]
       }
     ],
-    "ﷺ": [
+    "ل": [
+      {
+        "sequence": [
+          {
+            "key": "KeyL",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "؁": [
+      {
+        "sequence": [
+          {
+            "key": "Digit2",
+            "modifiers": [
+              "Shift",
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "ج": [
+      {
+        "sequence": [
+          {
+            "key": "KeyJ",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "ں": [
+      {
+        "sequence": [
+          {
+            "key": "KeyN",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "ص": [
       {
         "sequence": [
           {
             "key": "KeyS",
             "modifiers": [
-              "Shift",
-              "Alt"
+              "Shift"
             ]
           }
         ]
@@ -95,11 +196,23 @@
         ]
       }
     ],
-    "ٿ": [
+    "ۓ": [
       {
         "sequence": [
           {
-            "key": "KeyT",
+            "key": "KeyY",
+            "modifiers": [
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "~": [
+      {
+        "sequence": [
+          {
+            "key": "Backquote",
             "modifiers": [
               "Shift",
               "Alt"
@@ -108,11 +221,24 @@
         ]
       }
     ],
-    "⁧": [
+    "{": [
       {
         "sequence": [
           {
-            "key": "Semicolon",
+            "key": "BracketRight",
+            "modifiers": [
+              "Shift",
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "⁨": [
+      {
+        "sequence": [
+          {
+            "key": "Quote",
             "modifiers": [
               "Alt"
             ]
@@ -132,11 +258,21 @@
         ]
       }
     ],
-    "6": [
+    "۹": [
       {
         "sequence": [
           {
-            "key": "Digit6",
+            "key": "Digit9",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "5": [
+      {
+        "sequence": [
+          {
+            "key": "Digit5",
             "modifiers": [
               "Alt"
             ]
@@ -144,31 +280,245 @@
         ]
       }
     ],
-    "۳": [
+    "ُ": [
       {
         "sequence": [
           {
-            "key": "Digit3",
+            "key": "KeyU",
+            "modifiers": [
+              "Alt"
+            ]
+          }
+        ]
+      },
+      {
+        "sequence": [
+          {
+            "key": "BracketLeft",
             "modifiers": []
           }
         ]
       }
     ],
-    "۸": [
+    "=": [
       {
         "sequence": [
           {
-            "key": "Digit8",
+            "key": "Equal",
             "modifiers": []
           }
         ]
       }
     ],
-    "❊": [
+    "‎": [
       {
         "sequence": [
           {
-            "key": "Digit8",
+            "key": "Equal",
+            "modifiers": [
+              "Shift",
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "پ": [
+      {
+        "sequence": [
+          {
+            "key": "KeyP",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "و": [
+      {
+        "sequence": [
+          {
+            "key": "KeyW",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    ")": [
+      {
+        "sequence": [
+          {
+            "key": "Digit9",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "س": [
+      {
+        "sequence": [
+          {
+            "key": "KeyS",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "‍": [
+      {
+        "sequence": [
+          {
+            "key": "Minus",
+            "modifiers": [
+              "Shift",
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "ش": [
+      {
+        "sequence": [
+          {
+            "key": "KeyX",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "٘": [
+      {
+        "sequence": [
+          {
+            "key": "KeyN",
+            "modifiers": [
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "۲": [
+      {
+        "sequence": [
+          {
+            "key": "Digit2",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "َ": [
+      {
+        "sequence": [
+          {
+            "key": "BracketRight",
+            "modifiers": []
+          }
+        ]
+      },
+      {
+        "sequence": [
+          {
+            "key": "KeyA",
+            "modifiers": [
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "ن": [
+      {
+        "sequence": [
+          {
+            "key": "KeyN",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "<": [
+      {
+        "sequence": [
+          {
+            "key": "Period",
+            "modifiers": [
+              "Shift",
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "ۃ": [
+      {
+        "sequence": [
+          {
+            "key": "KeyO",
+            "modifiers": [
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "(": [
+      {
+        "sequence": [
+          {
+            "key": "Digit0",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "]": [
+      {
+        "sequence": [
+          {
+            "key": "BracketLeft",
+            "modifiers": [
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "ڙ": [
+      {
+        "sequence": [
+          {
+            "key": "KeyR",
+            "modifiers": [
+              "Shift",
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "ڑ": [
+      {
+        "sequence": [
+          {
+            "key": "KeyR",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "ة": [
+      {
+        "sequence": [
+          {
+            "key": "KeyO",
             "modifiers": [
               "Shift",
               "Alt"
@@ -189,35 +539,11 @@
         ]
       }
     ],
-    "؟": [
+    "ﷻ": [
       {
         "sequence": [
           {
-            "key": "Slash",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "ٗ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyP",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "؄": [
-      {
-        "sequence": [
-          {
-            "key": "Digit4",
+            "key": "KeyJ",
             "modifiers": [
               "Shift",
               "Alt"
@@ -226,59 +552,13 @@
         ]
       }
     ],
-    "_": [
+    ":": [
       {
         "sequence": [
           {
-            "key": "Minus",
+            "key": "Semicolon",
             "modifiers": [
               "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "‏": [
-      {
-        "sequence": [
-          {
-            "key": "Equal",
-            "modifiers": [
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "ٰ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyI",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "م": [
-      {
-        "sequence": [
-          {
-            "key": "KeyM",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "4": [
-      {
-        "sequence": [
-          {
-            "key": "Digit4",
-            "modifiers": [
-              "Alt"
             ]
           }
         ]
@@ -296,11 +576,43 @@
         ]
       }
     ],
-    "%": [
+    "!": [
       {
         "sequence": [
           {
-            "key": "Digit5",
+            "key": "Digit1",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "ے": [
+      {
+        "sequence": [
+          {
+            "key": "KeyY",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "م": [
+      {
+        "sequence": [
+          {
+            "key": "KeyM",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "ٿ": [
+      {
+        "sequence": [
+          {
+            "key": "KeyT",
             "modifiers": [
               "Shift",
               "Alt"
@@ -309,31 +621,11 @@
         ]
       }
     ],
-    "۷": [
+    "‏": [
       {
         "sequence": [
           {
-            "key": "Digit7",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "-": [
-      {
-        "sequence": [
-          {
-            "key": "Minus",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "₹": [
-      {
-        "sequence": [
-          {
-            "key": "Backquote",
+            "key": "Equal",
             "modifiers": [
               "Alt"
             ]
@@ -341,23 +633,25 @@
         ]
       }
     ],
-    "۱": [
+    "$": [
       {
         "sequence": [
           {
-            "key": "Digit1",
-            "modifiers": []
+            "key": "Digit4",
+            "modifiers": [
+              "Shift"
+            ]
           }
         ]
       }
     ],
-    "ٖ": [
+    "2": [
       {
         "sequence": [
           {
-            "key": "KeyY",
+            "key": "Digit2",
             "modifiers": [
-              "Shift"
+              "Alt"
             ]
           }
         ]
@@ -373,33 +667,39 @@
         ]
       }
     ],
-    "ب": [
+    "\u0003": [
       {
         "sequence": [
           {
-            "key": "KeyB",
+            "key": "IntlBackslash",
             "modifiers": []
           }
         ]
-      }
-    ],
-    "٬": [
+      },
       {
         "sequence": [
           {
-            "key": "Comma",
+            "key": "IntlBackslash",
             "modifiers": [
               "Shift"
             ]
           }
         ]
-      }
-    ],
-    "<": [
+      },
       {
         "sequence": [
           {
-            "key": "Period",
+            "key": "IntlBackslash",
+            "modifiers": [
+              "Alt"
+            ]
+          }
+        ]
+      },
+      {
+        "sequence": [
+          {
+            "key": "IntlBackslash",
             "modifiers": [
               "Shift",
               "Alt"
@@ -452,11 +752,362 @@
         ]
       }
     ],
-    "ں": [
+    "۵": [
       {
         "sequence": [
           {
-            "key": "KeyN",
+            "key": "Digit5",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "ط": [
+      {
+        "sequence": [
+          {
+            "key": "KeyV",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "+": [
+      {
+        "sequence": [
+          {
+            "key": "Equal",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "\\": [
+      {
+        "sequence": [
+          {
+            "key": "Slash",
+            "modifiers": [
+              "Shift",
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "4": [
+      {
+        "sequence": [
+          {
+            "key": "Digit4",
+            "modifiers": [
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "ھ": [
+      {
+        "sequence": [
+          {
+            "key": "KeyH",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "٫": [
+      {
+        "sequence": [
+          {
+            "key": "Period",
+            "modifiers": [
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "8": [
+      {
+        "sequence": [
+          {
+            "key": "Digit8",
+            "modifiers": [
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "ك": [
+      {
+        "sequence": [
+          {
+            "key": "KeyK",
+            "modifiers": [
+              "Alt"
+            ]
+          }
+        ]
+      },
+      {
+        "sequence": [
+          {
+            "key": "KeyK",
+            "modifiers": [
+              "Shift",
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "ه": [
+      {
+        "sequence": [
+          {
+            "key": "KeyH",
+            "modifiers": [
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "۸": [
+      {
+        "sequence": [
+          {
+            "key": "Digit8",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "ؐ": [
+      {
+        "sequence": [
+          {
+            "key": "KeyS",
+            "modifiers": [
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "د": [
+      {
+        "sequence": [
+          {
+            "key": "KeyD",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "ر": [
+      {
+        "sequence": [
+          {
+            "key": "KeyR",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "۰": [
+      {
+        "sequence": [
+          {
+            "key": "Digit0",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "ڐ": [
+      {
+        "sequence": [
+          {
+            "key": "KeyD",
+            "modifiers": [
+              "Shift",
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "ع": [
+      {
+        "sequence": [
+          {
+            "key": "KeyE",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "ذ": [
+      {
+        "sequence": [
+          {
+            "key": "KeyZ",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "؃": [
+      {
+        "sequence": [
+          {
+            "key": "Digit3",
+            "modifiers": [
+              "Shift",
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "3": [
+      {
+        "sequence": [
+          {
+            "key": "Digit3",
+            "modifiers": [
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "ق": [
+      {
+        "sequence": [
+          {
+            "key": "KeyQ",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "1": [
+      {
+        "sequence": [
+          {
+            "key": "Digit1",
+            "modifiers": [
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    " ": [
+      {
+        "sequence": [
+          {
+            "key": "Space",
+            "modifiers": []
+          }
+        ]
+      },
+      {
+        "sequence": [
+          {
+            "key": "Space",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "؛": [
+      {
+        "sequence": [
+          {
+            "key": "Semicolon",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "[": [
+      {
+        "sequence": [
+          {
+            "key": "BracketRight",
+            "modifiers": [
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "غ": [
+      {
+        "sequence": [
+          {
+            "key": "KeyG",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "^": [
+      {
+        "sequence": [
+          {
+            "key": "Digit6",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "ؤ": [
+      {
+        "sequence": [
+          {
+            "key": "KeyW",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "ي": [
+      {
+        "sequence": [
+          {
+            "key": "KeyY",
+            "modifiers": [
+              "Shift",
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "ث": [
+      {
+        "sequence": [
+          {
+            "key": "KeyC",
             "modifiers": [
               "Shift"
             ]
@@ -487,55 +1138,11 @@
         ]
       }
     ],
-    "ۓ": [
+    "\"": [
       {
         "sequence": [
           {
-            "key": "KeyY",
-            "modifiers": [
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "د": [
-      {
-        "sequence": [
-          {
-            "key": "KeyD",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "ج": [
-      {
-        "sequence": [
-          {
-            "key": "KeyJ",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "ؐ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyS",
-            "modifiers": [
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "ؤ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyW",
+            "key": "Quote",
             "modifiers": [
               "Shift"
             ]
@@ -550,1117 +1157,6 @@
             "key": "Digit5",
             "modifiers": [
               "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "ؔ": [
-      {
-        "sequence": [
-          {
-            "key": "Backquote",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "﷽": [
-      {
-        "sequence": [
-          {
-            "key": "KeyB",
-            "modifiers": [
-              "Shift",
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "چ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyC",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "۵": [
-      {
-        "sequence": [
-          {
-            "key": "Digit5",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "5": [
-      {
-        "sequence": [
-          {
-            "key": "Digit5",
-            "modifiers": [
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "ی": [
-      {
-        "sequence": [
-          {
-            "key": "KeyI",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "گ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyG",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "أ": [
-      {
-        "sequence": [
-          {
-            "key": "Backslash",
-            "modifiers": [
-              "Shift",
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "آ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyA",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "ظ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyV",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "[": [
-      {
-        "sequence": [
-          {
-            "key": "BracketRight",
-            "modifiers": [
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "1": [
-      {
-        "sequence": [
-          {
-            "key": "Digit1",
-            "modifiers": [
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "ڑ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyR",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "ک": [
-      {
-        "sequence": [
-          {
-            "key": "KeyK",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "؃": [
-      {
-        "sequence": [
-          {
-            "key": "Digit3",
-            "modifiers": [
-              "Shift",
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "\"": [
-      {
-        "sequence": [
-          {
-            "key": "Quote",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "،": [
-      {
-        "sequence": [
-          {
-            "key": "Comma",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "ئ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyU",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "7": [
-      {
-        "sequence": [
-          {
-            "key": "Digit7",
-            "modifiers": [
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "ت": [
-      {
-        "sequence": [
-          {
-            "key": "KeyT",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "ڐ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyD",
-            "modifiers": [
-              "Shift",
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "ض": [
-      {
-        "sequence": [
-          {
-            "key": "KeyJ",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "؁": [
-      {
-        "sequence": [
-          {
-            "key": "Digit2",
-            "modifiers": [
-              "Shift",
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "ة": [
-      {
-        "sequence": [
-          {
-            "key": "KeyO",
-            "modifiers": [
-              "Shift",
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "⁩": [
-      {
-        "sequence": [
-          {
-            "key": "Quote",
-            "modifiers": [
-              "Shift",
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "ط": [
-      {
-        "sequence": [
-          {
-            "key": "KeyV",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "٘": [
-      {
-        "sequence": [
-          {
-            "key": "KeyN",
-            "modifiers": [
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "؍": [
-      {
-        "sequence": [
-          {
-            "key": "Slash",
-            "modifiers": [
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "]": [
-      {
-        "sequence": [
-          {
-            "key": "BracketLeft",
-            "modifiers": [
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "ۃ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyO",
-            "modifiers": [
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "ً": [
-      {
-        "sequence": [
-          {
-            "key": "BracketRight",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      },
-      {
-        "sequence": [
-          {
-            "key": "KeyA",
-            "modifiers": [
-              "Shift",
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "#": [
-      {
-        "sequence": [
-          {
-            "key": "Digit3",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "َ": [
-      {
-        "sequence": [
-          {
-            "key": "BracketRight",
-            "modifiers": []
-          }
-        ]
-      },
-      {
-        "sequence": [
-          {
-            "key": "KeyA",
-            "modifiers": [
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "*": [
-      {
-        "sequence": [
-          {
-            "key": "Digit8",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "9": [
-      {
-        "sequence": [
-          {
-            "key": "Digit9",
-            "modifiers": [
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "ي": [
-      {
-        "sequence": [
-          {
-            "key": "KeyY",
-            "modifiers": [
-              "Shift",
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "ڈ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyD",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "ﷻ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyJ",
-            "modifiers": [
-              "Shift",
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "ه": [
-      {
-        "sequence": [
-          {
-            "key": "KeyH",
-            "modifiers": [
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "⁦": [
-      {
-        "sequence": [
-          {
-            "key": "Semicolon",
-            "modifiers": [
-              "Shift",
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "۹": [
-      {
-        "sequence": [
-          {
-            "key": "Digit9",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    " ": [
-      {
-        "sequence": [
-          {
-            "key": "Space",
-            "modifiers": [
-              "Shift",
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "ـ": [
-      {
-        "sequence": [
-          {
-            "key": "Minus",
-            "modifiers": [
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "}": [
-      {
-        "sequence": [
-          {
-            "key": "BracketLeft",
-            "modifiers": [
-              "Shift",
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "۴": [
-      {
-        "sequence": [
-          {
-            "key": "Digit4",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "ر": [
-      {
-        "sequence": [
-          {
-            "key": "KeyR",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "0": [
-      {
-        "sequence": [
-          {
-            "key": "Digit0",
-            "modifiers": [
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "ش": [
-      {
-        "sequence": [
-          {
-            "key": "KeyX",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "۰": [
-      {
-        "sequence": [
-          {
-            "key": "Digit0",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "^": [
-      {
-        "sequence": [
-          {
-            "key": "Digit6",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "ح": [
-      {
-        "sequence": [
-          {
-            "key": "KeyH",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "۲": [
-      {
-        "sequence": [
-          {
-            "key": "Digit2",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "۔": [
-      {
-        "sequence": [
-          {
-            "key": "Period",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "/": [
-      {
-        "sequence": [
-          {
-            "key": "Slash",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "(": [
-      {
-        "sequence": [
-          {
-            "key": "Digit0",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    ".": [
-      {
-        "sequence": [
-          {
-            "key": "Period",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "ے": [
-      {
-        "sequence": [
-          {
-            "key": "KeyY",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "\\": [
-      {
-        "sequence": [
-          {
-            "key": "Slash",
-            "modifiers": [
-              "Shift",
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "'": [
-      {
-        "sequence": [
-          {
-            "key": "Quote",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "ص": [
-      {
-        "sequence": [
-          {
-            "key": "KeyS",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "=": [
-      {
-        "sequence": [
-          {
-            "key": "Equal",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "ك": [
-      {
-        "sequence": [
-          {
-            "key": "KeyK",
-            "modifiers": [
-              "Alt"
-            ]
-          }
-        ]
-      },
-      {
-        "sequence": [
-          {
-            "key": "KeyK",
-            "modifiers": [
-              "Shift",
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "و": [
-      {
-        "sequence": [
-          {
-            "key": "KeyW",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "@": [
-      {
-        "sequence": [
-          {
-            "key": "Digit2",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "{": [
-      {
-        "sequence": [
-          {
-            "key": "BracketRight",
-            "modifiers": [
-              "Shift",
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "ٴ": [
-      {
-        "sequence": [
-          {
-            "key": "Digit7",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "ۂ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyO",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "پ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyP",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "ھ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyH",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "⁨": [
-      {
-        "sequence": [
-          {
-            "key": "Quote",
-            "modifiers": [
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "ء": [
-      {
-        "sequence": [
-          {
-            "key": "KeyU",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    ")": [
-      {
-        "sequence": [
-          {
-            "key": "Digit9",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "خ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyK",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "‎": [
-      {
-        "sequence": [
-          {
-            "key": "Equal",
-            "modifiers": [
-              "Shift",
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "\u0003": [
-      {
-        "sequence": [
-          {
-            "key": "IntlBackslash",
-            "modifiers": []
-          }
-        ]
-      },
-      {
-        "sequence": [
-          {
-            "key": "IntlBackslash",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      },
-      {
-        "sequence": [
-          {
-            "key": "IntlBackslash",
-            "modifiers": [
-              "Alt"
-            ]
-          }
-        ]
-      },
-      {
-        "sequence": [
-          {
-            "key": "IntlBackslash",
-            "modifiers": [
-              "Shift",
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "$": [
-      {
-        "sequence": [
-          {
-            "key": "Digit4",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "ؓ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyR",
-            "modifiers": [
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "إ": [
-      {
-        "sequence": [
-          {
-            "key": "Digit1",
-            "modifiers": [
-              "Shift",
-              "Alt"
-            ]
-          }
-        ]
-      },
-      {
-        "sequence": [
-          {
-            "key": "Backslash",
-            "modifiers": [
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "؀": [
-      {
-        "sequence": [
-          {
-            "key": "Backquote",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "ٹ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyT",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    ":": [
-      {
-        "sequence": [
-          {
-            "key": "Semicolon",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "؛": [
-      {
-        "sequence": [
-          {
-            "key": "Semicolon",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "ث": [
-      {
-        "sequence": [
-          {
-            "key": "KeyC",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "‍": [
-      {
-        "sequence": [
-          {
-            "key": "Minus",
-            "modifiers": [
-              "Shift",
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "ع": [
-      {
-        "sequence": [
-          {
-            "key": "KeyE",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "ن": [
-      {
-        "sequence": [
-          {
-            "key": "KeyN",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "ق": [
-      {
-        "sequence": [
-          {
-            "key": "KeyQ",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "~": [
-      {
-        "sequence": [
-          {
-            "key": "Backquote",
-            "modifiers": [
-              "Shift",
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "+": [
-      {
-        "sequence": [
-          {
-            "key": "Equal",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "8": [
-      {
-        "sequence": [
-          {
-            "key": "Digit8",
-            "modifiers": [
-              "Alt"
             ]
           }
         ]
@@ -1699,11 +1195,138 @@
         ]
       }
     ],
-    "!": [
+    "۴": [
       {
         "sequence": [
           {
-            "key": "Digit1",
+            "key": "Digit4",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "*": [
+      {
+        "sequence": [
+          {
+            "key": "Digit8",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "⁦": [
+      {
+        "sequence": [
+          {
+            "key": "Semicolon",
+            "modifiers": [
+              "Shift",
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "}": [
+      {
+        "sequence": [
+          {
+            "key": "BracketLeft",
+            "modifiers": [
+              "Shift",
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "ٴ": [
+      {
+        "sequence": [
+          {
+            "key": "Digit7",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "ؔ": [
+      {
+        "sequence": [
+          {
+            "key": "Backquote",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "۷": [
+      {
+        "sequence": [
+          {
+            "key": "Digit7",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "ٹ": [
+      {
+        "sequence": [
+          {
+            "key": "KeyT",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "۶": [
+      {
+        "sequence": [
+          {
+            "key": "Digit6",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "❊": [
+      {
+        "sequence": [
+          {
+            "key": "Digit8",
+            "modifiers": [
+              "Shift",
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "ت": [
+      {
+        "sequence": [
+          {
+            "key": "KeyT",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "؟": [
+      {
+        "sequence": [
+          {
+            "key": "Slash",
             "modifiers": [
               "Shift"
             ]
@@ -1724,158 +1347,11 @@
         ]
       }
     ],
-    "غ": [
+    "گ": [
       {
         "sequence": [
           {
             "key": "KeyG",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "۶": [
-      {
-        "sequence": [
-          {
-            "key": "Digit6",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "؎": [
-      {
-        "sequence": [
-          {
-            "key": "Digit7",
-            "modifiers": [
-              "Shift",
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "2": [
-      {
-        "sequence": [
-          {
-            "key": "Digit2",
-            "modifiers": [
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "ؑ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyE",
-            "modifiers": [
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "ٍ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyI",
-            "modifiers": [
-              "Shift",
-              "Alt"
-            ]
-          }
-        ]
-      },
-      {
-        "sequence": [
-          {
-            "key": "Backslash",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "3": [
-      {
-        "sequence": [
-          {
-            "key": "Digit3",
-            "modifiers": [
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "ُ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyU",
-            "modifiers": [
-              "Alt"
-            ]
-          }
-        ]
-      },
-      {
-        "sequence": [
-          {
-            "key": "BracketLeft",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "ڙ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyR",
-            "modifiers": [
-              "Shift",
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "س": [
-      {
-        "sequence": [
-          {
-            "key": "KeyS",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "ف": [
-      {
-        "sequence": [
-          {
-            "key": "KeyF",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "ل": [
-      {
-        "sequence": [
-          {
-            "key": "KeyL",
             "modifiers": []
           }
         ]
@@ -1896,6 +1372,531 @@
         "sequence": [
           {
             "key": "Backslash",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "ظ": [
+      {
+        "sequence": [
+          {
+            "key": "KeyV",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "۱": [
+      {
+        "sequence": [
+          {
+            "key": "Digit1",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "؍": [
+      {
+        "sequence": [
+          {
+            "key": "Slash",
+            "modifiers": [
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "۔": [
+      {
+        "sequence": [
+          {
+            "key": "Period",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "أ": [
+      {
+        "sequence": [
+          {
+            "key": "Backslash",
+            "modifiers": [
+              "Shift",
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "إ": [
+      {
+        "sequence": [
+          {
+            "key": "Digit1",
+            "modifiers": [
+              "Shift",
+              "Alt"
+            ]
+          }
+        ]
+      },
+      {
+        "sequence": [
+          {
+            "key": "Backslash",
+            "modifiers": [
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    " ": [
+      {
+        "sequence": [
+          {
+            "key": "Space",
+            "modifiers": [
+              "Shift",
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "ک": [
+      {
+        "sequence": [
+          {
+            "key": "KeyK",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "#": [
+      {
+        "sequence": [
+          {
+            "key": "Digit3",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "؄": [
+      {
+        "sequence": [
+          {
+            "key": "Digit4",
+            "modifiers": [
+              "Shift",
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "ؓ": [
+      {
+        "sequence": [
+          {
+            "key": "KeyR",
+            "modifiers": [
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "ب": [
+      {
+        "sequence": [
+          {
+            "key": "KeyB",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "ۂ": [
+      {
+        "sequence": [
+          {
+            "key": "KeyO",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "﷽": [
+      {
+        "sequence": [
+          {
+            "key": "KeyB",
+            "modifiers": [
+              "Shift",
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "%": [
+      {
+        "sequence": [
+          {
+            "key": "Digit5",
+            "modifiers": [
+              "Shift",
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "6": [
+      {
+        "sequence": [
+          {
+            "key": "Digit6",
+            "modifiers": [
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "ض": [
+      {
+        "sequence": [
+          {
+            "key": "KeyJ",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "ی": [
+      {
+        "sequence": [
+          {
+            "key": "KeyI",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "@": [
+      {
+        "sequence": [
+          {
+            "key": "Digit2",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "۳": [
+      {
+        "sequence": [
+          {
+            "key": "Digit3",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "؎": [
+      {
+        "sequence": [
+          {
+            "key": "Digit7",
+            "modifiers": [
+              "Shift",
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "ﷺ": [
+      {
+        "sequence": [
+          {
+            "key": "KeyS",
+            "modifiers": [
+              "Shift",
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "⁩": [
+      {
+        "sequence": [
+          {
+            "key": "Quote",
+            "modifiers": [
+              "Shift",
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "/": [
+      {
+        "sequence": [
+          {
+            "key": "Slash",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "₹": [
+      {
+        "sequence": [
+          {
+            "key": "Backquote",
+            "modifiers": [
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "7": [
+      {
+        "sequence": [
+          {
+            "key": "Digit7",
+            "modifiers": [
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "ئ": [
+      {
+        "sequence": [
+          {
+            "key": "KeyU",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "ا": [
+      {
+        "sequence": [
+          {
+            "key": "KeyA",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "ڈ": [
+      {
+        "sequence": [
+          {
+            "key": "KeyD",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "آ": [
+      {
+        "sequence": [
+          {
+            "key": "KeyA",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "خ": [
+      {
+        "sequence": [
+          {
+            "key": "KeyK",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "؏": [
+      {
+        "sequence": [
+          {
+            "key": "Digit9",
+            "modifiers": [
+              "Shift",
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "ء": [
+      {
+        "sequence": [
+          {
+            "key": "KeyU",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "⁧": [
+      {
+        "sequence": [
+          {
+            "key": "Semicolon",
+            "modifiers": [
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "چ": [
+      {
+        "sequence": [
+          {
+            "key": "KeyC",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "ٰ": [
+      {
+        "sequence": [
+          {
+            "key": "KeyI",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "٬": [
+      {
+        "sequence": [
+          {
+            "key": "Comma",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "ـ": [
+      {
+        "sequence": [
+          {
+            "key": "Minus",
+            "modifiers": [
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "ً": [
+      {
+        "sequence": [
+          {
+            "key": "BracketRight",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      },
+      {
+        "sequence": [
+          {
+            "key": "KeyA",
+            "modifiers": [
+              "Shift",
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "ٖ": [
+      {
+        "sequence": [
+          {
+            "key": "KeyY",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "ؑ": [
+      {
+        "sequence": [
+          {
+            "key": "KeyE",
+            "modifiers": [
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "_": [
+      {
+        "sequence": [
+          {
+            "key": "Minus",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "-": [
+      {
+        "sequence": [
+          {
+            "key": "Minus",
             "modifiers": []
           }
         ]

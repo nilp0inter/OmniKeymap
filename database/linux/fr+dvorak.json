@@ -3,14 +3,39 @@
     "platform": "linux",
     "layout_name": "fr",
     "layout_variant": "dvorak",
-    "extracted_on": "2026-07-07T00:41:27Z"
+    "display_name": "French (Dvorak)",
+    "extracted_on": "2026-07-07T01:15:29Z"
   },
   "mappings": {
-    " ": [
+    "6": [
       {
         "sequence": [
           {
-            "key": "Space",
+            "key": "Digit6",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "}": [
+      {
+        "sequence": [
+          {
+            "key": "KeyC",
+            "modifiers": [
+              "AltGraph"
+            ]
+          }
+        ]
+      }
+    ],
+    "'": [
+      {
+        "sequence": [
+          {
+            "key": "KeyW",
             "modifiers": []
           }
         ]
@@ -18,9 +43,59 @@
       {
         "sequence": [
           {
-            "key": "Space",
+            "key": "Digit6",
+            "modifiers": []
+          },
+          {
+            "key": "KeyW",
+            "modifiers": []
+          }
+        ]
+      },
+      {
+        "sequence": [
+          {
+            "key": "BracketRight",
+            "modifiers": []
+          },
+          {
+            "key": "KeyW",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "V": [
+      {
+        "sequence": [
+          {
+            "key": "KeyU",
             "modifiers": [
               "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "4": [
+      {
+        "sequence": [
+          {
+            "key": "Digit4",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "à": [
+      {
+        "sequence": [
+          {
+            "key": "KeyS",
+            "modifiers": [
+              "AltGraph"
             ]
           }
         ]
@@ -28,33 +103,7 @@
       {
         "sequence": [
           {
-            "key": "Digit6",
-            "modifiers": []
-          },
-          {
-            "key": "Space",
-            "modifiers": []
-          }
-        ]
-      },
-      {
-        "sequence": [
-          {
-            "key": "BracketRight",
-            "modifiers": []
-          },
-          {
-            "key": "Space",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "l": [
-      {
-        "sequence": [
-          {
-            "key": "Comma",
+            "key": "IntlBackslash",
             "modifiers": []
           }
         ]
@@ -66,7 +115,7 @@
             "modifiers": []
           },
           {
-            "key": "Comma",
+            "key": "IntlBackslash",
             "modifiers": []
           }
         ]
@@ -78,19 +127,554 @@
             "modifiers": []
           },
           {
-            "key": "Comma",
+            "key": "IntlBackslash",
             "modifiers": []
           }
         ]
       }
     ],
-    "7": [
+    "C": [
       {
         "sequence": [
           {
-            "key": "Digit7",
+            "key": "KeyI",
             "modifiers": [
               "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "¼": [
+      {
+        "sequence": [
+          {
+            "key": "Digit3",
+            "modifiers": [
+              "AltGraph"
+            ]
+          }
+        ]
+      }
+    ],
+    "E": [
+      {
+        "sequence": [
+          {
+            "key": "KeyF",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "f": [
+      {
+        "sequence": [
+          {
+            "key": "KeyH",
+            "modifiers": []
+          }
+        ]
+      },
+      {
+        "sequence": [
+          {
+            "key": "Digit6",
+            "modifiers": []
+          },
+          {
+            "key": "KeyH",
+            "modifiers": []
+          }
+        ]
+      },
+      {
+        "sequence": [
+          {
+            "key": "BracketRight",
+            "modifiers": []
+          },
+          {
+            "key": "KeyH",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "*": [
+      {
+        "sequence": [
+          {
+            "key": "Backquote",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "N": [
+      {
+        "sequence": [
+          {
+            "key": "KeyL",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "h": [
+      {
+        "sequence": [
+          {
+            "key": "KeyY",
+            "modifiers": []
+          }
+        ]
+      },
+      {
+        "sequence": [
+          {
+            "key": "Digit6",
+            "modifiers": []
+          },
+          {
+            "key": "KeyY",
+            "modifiers": []
+          }
+        ]
+      },
+      {
+        "sequence": [
+          {
+            "key": "BracketRight",
+            "modifiers": []
+          },
+          {
+            "key": "KeyY",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    ".": [
+      {
+        "sequence": [
+          {
+            "key": "KeyT",
+            "modifiers": []
+          }
+        ]
+      },
+      {
+        "sequence": [
+          {
+            "key": "Digit6",
+            "modifiers": []
+          },
+          {
+            "key": "KeyT",
+            "modifiers": []
+          }
+        ]
+      },
+      {
+        "sequence": [
+          {
+            "key": "BracketRight",
+            "modifiers": []
+          },
+          {
+            "key": "KeyT",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "½": [
+      {
+        "sequence": [
+          {
+            "key": "Digit4",
+            "modifiers": [
+              "AltGraph"
+            ]
+          }
+        ]
+      }
+    ],
+    "P": [
+      {
+        "sequence": [
+          {
+            "key": "Period",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    ";": [
+      {
+        "sequence": [
+          {
+            "key": "KeyZ",
+            "modifiers": []
+          }
+        ]
+      },
+      {
+        "sequence": [
+          {
+            "key": "Digit6",
+            "modifiers": []
+          },
+          {
+            "key": "KeyZ",
+            "modifiers": []
+          }
+        ]
+      },
+      {
+        "sequence": [
+          {
+            "key": "BracketRight",
+            "modifiers": []
+          },
+          {
+            "key": "KeyZ",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "ù": [
+      {
+        "sequence": [
+          {
+            "key": "KeyD",
+            "modifiers": [
+              "AltGraph"
+            ]
+          }
+        ]
+      }
+    ],
+    "{": [
+      {
+        "sequence": [
+          {
+            "key": "KeyX",
+            "modifiers": [
+              "AltGraph"
+            ]
+          }
+        ]
+      }
+    ],
+    "-": [
+      {
+        "sequence": [
+          {
+            "key": "Digit3",
+            "modifiers": []
+          }
+        ]
+      },
+      {
+        "sequence": [
+          {
+            "key": "Digit6",
+            "modifiers": []
+          },
+          {
+            "key": "Digit3",
+            "modifiers": []
+          }
+        ]
+      },
+      {
+        "sequence": [
+          {
+            "key": "BracketRight",
+            "modifiers": []
+          },
+          {
+            "key": "Digit3",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "Æ": [
+      {
+        "sequence": [
+          {
+            "key": "KeyQ",
+            "modifiers": [
+              "Shift",
+              "AltGraph"
+            ]
+          }
+        ]
+      }
+    ],
+    "s": [
+      {
+        "sequence": [
+          {
+            "key": "KeyJ",
+            "modifiers": []
+          }
+        ]
+      },
+      {
+        "sequence": [
+          {
+            "key": "Digit6",
+            "modifiers": []
+          },
+          {
+            "key": "KeyJ",
+            "modifiers": []
+          }
+        ]
+      },
+      {
+        "sequence": [
+          {
+            "key": "BracketRight",
+            "modifiers": []
+          },
+          {
+            "key": "KeyJ",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "Ù": [
+      {
+        "sequence": [
+          {
+            "key": "KeyD",
+            "modifiers": [
+              "Shift",
+              "AltGraph"
+            ]
+          }
+        ]
+      }
+    ],
+    "k": [
+      {
+        "sequence": [
+          {
+            "key": "KeyP",
+            "modifiers": []
+          }
+        ]
+      },
+      {
+        "sequence": [
+          {
+            "key": "Digit6",
+            "modifiers": []
+          },
+          {
+            "key": "KeyP",
+            "modifiers": []
+          }
+        ]
+      },
+      {
+        "sequence": [
+          {
+            "key": "BracketRight",
+            "modifiers": []
+          },
+          {
+            "key": "KeyP",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "\"": [
+      {
+        "sequence": [
+          {
+            "key": "Digit0",
+            "modifiers": []
+          }
+        ]
+      },
+      {
+        "sequence": [
+          {
+            "key": "Digit6",
+            "modifiers": []
+          },
+          {
+            "key": "Digit0",
+            "modifiers": []
+          }
+        ]
+      },
+      {
+        "sequence": [
+          {
+            "key": "BracketRight",
+            "modifiers": []
+          },
+          {
+            "key": "Digit0",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "b": [
+      {
+        "sequence": [
+          {
+            "key": "KeyG",
+            "modifiers": []
+          }
+        ]
+      },
+      {
+        "sequence": [
+          {
+            "key": "Digit6",
+            "modifiers": []
+          },
+          {
+            "key": "KeyG",
+            "modifiers": []
+          }
+        ]
+      },
+      {
+        "sequence": [
+          {
+            "key": "BracketRight",
+            "modifiers": []
+          },
+          {
+            "key": "KeyG",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "J": [
+      {
+        "sequence": [
+          {
+            "key": "Slash",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "m": [
+      {
+        "sequence": [
+          {
+            "key": "KeyO",
+            "modifiers": []
+          }
+        ]
+      },
+      {
+        "sequence": [
+          {
+            "key": "Digit6",
+            "modifiers": []
+          },
+          {
+            "key": "KeyO",
+            "modifiers": []
+          }
+        ]
+      },
+      {
+        "sequence": [
+          {
+            "key": "BracketRight",
+            "modifiers": []
+          },
+          {
+            "key": "KeyO",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "Œ": [
+      {
+        "sequence": [
+          {
+            "key": "KeyZ",
+            "modifiers": [
+              "Shift",
+              "AltGraph"
+            ]
+          }
+        ]
+      }
+    ],
+    "8": [
+      {
+        "sequence": [
+          {
+            "key": "Digit8",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "º": [
+      {
+        "sequence": [
+          {
+            "key": "KeyM",
+            "modifiers": [
+              "AltGraph"
+            ]
+          }
+        ]
+      }
+    ],
+    "K": [
+      {
+        "sequence": [
+          {
+            "key": "KeyP",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "€": [
+      {
+        "sequence": [
+          {
+            "key": "KeyR",
+            "modifiers": [
+              "AltGraph"
             ]
           }
         ]
@@ -130,11 +714,47 @@
         ]
       }
     ],
-    "c": [
+    "#": [
       {
         "sequence": [
           {
-            "key": "KeyI",
+            "key": "Backslash",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "|": [
+      {
+        "sequence": [
+          {
+            "key": "KeyZ",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "£": [
+      {
+        "sequence": [
+          {
+            "key": "KeyB",
+            "modifiers": [
+              "AltGraph"
+            ]
+          }
+        ]
+      }
+    ],
+    "\\": [
+      {
+        "sequence": [
+          {
+            "key": "Digit5",
             "modifiers": []
           }
         ]
@@ -146,7 +766,7 @@
             "modifiers": []
           },
           {
-            "key": "KeyI",
+            "key": "Digit5",
             "modifiers": []
           }
         ]
@@ -158,19 +778,66 @@
             "modifiers": []
           },
           {
-            "key": "KeyI",
+            "key": "Digit5",
             "modifiers": []
           }
         ]
       }
     ],
-    "C": [
+    "Ì": [
       {
         "sequence": [
           {
-            "key": "KeyI",
+            "key": "KeyV",
             "modifiers": [
-              "Shift"
+              "Shift",
+              "AltGraph"
+            ]
+          }
+        ]
+      }
+    ],
+    "é": [
+      {
+        "sequence": [
+          {
+            "key": "KeyE",
+            "modifiers": []
+          }
+        ]
+      },
+      {
+        "sequence": [
+          {
+            "key": "Digit6",
+            "modifiers": []
+          },
+          {
+            "key": "KeyE",
+            "modifiers": []
+          }
+        ]
+      },
+      {
+        "sequence": [
+          {
+            "key": "BracketRight",
+            "modifiers": []
+          },
+          {
+            "key": "KeyE",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "»": [
+      {
+        "sequence": [
+          {
+            "key": "KeyL",
+            "modifiers": [
+              "AltGraph"
             ]
           }
         ]
@@ -210,24 +877,71 @@
         ]
       }
     ],
-    "À": [
+    "±": [
       {
         "sequence": [
           {
-            "key": "KeyS",
+            "key": "Digit2",
             "modifiers": [
-              "Shift",
               "AltGraph"
             ]
+          }
+        ]
+      }
+    ],
+    "H": [
+      {
+        "sequence": [
+          {
+            "key": "KeyY",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "_": [
+      {
+        "sequence": [
+          {
+            "key": "Backquote",
+            "modifiers": []
           }
         ]
       },
       {
         "sequence": [
           {
-            "key": "IntlBackslash",
+            "key": "Digit6",
+            "modifiers": []
+          },
+          {
+            "key": "Backquote",
+            "modifiers": []
+          }
+        ]
+      },
+      {
+        "sequence": [
+          {
+            "key": "BracketRight",
+            "modifiers": []
+          },
+          {
+            "key": "Backquote",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    ">": [
+      {
+        "sequence": [
+          {
+            "key": "KeyE",
             "modifiers": [
-              "AltGraph"
+              "Shift"
             ]
           }
         ]
@@ -245,24 +959,81 @@
         ]
       }
     ],
-    "Œ": [
+    "t": [
+      {
+        "sequence": [
+          {
+            "key": "KeyK",
+            "modifiers": []
+          }
+        ]
+      },
+      {
+        "sequence": [
+          {
+            "key": "Digit6",
+            "modifiers": []
+          },
+          {
+            "key": "KeyK",
+            "modifiers": []
+          }
+        ]
+      },
+      {
+        "sequence": [
+          {
+            "key": "BracketRight",
+            "modifiers": []
+          },
+          {
+            "key": "KeyK",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "0": [
+      {
+        "sequence": [
+          {
+            "key": "Digit0",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "@": [
+      {
+        "sequence": [
+          {
+            "key": "KeyC",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "œ": [
       {
         "sequence": [
           {
             "key": "KeyZ",
             "modifiers": [
-              "Shift",
               "AltGraph"
             ]
           }
         ]
       }
     ],
-    "=": [
+    "l": [
       {
         "sequence": [
           {
-            "key": "Digit1",
+            "key": "Comma",
             "modifiers": []
           }
         ]
@@ -274,7 +1045,7 @@
             "modifiers": []
           },
           {
-            "key": "Digit1",
+            "key": "Comma",
             "modifiers": []
           }
         ]
@@ -286,145 +1057,17 @@
             "modifiers": []
           },
           {
-            "key": "Digit1",
+            "key": "Comma",
             "modifiers": []
           }
         ]
       }
     ],
-    "8": [
+    "5": [
       {
         "sequence": [
           {
-            "key": "Digit8",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "S": [
-      {
-        "sequence": [
-          {
-            "key": "KeyJ",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "`": [
-      {
-        "sequence": [
-          {
-            "key": "Digit8",
-            "modifiers": [
-              "AltGraph"
-            ]
-          }
-        ]
-      }
-    ],
-    "½": [
-      {
-        "sequence": [
-          {
-            "key": "Digit4",
-            "modifiers": [
-              "AltGraph"
-            ]
-          }
-        ]
-      }
-    ],
-    "x": [
-      {
-        "sequence": [
-          {
-            "key": "KeyN",
-            "modifiers": []
-          }
-        ]
-      },
-      {
-        "sequence": [
-          {
-            "key": "Digit6",
-            "modifiers": []
-          },
-          {
-            "key": "KeyN",
-            "modifiers": []
-          }
-        ]
-      },
-      {
-        "sequence": [
-          {
-            "key": "BracketRight",
-            "modifiers": []
-          },
-          {
-            "key": "KeyN",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "'": [
-      {
-        "sequence": [
-          {
-            "key": "KeyW",
-            "modifiers": []
-          }
-        ]
-      },
-      {
-        "sequence": [
-          {
-            "key": "Digit6",
-            "modifiers": []
-          },
-          {
-            "key": "KeyW",
-            "modifiers": []
-          }
-        ]
-      },
-      {
-        "sequence": [
-          {
-            "key": "BracketRight",
-            "modifiers": []
-          },
-          {
-            "key": "KeyW",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "N": [
-      {
-        "sequence": [
-          {
-            "key": "KeyL",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "Z": [
-      {
-        "sequence": [
-          {
-            "key": "BracketLeft",
+            "key": "Digit5",
             "modifiers": [
               "Shift"
             ]
@@ -437,6 +1080,202 @@
         "sequence": [
           {
             "key": "KeyT",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "]": [
+      {
+        "sequence": [
+          {
+            "key": "Equal",
+            "modifiers": []
+          }
+        ]
+      },
+      {
+        "sequence": [
+          {
+            "key": "Digit6",
+            "modifiers": []
+          },
+          {
+            "key": "Equal",
+            "modifiers": []
+          }
+        ]
+      },
+      {
+        "sequence": [
+          {
+            "key": "BracketRight",
+            "modifiers": []
+          },
+          {
+            "key": "Equal",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "g": [
+      {
+        "sequence": [
+          {
+            "key": "KeyR",
+            "modifiers": []
+          }
+        ]
+      },
+      {
+        "sequence": [
+          {
+            "key": "Digit6",
+            "modifiers": []
+          },
+          {
+            "key": "KeyR",
+            "modifiers": []
+          }
+        ]
+      },
+      {
+        "sequence": [
+          {
+            "key": "BracketRight",
+            "modifiers": []
+          },
+          {
+            "key": "KeyR",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "U": [
+      {
+        "sequence": [
+          {
+            "key": "KeyD",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "T": [
+      {
+        "sequence": [
+          {
+            "key": "KeyK",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "°": [
+      {
+        "sequence": [
+          {
+            "key": "KeyT",
+            "modifiers": [
+              "AltGraph"
+            ]
+          }
+        ]
+      }
+    ],
+    "ç": [
+      {
+        "sequence": [
+          {
+            "key": "KeyI",
+            "modifiers": [
+              "AltGraph"
+            ]
+          }
+        ]
+      },
+      {
+        "sequence": [
+          {
+            "key": "IntlBackslash",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "c": [
+      {
+        "sequence": [
+          {
+            "key": "KeyI",
+            "modifiers": []
+          }
+        ]
+      },
+      {
+        "sequence": [
+          {
+            "key": "Digit6",
+            "modifiers": []
+          },
+          {
+            "key": "KeyI",
+            "modifiers": []
+          }
+        ]
+      },
+      {
+        "sequence": [
+          {
+            "key": "BracketRight",
+            "modifiers": []
+          },
+          {
+            "key": "KeyI",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "<": [
+      {
+        "sequence": [
+          {
+            "key": "KeyW",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "µ": [
+      {
+        "sequence": [
+          {
+            "key": "KeyO",
+            "modifiers": [
+              "AltGraph"
+            ]
+          }
+        ]
+      }
+    ],
+    "3": [
+      {
+        "sequence": [
+          {
+            "key": "Digit3",
             "modifiers": [
               "Shift"
             ]
@@ -478,11 +1317,11 @@
         ]
       }
     ],
-    "q": [
+    "(": [
       {
         "sequence": [
           {
-            "key": "KeyX",
+            "key": "Digit7",
             "modifiers": []
           }
         ]
@@ -494,7 +1333,7 @@
             "modifiers": []
           },
           {
-            "key": "KeyX",
+            "key": "Digit7",
             "modifiers": []
           }
         ]
@@ -506,8 +1345,20 @@
             "modifiers": []
           },
           {
-            "key": "KeyX",
+            "key": "Digit7",
             "modifiers": []
+          }
+        ]
+      }
+    ],
+    "Z": [
+      {
+        "sequence": [
+          {
+            "key": "BracketLeft",
+            "modifiers": [
+              "Shift"
+            ]
           }
         ]
       }
@@ -524,81 +1375,166 @@
         ]
       }
     ],
-    "s": [
+    "«": [
       {
         "sequence": [
           {
             "key": "KeyJ",
-            "modifiers": []
-          }
-        ]
-      },
-      {
-        "sequence": [
-          {
-            "key": "Digit6",
-            "modifiers": []
-          },
-          {
-            "key": "KeyJ",
-            "modifiers": []
-          }
-        ]
-      },
-      {
-        "sequence": [
-          {
-            "key": "BracketRight",
-            "modifiers": []
-          },
-          {
-            "key": "KeyJ",
-            "modifiers": []
+            "modifiers": [
+              "AltGraph"
+            ]
           }
         ]
       }
     ],
-    "v": [
+    "È": [
       {
         "sequence": [
           {
-            "key": "KeyU",
-            "modifiers": []
-          }
-        ]
-      },
-      {
-        "sequence": [
-          {
-            "key": "Digit6",
-            "modifiers": []
-          },
-          {
-            "key": "KeyU",
-            "modifiers": []
-          }
-        ]
-      },
-      {
-        "sequence": [
-          {
-            "key": "BracketRight",
-            "modifiers": []
-          },
-          {
-            "key": "KeyU",
-            "modifiers": []
+            "key": "KeyF",
+            "modifiers": [
+              "Shift",
+              "AltGraph"
+            ]
           }
         ]
       }
     ],
-    "W": [
+    "?": [
       {
         "sequence": [
           {
-            "key": "Quote",
+            "key": "KeyQ",
             "modifiers": [
               "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "Ò": [
+      {
+        "sequence": [
+          {
+            "key": "KeyA",
+            "modifiers": [
+              "Shift",
+              "AltGraph"
+            ]
+          }
+        ]
+      }
+    ],
+    "x": [
+      {
+        "sequence": [
+          {
+            "key": "KeyN",
+            "modifiers": []
+          }
+        ]
+      },
+      {
+        "sequence": [
+          {
+            "key": "Digit6",
+            "modifiers": []
+          },
+          {
+            "key": "KeyN",
+            "modifiers": []
+          }
+        ]
+      },
+      {
+        "sequence": [
+          {
+            "key": "BracketRight",
+            "modifiers": []
+          },
+          {
+            "key": "KeyN",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "æ": [
+      {
+        "sequence": [
+          {
+            "key": "KeyQ",
+            "modifiers": [
+              "AltGraph"
+            ]
+          }
+        ]
+      }
+    ],
+    "2": [
+      {
+        "sequence": [
+          {
+            "key": "Digit2",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "p": [
+      {
+        "sequence": [
+          {
+            "key": "Period",
+            "modifiers": []
+          }
+        ]
+      },
+      {
+        "sequence": [
+          {
+            "key": "Digit6",
+            "modifiers": []
+          },
+          {
+            "key": "Period",
+            "modifiers": []
+          }
+        ]
+      },
+      {
+        "sequence": [
+          {
+            "key": "BracketRight",
+            "modifiers": []
+          },
+          {
+            "key": "Period",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "À": [
+      {
+        "sequence": [
+          {
+            "key": "KeyS",
+            "modifiers": [
+              "Shift",
+              "AltGraph"
+            ]
+          }
+        ]
+      },
+      {
+        "sequence": [
+          {
+            "key": "IntlBackslash",
+            "modifiers": [
+              "AltGraph"
             ]
           }
         ]
@@ -638,6 +1574,109 @@
         ]
       }
     ],
+    " ": [
+      {
+        "sequence": [
+          {
+            "key": "Space",
+            "modifiers": [
+              "AltGraph"
+            ]
+          }
+        ]
+      },
+      {
+        "sequence": [
+          {
+            "key": "Space",
+            "modifiers": [
+              "Shift",
+              "AltGraph"
+            ]
+          }
+        ]
+      }
+    ],
+    ":": [
+      {
+        "sequence": [
+          {
+            "key": "KeyQ",
+            "modifiers": []
+          }
+        ]
+      },
+      {
+        "sequence": [
+          {
+            "key": "Digit6",
+            "modifiers": []
+          },
+          {
+            "key": "KeyQ",
+            "modifiers": []
+          }
+        ]
+      },
+      {
+        "sequence": [
+          {
+            "key": "BracketRight",
+            "modifiers": []
+          },
+          {
+            "key": "KeyQ",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "u": [
+      {
+        "sequence": [
+          {
+            "key": "KeyD",
+            "modifiers": []
+          }
+        ]
+      },
+      {
+        "sequence": [
+          {
+            "key": "Digit6",
+            "modifiers": []
+          },
+          {
+            "key": "KeyD",
+            "modifiers": []
+          }
+        ]
+      },
+      {
+        "sequence": [
+          {
+            "key": "BracketRight",
+            "modifiers": []
+          },
+          {
+            "key": "KeyD",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "A": [
+      {
+        "sequence": [
+          {
+            "key": "KeyS",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
     "O": [
       {
         "sequence": [
@@ -650,95 +1689,11 @@
         ]
       }
     ],
-    "&": [
-      {
-        "sequence": [
-          {
-            "key": "BracketRight",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "J": [
-      {
-        "sequence": [
-          {
-            "key": "Slash",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "9": [
+    ")": [
       {
         "sequence": [
           {
             "key": "Digit9",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "V": [
-      {
-        "sequence": [
-          {
-            "key": "KeyU",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "5": [
-      {
-        "sequence": [
-          {
-            "key": "Digit5",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "L": [
-      {
-        "sequence": [
-          {
-            "key": "Comma",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "E": [
-      {
-        "sequence": [
-          {
-            "key": "KeyF",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "-": [
-      {
-        "sequence": [
-          {
-            "key": "Digit3",
             "modifiers": []
           }
         ]
@@ -750,7 +1705,7 @@
             "modifiers": []
           },
           {
-            "key": "Digit3",
+            "key": "Digit9",
             "modifiers": []
           }
         ]
@@ -762,41 +1717,17 @@
             "modifiers": []
           },
           {
-            "key": "Digit3",
+            "key": "Digit9",
             "modifiers": []
           }
         ]
       }
     ],
-    "6": [
+    "=": [
       {
         "sequence": [
           {
-            "key": "Digit6",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    ">": [
-      {
-        "sequence": [
-          {
-            "key": "KeyE",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "é": [
-      {
-        "sequence": [
-          {
-            "key": "KeyE",
+            "key": "Digit1",
             "modifiers": []
           }
         ]
@@ -808,7 +1739,7 @@
             "modifiers": []
           },
           {
-            "key": "KeyE",
+            "key": "Digit1",
             "modifiers": []
           }
         ]
@@ -820,8 +1751,66 @@
             "modifiers": []
           },
           {
-            "key": "KeyE",
+            "key": "Digit1",
             "modifiers": []
+          }
+        ]
+      }
+    ],
+    "M": [
+      {
+        "sequence": [
+          {
+            "key": "KeyO",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "/": [
+      {
+        "sequence": [
+          {
+            "key": "Digit2",
+            "modifiers": []
+          }
+        ]
+      },
+      {
+        "sequence": [
+          {
+            "key": "Digit6",
+            "modifiers": []
+          },
+          {
+            "key": "Digit2",
+            "modifiers": []
+          }
+        ]
+      },
+      {
+        "sequence": [
+          {
+            "key": "BracketRight",
+            "modifiers": []
+          },
+          {
+            "key": "Digit2",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "É": [
+      {
+        "sequence": [
+          {
+            "key": "KeyE",
+            "modifiers": [
+              "AltGraph"
+            ]
           }
         ]
       }
@@ -870,23 +1859,11 @@
         ]
       }
     ],
-    "°": [
+    "i": [
       {
         "sequence": [
           {
-            "key": "KeyT",
-            "modifiers": [
-              "AltGraph"
-            ]
-          }
-        ]
-      }
-    ],
-    "~": [
-      {
-        "sequence": [
-          {
-            "key": "Backslash",
+            "key": "KeyV",
             "modifiers": []
           }
         ]
@@ -898,7 +1875,7 @@
             "modifiers": []
           },
           {
-            "key": "Backslash",
+            "key": "KeyV",
             "modifiers": []
           }
         ]
@@ -910,284 +1887,20 @@
             "modifiers": []
           },
           {
-            "key": "Backslash",
+            "key": "KeyV",
             "modifiers": []
           }
         ]
       }
     ],
-    "X": [
+    "1": [
       {
         "sequence": [
           {
-            "key": "KeyN",
+            "key": "Digit1",
             "modifiers": [
               "Shift"
             ]
-          }
-        ]
-      }
-    ],
-    "Q": [
-      {
-        "sequence": [
-          {
-            "key": "KeyX",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "/": [
-      {
-        "sequence": [
-          {
-            "key": "Digit2",
-            "modifiers": []
-          }
-        ]
-      },
-      {
-        "sequence": [
-          {
-            "key": "Digit6",
-            "modifiers": []
-          },
-          {
-            "key": "Digit2",
-            "modifiers": []
-          }
-        ]
-      },
-      {
-        "sequence": [
-          {
-            "key": "BracketRight",
-            "modifiers": []
-          },
-          {
-            "key": "Digit2",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "±": [
-      {
-        "sequence": [
-          {
-            "key": "Digit2",
-            "modifiers": [
-              "AltGraph"
-            ]
-          }
-        ]
-      }
-    ],
-    "(": [
-      {
-        "sequence": [
-          {
-            "key": "Digit7",
-            "modifiers": []
-          }
-        ]
-      },
-      {
-        "sequence": [
-          {
-            "key": "Digit6",
-            "modifiers": []
-          },
-          {
-            "key": "Digit7",
-            "modifiers": []
-          }
-        ]
-      },
-      {
-        "sequence": [
-          {
-            "key": "BracketRight",
-            "modifiers": []
-          },
-          {
-            "key": "Digit7",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "g": [
-      {
-        "sequence": [
-          {
-            "key": "KeyR",
-            "modifiers": []
-          }
-        ]
-      },
-      {
-        "sequence": [
-          {
-            "key": "Digit6",
-            "modifiers": []
-          },
-          {
-            "key": "KeyR",
-            "modifiers": []
-          }
-        ]
-      },
-      {
-        "sequence": [
-          {
-            "key": "BracketRight",
-            "modifiers": []
-          },
-          {
-            "key": "KeyR",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "M": [
-      {
-        "sequence": [
-          {
-            "key": "KeyO",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "ò": [
-      {
-        "sequence": [
-          {
-            "key": "KeyA",
-            "modifiers": [
-              "AltGraph"
-            ]
-          }
-        ]
-      }
-    ],
-    ".": [
-      {
-        "sequence": [
-          {
-            "key": "KeyT",
-            "modifiers": []
-          }
-        ]
-      },
-      {
-        "sequence": [
-          {
-            "key": "Digit6",
-            "modifiers": []
-          },
-          {
-            "key": "KeyT",
-            "modifiers": []
-          }
-        ]
-      },
-      {
-        "sequence": [
-          {
-            "key": "BracketRight",
-            "modifiers": []
-          },
-          {
-            "key": "KeyT",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "\"": [
-      {
-        "sequence": [
-          {
-            "key": "Digit0",
-            "modifiers": []
-          }
-        ]
-      },
-      {
-        "sequence": [
-          {
-            "key": "Digit6",
-            "modifiers": []
-          },
-          {
-            "key": "Digit0",
-            "modifiers": []
-          }
-        ]
-      },
-      {
-        "sequence": [
-          {
-            "key": "BracketRight",
-            "modifiers": []
-          },
-          {
-            "key": "Digit0",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "º": [
-      {
-        "sequence": [
-          {
-            "key": "KeyM",
-            "modifiers": [
-              "AltGraph"
-            ]
-          }
-        ]
-      }
-    ],
-    "h": [
-      {
-        "sequence": [
-          {
-            "key": "KeyY",
-            "modifiers": []
-          }
-        ]
-      },
-      {
-        "sequence": [
-          {
-            "key": "Digit6",
-            "modifiers": []
-          },
-          {
-            "key": "KeyY",
-            "modifiers": []
-          }
-        ]
-      },
-      {
-        "sequence": [
-          {
-            "key": "BracketRight",
-            "modifiers": []
-          },
-          {
-            "key": "KeyY",
-            "modifiers": []
           }
         ]
       }
@@ -1226,11 +1939,23 @@
         ]
       }
     ],
-    "n": [
+    "`": [
       {
         "sequence": [
           {
-            "key": "KeyL",
+            "key": "Digit8",
+            "modifiers": [
+              "AltGraph"
+            ]
+          }
+        ]
+      }
+    ],
+    "r": [
+      {
+        "sequence": [
+          {
+            "key": "KeyM",
             "modifiers": []
           }
         ]
@@ -1242,7 +1967,7 @@
             "modifiers": []
           },
           {
-            "key": "KeyL",
+            "key": "KeyM",
             "modifiers": []
           }
         ]
@@ -1254,101 +1979,31 @@
             "modifiers": []
           },
           {
-            "key": "KeyL",
+            "key": "KeyM",
             "modifiers": []
           }
         ]
       }
     ],
-    "%": [
+    "ò": [
       {
         "sequence": [
           {
-            "key": "Equal",
+            "key": "KeyA",
             "modifiers": [
-              "Shift"
+              "AltGraph"
             ]
           }
         ]
       }
     ],
-    "0": [
-      {
-        "sequence": [
-          {
-            "key": "Digit0",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "«": [
+    "S": [
       {
         "sequence": [
           {
             "key": "KeyJ",
             "modifiers": [
-              "AltGraph"
-            ]
-          }
-        ]
-      }
-    ],
-    "a": [
-      {
-        "sequence": [
-          {
-            "key": "KeyS",
-            "modifiers": []
-          }
-        ]
-      },
-      {
-        "sequence": [
-          {
-            "key": "Digit6",
-            "modifiers": []
-          },
-          {
-            "key": "KeyS",
-            "modifiers": []
-          }
-        ]
-      },
-      {
-        "sequence": [
-          {
-            "key": "BracketRight",
-            "modifiers": []
-          },
-          {
-            "key": "KeyS",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "œ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyZ",
-            "modifiers": [
-              "AltGraph"
-            ]
-          }
-        ]
-      }
-    ],
-    "ì": [
-      {
-        "sequence": [
-          {
-            "key": "KeyV",
-            "modifiers": [
-              "AltGraph"
+              "Shift"
             ]
           }
         ]
@@ -1366,47 +2021,11 @@
         ]
       }
     ],
-    "µ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyO",
-            "modifiers": [
-              "AltGraph"
-            ]
-          }
-        ]
-      }
-    ],
-    "»": [
-      {
-        "sequence": [
-          {
-            "key": "KeyL",
-            "modifiers": [
-              "AltGraph"
-            ]
-          }
-        ]
-      }
-    ],
-    "@": [
+    ",": [
       {
         "sequence": [
           {
             "key": "KeyC",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "]": [
-      {
-        "sequence": [
-          {
-            "key": "Equal",
             "modifiers": []
           }
         ]
@@ -1418,7 +2037,7 @@
             "modifiers": []
           },
           {
-            "key": "Equal",
+            "key": "KeyC",
             "modifiers": []
           }
         ]
@@ -1430,17 +2049,17 @@
             "modifiers": []
           },
           {
-            "key": "Equal",
+            "key": "KeyC",
             "modifiers": []
           }
         ]
       }
     ],
-    "B": [
+    "X": [
       {
         "sequence": [
           {
-            "key": "KeyG",
+            "key": "KeyN",
             "modifiers": [
               "Shift"
             ]
@@ -1448,107 +2067,12 @@
         ]
       }
     ],
-    "#": [
+    "§": [
       {
         "sequence": [
           {
-            "key": "Backslash",
+            "key": "Period",
             "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "1": [
-      {
-        "sequence": [
-          {
-            "key": "Digit1",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    ")": [
-      {
-        "sequence": [
-          {
-            "key": "Digit9",
-            "modifiers": []
-          }
-        ]
-      },
-      {
-        "sequence": [
-          {
-            "key": "Digit6",
-            "modifiers": []
-          },
-          {
-            "key": "Digit9",
-            "modifiers": []
-          }
-        ]
-      },
-      {
-        "sequence": [
-          {
-            "key": "BracketRight",
-            "modifiers": []
-          },
-          {
-            "key": "Digit9",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "Ç": [
-      {
-        "sequence": [
-          {
-            "key": "KeyI",
-            "modifiers": [
-              "Shift",
-              "AltGraph"
-            ]
-          }
-        ]
-      },
-      {
-        "sequence": [
-          {
-            "key": "IntlBackslash",
-            "modifiers": [
-              "Shift",
-              "AltGraph"
-            ]
-          }
-        ]
-      }
-    ],
-    "R": [
-      {
-        "sequence": [
-          {
-            "key": "KeyM",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "È": [
-      {
-        "sequence": [
-          {
-            "key": "KeyF",
-            "modifiers": [
-              "Shift",
               "AltGraph"
             ]
           }
@@ -1567,11 +2091,11 @@
         ]
       }
     ],
-    "w": [
+    "v": [
       {
         "sequence": [
           {
-            "key": "Quote",
+            "key": "KeyU",
             "modifiers": []
           }
         ]
@@ -1583,7 +2107,7 @@
             "modifiers": []
           },
           {
-            "key": "Quote",
+            "key": "KeyU",
             "modifiers": []
           }
         ]
@@ -1595,98 +2119,17 @@
             "modifiers": []
           },
           {
-            "key": "Quote",
+            "key": "KeyU",
             "modifiers": []
           }
         ]
       }
     ],
-    ";": [
+    "%": [
       {
         "sequence": [
           {
-            "key": "KeyZ",
-            "modifiers": []
-          }
-        ]
-      },
-      {
-        "sequence": [
-          {
-            "key": "Digit6",
-            "modifiers": []
-          },
-          {
-            "key": "KeyZ",
-            "modifiers": []
-          }
-        ]
-      },
-      {
-        "sequence": [
-          {
-            "key": "BracketRight",
-            "modifiers": []
-          },
-          {
-            "key": "KeyZ",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "Ì": [
-      {
-        "sequence": [
-          {
-            "key": "KeyV",
-            "modifiers": [
-              "Shift",
-              "AltGraph"
-            ]
-          }
-        ]
-      }
-    ],
-    "b": [
-      {
-        "sequence": [
-          {
-            "key": "KeyG",
-            "modifiers": []
-          }
-        ]
-      },
-      {
-        "sequence": [
-          {
-            "key": "Digit6",
-            "modifiers": []
-          },
-          {
-            "key": "KeyG",
-            "modifiers": []
-          }
-        ]
-      },
-      {
-        "sequence": [
-          {
-            "key": "BracketRight",
-            "modifiers": []
-          },
-          {
-            "key": "KeyG",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "D": [
-      {
-        "sequence": [
-          {
-            "key": "Semicolon",
+            "key": "Equal",
             "modifiers": [
               "Shift"
             ]
@@ -1694,11 +2137,11 @@
         ]
       }
     ],
-    "T": [
+    "Q": [
       {
         "sequence": [
           {
-            "key": "KeyK",
+            "key": "KeyX",
             "modifiers": [
               "Shift"
             ]
@@ -1706,46 +2149,38 @@
         ]
       }
     ],
-    "à": [
+    "W": [
       {
         "sequence": [
           {
-            "key": "KeyS",
+            "key": "Quote",
             "modifiers": [
-              "AltGraph"
+              "Shift"
             ]
           }
         ]
-      },
+      }
+    ],
+    "B": [
       {
         "sequence": [
           {
-            "key": "IntlBackslash",
-            "modifiers": []
+            "key": "KeyG",
+            "modifiers": [
+              "Shift"
+            ]
           }
         ]
-      },
+      }
+    ],
+    "$": [
       {
         "sequence": [
           {
-            "key": "Digit6",
-            "modifiers": []
-          },
-          {
-            "key": "IntlBackslash",
-            "modifiers": []
-          }
-        ]
-      },
-      {
-        "sequence": [
-          {
-            "key": "BracketRight",
-            "modifiers": []
-          },
-          {
-            "key": "IntlBackslash",
-            "modifiers": []
+            "key": "KeyW",
+            "modifiers": [
+              "AltGraph"
+            ]
           }
         ]
       }
@@ -1818,72 +2253,22 @@
         ]
       }
     ],
-    "2": [
+    " ": [
       {
         "sequence": [
           {
-            "key": "Digit2",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "|": [
-      {
-        "sequence": [
-          {
-            "key": "KeyZ",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "¼": [
-      {
-        "sequence": [
-          {
-            "key": "Digit3",
-            "modifiers": [
-              "AltGraph"
-            ]
-          }
-        ]
-      }
-    ],
-    "4": [
-      {
-        "sequence": [
-          {
-            "key": "Digit4",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "P": [
-      {
-        "sequence": [
-          {
-            "key": "Period",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "t": [
-      {
-        "sequence": [
-          {
-            "key": "KeyK",
+            "key": "Space",
             "modifiers": []
+          }
+        ]
+      },
+      {
+        "sequence": [
+          {
+            "key": "Space",
+            "modifiers": [
+              "Shift"
+            ]
           }
         ]
       },
@@ -1894,7 +2279,7 @@
             "modifiers": []
           },
           {
-            "key": "KeyK",
+            "key": "Space",
             "modifiers": []
           }
         ]
@@ -1906,17 +2291,17 @@
             "modifiers": []
           },
           {
-            "key": "KeyK",
+            "key": "Space",
             "modifiers": []
           }
         ]
       }
     ],
-    "G": [
+    "7": [
       {
         "sequence": [
           {
-            "key": "KeyR",
+            "key": "Digit7",
             "modifiers": [
               "Shift"
             ]
@@ -1924,129 +2309,13 @@
         ]
       }
     ],
-    "_": [
-      {
-        "sequence": [
-          {
-            "key": "Backquote",
-            "modifiers": []
-          }
-        ]
-      },
-      {
-        "sequence": [
-          {
-            "key": "Digit6",
-            "modifiers": []
-          },
-          {
-            "key": "Backquote",
-            "modifiers": []
-          }
-        ]
-      },
-      {
-        "sequence": [
-          {
-            "key": "BracketRight",
-            "modifiers": []
-          },
-          {
-            "key": "Backquote",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "m": [
-      {
-        "sequence": [
-          {
-            "key": "KeyO",
-            "modifiers": []
-          }
-        ]
-      },
-      {
-        "sequence": [
-          {
-            "key": "Digit6",
-            "modifiers": []
-          },
-          {
-            "key": "KeyO",
-            "modifiers": []
-          }
-        ]
-      },
-      {
-        "sequence": [
-          {
-            "key": "BracketRight",
-            "modifiers": []
-          },
-          {
-            "key": "KeyO",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "Æ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyQ",
-            "modifiers": [
-              "Shift",
-              "AltGraph"
-            ]
-          }
-        ]
-      }
-    ],
-    "3": [
-      {
-        "sequence": [
-          {
-            "key": "Digit3",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "ù": [
-      {
-        "sequence": [
-          {
-            "key": "KeyD",
-            "modifiers": [
-              "AltGraph"
-            ]
-          }
-        ]
-      }
-    ],
-    "£": [
-      {
-        "sequence": [
-          {
-            "key": "KeyB",
-            "modifiers": [
-              "AltGraph"
-            ]
-          }
-        ]
-      }
-    ],
-    "ç": [
+    "Ç": [
       {
         "sequence": [
           {
             "key": "KeyI",
             "modifiers": [
+              "Shift",
               "AltGraph"
             ]
           }
@@ -2057,168 +2326,6 @@
           {
             "key": "IntlBackslash",
             "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "$": [
-      {
-        "sequence": [
-          {
-            "key": "KeyW",
-            "modifiers": [
-              "AltGraph"
-            ]
-          }
-        ]
-      }
-    ],
-    "r": [
-      {
-        "sequence": [
-          {
-            "key": "KeyM",
-            "modifiers": []
-          }
-        ]
-      },
-      {
-        "sequence": [
-          {
-            "key": "Digit6",
-            "modifiers": []
-          },
-          {
-            "key": "KeyM",
-            "modifiers": []
-          }
-        ]
-      },
-      {
-        "sequence": [
-          {
-            "key": "BracketRight",
-            "modifiers": []
-          },
-          {
-            "key": "KeyM",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "K": [
-      {
-        "sequence": [
-          {
-            "key": "KeyP",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "k": [
-      {
-        "sequence": [
-          {
-            "key": "KeyP",
-            "modifiers": []
-          }
-        ]
-      },
-      {
-        "sequence": [
-          {
-            "key": "Digit6",
-            "modifiers": []
-          },
-          {
-            "key": "KeyP",
-            "modifiers": []
-          }
-        ]
-      },
-      {
-        "sequence": [
-          {
-            "key": "BracketRight",
-            "modifiers": []
-          },
-          {
-            "key": "KeyP",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    ":": [
-      {
-        "sequence": [
-          {
-            "key": "KeyQ",
-            "modifiers": []
-          }
-        ]
-      },
-      {
-        "sequence": [
-          {
-            "key": "Digit6",
-            "modifiers": []
-          },
-          {
-            "key": "KeyQ",
-            "modifiers": []
-          }
-        ]
-      },
-      {
-        "sequence": [
-          {
-            "key": "BracketRight",
-            "modifiers": []
-          },
-          {
-            "key": "KeyQ",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "U": [
-      {
-        "sequence": [
-          {
-            "key": "KeyD",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "*": [
-      {
-        "sequence": [
-          {
-            "key": "Backquote",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "Ò": [
-      {
-        "sequence": [
-          {
-            "key": "KeyA",
-            "modifiers": [
               "Shift",
               "AltGraph"
             ]
@@ -2226,23 +2333,11 @@
         ]
       }
     ],
-    "H": [
+    "n": [
       {
         "sequence": [
           {
-            "key": "KeyY",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "u": [
-      {
-        "sequence": [
-          {
-            "key": "KeyD",
+            "key": "KeyL",
             "modifiers": []
           }
         ]
@@ -2254,7 +2349,7 @@
             "modifiers": []
           },
           {
-            "key": "KeyD",
+            "key": "KeyL",
             "modifiers": []
           }
         ]
@@ -2266,65 +2361,29 @@
             "modifiers": []
           },
           {
-            "key": "KeyD",
+            "key": "KeyL",
             "modifiers": []
           }
         ]
       }
     ],
-    "{": [
+    "D": [
       {
         "sequence": [
           {
-            "key": "KeyX",
+            "key": "Semicolon",
             "modifiers": [
-              "AltGraph"
+              "Shift"
             ]
           }
         ]
       }
     ],
-    "É": [
+    "a": [
       {
         "sequence": [
           {
-            "key": "KeyE",
-            "modifiers": [
-              "AltGraph"
-            ]
-          }
-        ]
-      }
-    ],
-    "€": [
-      {
-        "sequence": [
-          {
-            "key": "KeyR",
-            "modifiers": [
-              "AltGraph"
-            ]
-          }
-        ]
-      }
-    ],
-    "æ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyQ",
-            "modifiers": [
-              "AltGraph"
-            ]
-          }
-        ]
-      }
-    ],
-    "f": [
-      {
-        "sequence": [
-          {
-            "key": "KeyH",
+            "key": "KeyS",
             "modifiers": []
           }
         ]
@@ -2336,7 +2395,7 @@
             "modifiers": []
           },
           {
-            "key": "KeyH",
+            "key": "KeyS",
             "modifiers": []
           }
         ]
@@ -2348,32 +2407,42 @@
             "modifiers": []
           },
           {
-            "key": "KeyH",
+            "key": "KeyS",
             "modifiers": []
           }
         ]
       }
     ],
-    "}": [
+    "w": [
       {
         "sequence": [
           {
-            "key": "KeyC",
-            "modifiers": [
-              "AltGraph"
-            ]
+            "key": "Quote",
+            "modifiers": []
           }
         ]
-      }
-    ],
-    "<": [
+      },
       {
         "sequence": [
           {
-            "key": "KeyW",
-            "modifiers": [
-              "Shift"
-            ]
+            "key": "Digit6",
+            "modifiers": []
+          },
+          {
+            "key": "Quote",
+            "modifiers": []
+          }
+        ]
+      },
+      {
+        "sequence": [
+          {
+            "key": "BracketRight",
+            "modifiers": []
+          },
+          {
+            "key": "Quote",
+            "modifiers": []
           }
         ]
       }
@@ -2390,68 +2459,11 @@
         ]
       }
     ],
-    " ": [
-      {
-        "sequence": [
-          {
-            "key": "Space",
-            "modifiers": [
-              "AltGraph"
-            ]
-          }
-        ]
-      },
-      {
-        "sequence": [
-          {
-            "key": "Space",
-            "modifiers": [
-              "Shift",
-              "AltGraph"
-            ]
-          }
-        ]
-      }
-    ],
-    "i": [
-      {
-        "sequence": [
-          {
-            "key": "KeyV",
-            "modifiers": []
-          }
-        ]
-      },
-      {
-        "sequence": [
-          {
-            "key": "Digit6",
-            "modifiers": []
-          },
-          {
-            "key": "KeyV",
-            "modifiers": []
-          }
-        ]
-      },
+    "&": [
       {
         "sequence": [
           {
             "key": "BracketRight",
-            "modifiers": []
-          },
-          {
-            "key": "KeyV",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "?": [
-      {
-        "sequence": [
-          {
-            "key": "KeyQ",
             "modifiers": [
               "Shift"
             ]
@@ -2459,125 +2471,11 @@
         ]
       }
     ],
-    "p": [
+    "G": [
       {
         "sequence": [
           {
-            "key": "Period",
-            "modifiers": []
-          }
-        ]
-      },
-      {
-        "sequence": [
-          {
-            "key": "Digit6",
-            "modifiers": []
-          },
-          {
-            "key": "Period",
-            "modifiers": []
-          }
-        ]
-      },
-      {
-        "sequence": [
-          {
-            "key": "BracketRight",
-            "modifiers": []
-          },
-          {
-            "key": "Period",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "§": [
-      {
-        "sequence": [
-          {
-            "key": "Period",
-            "modifiers": [
-              "AltGraph"
-            ]
-          }
-        ]
-      }
-    ],
-    "\\": [
-      {
-        "sequence": [
-          {
-            "key": "Digit5",
-            "modifiers": []
-          }
-        ]
-      },
-      {
-        "sequence": [
-          {
-            "key": "Digit6",
-            "modifiers": []
-          },
-          {
-            "key": "Digit5",
-            "modifiers": []
-          }
-        ]
-      },
-      {
-        "sequence": [
-          {
-            "key": "BracketRight",
-            "modifiers": []
-          },
-          {
-            "key": "Digit5",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    ",": [
-      {
-        "sequence": [
-          {
-            "key": "KeyC",
-            "modifiers": []
-          }
-        ]
-      },
-      {
-        "sequence": [
-          {
-            "key": "Digit6",
-            "modifiers": []
-          },
-          {
-            "key": "KeyC",
-            "modifiers": []
-          }
-        ]
-      },
-      {
-        "sequence": [
-          {
-            "key": "BracketRight",
-            "modifiers": []
-          },
-          {
-            "key": "KeyC",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "A": [
-      {
-        "sequence": [
-          {
-            "key": "KeyS",
+            "key": "KeyR",
             "modifiers": [
               "Shift"
             ]
@@ -2585,15 +2483,118 @@
         ]
       }
     ],
-    "Ù": [
+    "ì": [
       {
         "sequence": [
           {
-            "key": "KeyD",
+            "key": "KeyV",
             "modifiers": [
-              "Shift",
               "AltGraph"
             ]
+          }
+        ]
+      }
+    ],
+    "q": [
+      {
+        "sequence": [
+          {
+            "key": "KeyX",
+            "modifiers": []
+          }
+        ]
+      },
+      {
+        "sequence": [
+          {
+            "key": "Digit6",
+            "modifiers": []
+          },
+          {
+            "key": "KeyX",
+            "modifiers": []
+          }
+        ]
+      },
+      {
+        "sequence": [
+          {
+            "key": "BracketRight",
+            "modifiers": []
+          },
+          {
+            "key": "KeyX",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "R": [
+      {
+        "sequence": [
+          {
+            "key": "KeyM",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "9": [
+      {
+        "sequence": [
+          {
+            "key": "Digit9",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "L": [
+      {
+        "sequence": [
+          {
+            "key": "Comma",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "~": [
+      {
+        "sequence": [
+          {
+            "key": "Backslash",
+            "modifiers": []
+          }
+        ]
+      },
+      {
+        "sequence": [
+          {
+            "key": "Digit6",
+            "modifiers": []
+          },
+          {
+            "key": "Backslash",
+            "modifiers": []
+          }
+        ]
+      },
+      {
+        "sequence": [
+          {
+            "key": "BracketRight",
+            "modifiers": []
+          },
+          {
+            "key": "Backslash",
+            "modifiers": []
           }
         ]
       }

@@ -2,41 +2,10 @@
   "metadata": {
     "platform": "macos",
     "layout_name": "RussianWin",
-    "extracted_on": "2026-07-07T00:41:29Z"
+    "display_name": "Russian – PC",
+    "extracted_on": "2026-07-07T01:15:16Z"
   },
   "mappings": {
-    "з": [
-      {
-        "sequence": [
-          {
-            "key": "KeyP",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "Ь": [
-      {
-        "sequence": [
-          {
-            "key": "KeyM",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "л": [
-      {
-        "sequence": [
-          {
-            "key": "KeyK",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
     "}": [
       {
         "sequence": [
@@ -50,37 +19,21 @@
         ]
       }
     ],
-    "Ў": [
+    "щ": [
       {
         "sequence": [
           {
-            "key": "KeyE",
-            "modifiers": [
-              "Shift",
-              "Alt"
-            ]
+            "key": "KeyO",
+            "modifiers": []
           }
         ]
       }
     ],
-    "X": [
+    "%": [
       {
         "sequence": [
           {
-            "key": "KeyX",
-            "modifiers": [
-              "Shift",
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "Р": [
-      {
-        "sequence": [
-          {
-            "key": "KeyH",
+            "key": "Digit5",
             "modifiers": [
               "Shift"
             ]
@@ -88,46 +41,74 @@
         ]
       }
     ],
-    "ё": [
+    "¬": [
       {
         "sequence": [
           {
-            "key": "Backquote",
-            "modifiers": []
+            "key": "Digit6",
+            "modifiers": [
+              "Shift",
+              "Alt"
+            ]
           }
         ]
-      },
+      }
+    ],
+    "M": [
       {
         "sequence": [
           {
-            "key": "IntlBackslash",
-            "modifiers": []
+            "key": "KeyM",
+            "modifiers": [
+              "Shift",
+              "Alt"
+            ]
           }
         ]
-      },
+      }
+    ],
+    "ж": [
       {
         "sequence": [
           {
-            "key": "IntlRo",
-            "modifiers": []
-          }
-        ]
-      },
-      {
-        "sequence": [
-          {
-            "key": "IntlYen",
+            "key": "Semicolon",
             "modifiers": []
           }
         ]
       }
     ],
-    "с": [
+    "v": [
       {
         "sequence": [
           {
-            "key": "KeyC",
-            "modifiers": []
+            "key": "KeyV",
+            "modifiers": [
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "©": [
+      {
+        "sequence": [
+          {
+            "key": "Digit5",
+            "modifiers": [
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "@": [
+      {
+        "sequence": [
+          {
+            "key": "Digit2",
+            "modifiers": [
+              "Alt"
+            ]
           }
         ]
       }
@@ -142,65 +123,11 @@
         ]
       }
     ],
-    "ъ": [
+    "+": [
       {
         "sequence": [
           {
-            "key": "BracketRight",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "м": [
-      {
-        "sequence": [
-          {
-            "key": "KeyV",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "ш": [
-      {
-        "sequence": [
-          {
-            "key": "KeyI",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "ј": [
-      {
-        "sequence": [
-          {
-            "key": "KeyQ",
-            "modifiers": [
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "#": [
-      {
-        "sequence": [
-          {
-            "key": "Digit3",
-            "modifiers": [
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "_": [
-      {
-        "sequence": [
-          {
-            "key": "Minus",
+            "key": "Equal",
             "modifiers": [
               "Shift"
             ]
@@ -208,185 +135,24 @@
         ]
       }
     ],
-    "М": [
+    "8": [
       {
         "sequence": [
           {
-            "key": "KeyV",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "-": [
-      {
-        "sequence": [
-          {
-            "key": "Minus",
+            "key": "Digit8",
             "modifiers": []
           }
         ]
       }
     ],
-    "—": [
-      {
-        "sequence": [
-          {
-            "key": "Minus",
-            "modifiers": [
-              "Shift",
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "Ќ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyR",
-            "modifiers": [
-              "Shift",
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "р": [
-      {
-        "sequence": [
-          {
-            "key": "KeyH",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "Љ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyK",
-            "modifiers": [
-              "Shift",
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    " ": [
-      {
-        "sequence": [
-          {
-            "key": "Space",
-            "modifiers": []
-          }
-        ]
-      },
-      {
-        "sequence": [
-          {
-            "key": "Space",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "т": [
-      {
-        "sequence": [
-          {
-            "key": "KeyN",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "Њ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyY",
-            "modifiers": [
-              "Shift",
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "О": [
+    "∆": [
       {
         "sequence": [
           {
             "key": "KeyJ",
             "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "ц": [
-      {
-        "sequence": [
-          {
-            "key": "KeyW",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "™": [
-      {
-        "sequence": [
-          {
-            "key": "Digit1",
-            "modifiers": [
-              "Shift",
               "Alt"
             ]
-          }
-        ]
-      }
-    ],
-    "Щ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyO",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "&": [
-      {
-        "sequence": [
-          {
-            "key": "Digit7",
-            "modifiers": [
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "7": [
-      {
-        "sequence": [
-          {
-            "key": "Digit7",
-            "modifiers": []
           }
         ]
       }
@@ -413,33 +179,11 @@
         ]
       }
     ],
-    "2": [
+    "≈": [
       {
         "sequence": [
           {
-            "key": "Digit2",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "У": [
-      {
-        "sequence": [
-          {
-            "key": "KeyE",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "¶": [
-      {
-        "sequence": [
-          {
-            "key": "Digit7",
+            "key": "Equal",
             "modifiers": [
               "Shift",
               "Alt"
@@ -448,72 +192,12 @@
         ]
       }
     ],
-    "щ": [
+    "а": [
       {
         "sequence": [
           {
-            "key": "KeyO",
+            "key": "KeyF",
             "modifiers": []
-          }
-        ]
-      }
-    ],
-    "©": [
-      {
-        "sequence": [
-          {
-            "key": "Digit5",
-            "modifiers": [
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    ":": [
-      {
-        "sequence": [
-          {
-            "key": "Digit6",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "?": [
-      {
-        "sequence": [
-          {
-            "key": "Digit7",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "*": [
-      {
-        "sequence": [
-          {
-            "key": "Digit8",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "Е": [
-      {
-        "sequence": [
-          {
-            "key": "KeyT",
-            "modifiers": [
-              "Shift"
-            ]
           }
         ]
       }
@@ -540,21 +224,200 @@
         ]
       }
     ],
-    "х": [
+    "ч": [
       {
         "sequence": [
           {
-            "key": "BracketLeft",
+            "key": "KeyX",
             "modifiers": []
           }
         ]
       }
     ],
-    "d": [
+    "Р": [
       {
         "sequence": [
           {
-            "key": "KeyA",
+            "key": "KeyH",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "Ќ": [
+      {
+        "sequence": [
+          {
+            "key": "KeyR",
+            "modifiers": [
+              "Shift",
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "М": [
+      {
+        "sequence": [
+          {
+            "key": "KeyV",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    ">": [
+      {
+        "sequence": [
+          {
+            "key": "Period",
+            "modifiers": [
+              "Shift",
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "-": [
+      {
+        "sequence": [
+          {
+            "key": "Minus",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "ю": [
+      {
+        "sequence": [
+          {
+            "key": "Period",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "'": [
+      {
+        "sequence": [
+          {
+            "key": "KeyO",
+            "modifiers": [
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "/": [
+      {
+        "sequence": [
+          {
+            "key": "Backslash",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "Z": [
+      {
+        "sequence": [
+          {
+            "key": "KeyS",
+            "modifiers": [
+              "Shift",
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "ђ": [
+      {
+        "sequence": [
+          {
+            "key": "KeyZ",
+            "modifiers": [
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "]": [
+      {
+        "sequence": [
+          {
+            "key": "Backquote",
+            "modifiers": [
+              "Shift",
+              "Alt"
+            ]
+          }
+        ]
+      },
+      {
+        "sequence": [
+          {
+            "key": "IntlRo",
+            "modifiers": [
+              "Shift",
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "x": [
+      {
+        "sequence": [
+          {
+            "key": "KeyX",
+            "modifiers": [
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "Г": [
+      {
+        "sequence": [
+          {
+            "key": "KeyU",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "Ы": [
+      {
+        "sequence": [
+          {
+            "key": "KeyS",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "[": [
+      {
+        "sequence": [
+          {
+            "key": "Backquote",
             "modifiers": [
               "Alt"
             ]
@@ -564,7 +427,65 @@
       {
         "sequence": [
           {
-            "key": "KeyA",
+            "key": "IntlRo",
+            "modifiers": [
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "ѓ": [
+      {
+        "sequence": [
+          {
+            "key": "KeyU",
+            "modifiers": [
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "?": [
+      {
+        "sequence": [
+          {
+            "key": "Digit7",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "у": [
+      {
+        "sequence": [
+          {
+            "key": "KeyE",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    ";": [
+      {
+        "sequence": [
+          {
+            "key": "Digit4",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "Ї": [
+      {
+        "sequence": [
+          {
+            "key": "Slash",
             "modifiers": [
               "Shift",
               "Alt"
@@ -573,11 +494,326 @@
         ]
       }
     ],
-    "V": [
+    "†": [
       {
         "sequence": [
           {
-            "key": "KeyV",
+            "key": "KeyT",
+            "modifiers": [
+              "Alt"
+            ]
+          }
+        ]
+      },
+      {
+        "sequence": [
+          {
+            "key": "KeyT",
+            "modifiers": [
+              "Shift",
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "≠": [
+      {
+        "sequence": [
+          {
+            "key": "Equal",
+            "modifiers": [
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "(": [
+      {
+        "sequence": [
+          {
+            "key": "Digit9",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      },
+      {
+        "sequence": [
+          {
+            "key": "Digit9",
+            "modifiers": [
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "ц": [
+      {
+        "sequence": [
+          {
+            "key": "KeyW",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "”": [
+      {
+        "sequence": [
+          {
+            "key": "BracketLeft",
+            "modifiers": [
+              "Shift",
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "Ц": [
+      {
+        "sequence": [
+          {
+            "key": "KeyW",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "Ѕ": [
+      {
+        "sequence": [
+          {
+            "key": "KeyI",
+            "modifiers": [
+              "Shift",
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "’": [
+      {
+        "sequence": [
+          {
+            "key": "KeyP",
+            "modifiers": [
+              "Shift",
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "Ђ": [
+      {
+        "sequence": [
+          {
+            "key": "KeyZ",
+            "modifiers": [
+              "Shift",
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "»": [
+      {
+        "sequence": [
+          {
+            "key": "BracketRight",
+            "modifiers": [
+              "Shift",
+              "Alt"
+            ]
+          }
+        ]
+      },
+      {
+        "sequence": [
+          {
+            "key": "Semicolon",
+            "modifiers": [
+              "Shift",
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "Ф": [
+      {
+        "sequence": [
+          {
+            "key": "KeyA",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "О": [
+      {
+        "sequence": [
+          {
+            "key": "KeyJ",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "И": [
+      {
+        "sequence": [
+          {
+            "key": "KeyB",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "9": [
+      {
+        "sequence": [
+          {
+            "key": "Digit9",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "•": [
+      {
+        "sequence": [
+          {
+            "key": "KeyH",
+            "modifiers": [
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "<": [
+      {
+        "sequence": [
+          {
+            "key": "Comma",
+            "modifiers": [
+              "Shift",
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "7": [
+      {
+        "sequence": [
+          {
+            "key": "Digit7",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "е": [
+      {
+        "sequence": [
+          {
+            "key": "KeyT",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "≥": [
+      {
+        "sequence": [
+          {
+            "key": "Period",
+            "modifiers": [
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "Ё": [
+      {
+        "sequence": [
+          {
+            "key": "IntlBackslash",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      },
+      {
+        "sequence": [
+          {
+            "key": "IntlYen",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "л": [
+      {
+        "sequence": [
+          {
+            "key": "KeyK",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "₽": [
+      {
+        "sequence": [
+          {
+            "key": "Digit8",
+            "modifiers": [
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "¶": [
+      {
+        "sequence": [
+          {
+            "key": "Digit7",
+            "modifiers": [
+              "Shift",
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "Є": [
+      {
+        "sequence": [
+          {
+            "key": "Quote",
             "modifiers": [
               "Shift",
               "Alt"
@@ -598,35 +834,127 @@
         ]
       }
     ],
-    "%": [
+    "Ч": [
+      {
+        "sequence": [
+          {
+            "key": "KeyX",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "‘": [
+      {
+        "sequence": [
+          {
+            "key": "KeyP",
+            "modifiers": [
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "і": [
+      {
+        "sequence": [
+          {
+            "key": "KeyB",
+            "modifiers": [
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "Й": [
+      {
+        "sequence": [
+          {
+            "key": "KeyQ",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "ь": [
+      {
+        "sequence": [
+          {
+            "key": "KeyM",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "√": [
+      {
+        "sequence": [
+          {
+            "key": "KeyG",
+            "modifiers": [
+              "Shift",
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "ј": [
+      {
+        "sequence": [
+          {
+            "key": "KeyQ",
+            "modifiers": [
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "®": [
       {
         "sequence": [
           {
             "key": "Digit5",
             "modifiers": [
-              "Shift"
+              "Shift",
+              "Alt"
             ]
           }
         ]
       }
     ],
-    "Ц": [
+    "р": [
       {
         "sequence": [
           {
-            "key": "KeyW",
-            "modifiers": [
-              "Shift"
-            ]
+            "key": "KeyH",
+            "modifiers": []
           }
         ]
       }
     ],
-    "ќ": [
+    "п": [
       {
         "sequence": [
           {
-            "key": "KeyR",
+            "key": "KeyG",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "є": [
+      {
+        "sequence": [
+          {
+            "key": "Quote",
             "modifiers": [
               "Alt"
             ]
@@ -634,11 +962,11 @@
         ]
       }
     ],
-    "^": [
+    "l": [
       {
         "sequence": [
           {
-            "key": "Digit6",
+            "key": "KeyL",
             "modifiers": [
               "Alt"
             ]
@@ -646,23 +974,11 @@
         ]
       }
     ],
-    "ў": [
+    "Е": [
       {
         "sequence": [
           {
-            "key": "KeyE",
-            "modifiers": [
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "Н": [
-      {
-        "sequence": [
-          {
-            "key": "KeyY",
+            "key": "KeyT",
             "modifiers": [
               "Shift"
             ]
@@ -702,11 +1018,149 @@
         ]
       }
     ],
-    "Є": [
+    "љ": [
       {
         "sequence": [
           {
-            "key": "Quote",
+            "key": "KeyK",
+            "modifiers": [
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "г": [
+      {
+        "sequence": [
+          {
+            "key": "KeyU",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "ћ": [
+      {
+        "sequence": [
+          {
+            "key": "KeyD",
+            "modifiers": [
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "В": [
+      {
+        "sequence": [
+          {
+            "key": "KeyD",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "ы": [
+      {
+        "sequence": [
+          {
+            "key": "KeyS",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "ё": [
+      {
+        "sequence": [
+          {
+            "key": "Backquote",
+            "modifiers": []
+          }
+        ]
+      },
+      {
+        "sequence": [
+          {
+            "key": "IntlBackslash",
+            "modifiers": []
+          }
+        ]
+      },
+      {
+        "sequence": [
+          {
+            "key": "IntlRo",
+            "modifiers": []
+          }
+        ]
+      },
+      {
+        "sequence": [
+          {
+            "key": "IntlYen",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "^": [
+      {
+        "sequence": [
+          {
+            "key": "Digit6",
+            "modifiers": [
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "÷": [
+      {
+        "sequence": [
+          {
+            "key": "KeyF",
+            "modifiers": [
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "Л": [
+      {
+        "sequence": [
+          {
+            "key": "KeyK",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "ќ": [
+      {
+        "sequence": [
+          {
+            "key": "KeyR",
+            "modifiers": [
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "—": [
+      {
+        "sequence": [
+          {
+            "key": "Minus",
             "modifiers": [
               "Shift",
               "Alt"
@@ -715,47 +1169,25 @@
         ]
       }
     ],
-    "5": [
+    "А": [
       {
         "sequence": [
           {
-            "key": "Digit5",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "ђ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyZ",
+            "key": "KeyF",
             "modifiers": [
-              "Alt"
+              "Shift"
             ]
           }
         ]
       }
     ],
-    "x": [
+    "!": [
       {
         "sequence": [
           {
-            "key": "KeyX",
+            "key": "Digit1",
             "modifiers": [
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    " ": [
-      {
-        "sequence": [
-          {
-            "key": "Space",
-            "modifiers": [
-              "Alt"
+              "Shift"
             ]
           }
         ]
@@ -763,11 +1195,170 @@
       {
         "sequence": [
           {
-            "key": "Space",
+            "key": "Digit1",
+            "modifiers": [
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "Ж": [
+      {
+        "sequence": [
+          {
+            "key": "Semicolon",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "о": [
+      {
+        "sequence": [
+          {
+            "key": "KeyJ",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "Щ": [
+      {
+        "sequence": [
+          {
+            "key": "KeyO",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "џ": [
+      {
+        "sequence": [
+          {
+            "key": "KeyW",
+            "modifiers": [
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "т": [
+      {
+        "sequence": [
+          {
+            "key": "KeyN",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "Ь": [
+      {
+        "sequence": [
+          {
+            "key": "KeyM",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "б": [
+      {
+        "sequence": [
+          {
+            "key": "Comma",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "Ў": [
+      {
+        "sequence": [
+          {
+            "key": "KeyE",
             "modifiers": [
               "Shift",
               "Alt"
             ]
+          }
+        ]
+      }
+    ],
+    "µ": [
+      {
+        "sequence": [
+          {
+            "key": "KeyJ",
+            "modifiers": [
+              "Shift",
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "Х": [
+      {
+        "sequence": [
+          {
+            "key": "BracketLeft",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "3": [
+      {
+        "sequence": [
+          {
+            "key": "Digit3",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    ":": [
+      {
+        "sequence": [
+          {
+            "key": "Digit6",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "m": [
+      {
+        "sequence": [
+          {
+            "key": "KeyM",
+            "modifiers": [
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "к": [
+      {
+        "sequence": [
+          {
+            "key": "KeyR",
+            "modifiers": []
           }
         ]
       }
@@ -805,158 +1396,60 @@
         ]
       }
     ],
-    "≈": [
+    "4": [
       {
         "sequence": [
           {
-            "key": "Equal",
-            "modifiers": [
-              "Shift",
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "д": [
-      {
-        "sequence": [
-          {
-            "key": "KeyL",
+            "key": "Digit4",
             "modifiers": []
           }
         ]
       }
     ],
-    "В": [
+    "Ѓ": [
       {
         "sequence": [
           {
-            "key": "KeyD",
+            "key": "KeyU",
             "modifiers": [
-              "Shift"
+              "Shift",
+              "Alt"
             ]
           }
         ]
       }
     ],
-    "Ч": [
+    "L": [
       {
         "sequence": [
           {
-            "key": "KeyX",
+            "key": "KeyL",
             "modifiers": [
-              "Shift"
+              "Shift",
+              "Alt"
             ]
           }
         ]
       }
     ],
-    "Й": [
-      {
-        "sequence": [
-          {
-            "key": "KeyQ",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "C": [
+    "c": [
       {
         "sequence": [
           {
             "key": "KeyC",
             "modifiers": [
-              "Shift",
               "Alt"
             ]
           }
         ]
       }
     ],
-    "≤": [
+    "d": [
       {
         "sequence": [
           {
-            "key": "Comma",
+            "key": "KeyA",
             "modifiers": [
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "ї": [
-      {
-        "sequence": [
-          {
-            "key": "Slash",
-            "modifiers": [
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "“": [
-      {
-        "sequence": [
-          {
-            "key": "BracketLeft",
-            "modifiers": [
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "П": [
-      {
-        "sequence": [
-          {
-            "key": "KeyG",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "є": [
-      {
-        "sequence": [
-          {
-            "key": "Quote",
-            "modifiers": [
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "M": [
-      {
-        "sequence": [
-          {
-            "key": "KeyM",
-            "modifiers": [
-              "Shift",
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "]": [
-      {
-        "sequence": [
-          {
-            "key": "Backquote",
-            "modifiers": [
-              "Shift",
               "Alt"
             ]
           }
@@ -965,22 +1458,10 @@
       {
         "sequence": [
           {
-            "key": "IntlRo",
+            "key": "KeyA",
             "modifiers": [
               "Shift",
               "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "Т": [
-      {
-        "sequence": [
-          {
-            "key": "KeyN",
-            "modifiers": [
-              "Shift"
             ]
           }
         ]
@@ -998,57 +1479,11 @@
         ]
       }
     ],
-    "Ё": [
-      {
-        "sequence": [
-          {
-            "key": "IntlBackslash",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      },
-      {
-        "sequence": [
-          {
-            "key": "IntlYen",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "•": [
+    "∞": [
       {
         "sequence": [
           {
             "key": "KeyH",
-            "modifiers": [
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "÷": [
-      {
-        "sequence": [
-          {
-            "key": "KeyF",
-            "modifiers": [
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "”": [
-      {
-        "sequence": [
-          {
-            "key": "BracketLeft",
             "modifiers": [
               "Shift",
               "Alt"
@@ -1057,21 +1492,67 @@
         ]
       }
     ],
-    "я": [
+    "Ш": [
       {
         "sequence": [
           {
-            "key": "KeyZ",
+            "key": "KeyI",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "д": [
+      {
+        "sequence": [
+          {
+            "key": "KeyL",
             "modifiers": []
           }
         ]
       }
     ],
-    "Х": [
+    "э": [
       {
         "sequence": [
           {
-            "key": "BracketLeft",
+            "key": "Quote",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "≤": [
+      {
+        "sequence": [
+          {
+            "key": "Comma",
+            "modifiers": [
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "#": [
+      {
+        "sequence": [
+          {
+            "key": "Digit3",
+            "modifiers": [
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "К": [
+      {
+        "sequence": [
+          {
+            "key": "KeyR",
             "modifiers": [
               "Shift"
             ]
@@ -1091,21 +1572,11 @@
         ]
       }
     ],
-    "б": [
+    "“": [
       {
         "sequence": [
           {
-            "key": "Comma",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "ѓ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyU",
+            "key": "BracketLeft",
             "modifiers": [
               "Alt"
             ]
@@ -1113,11 +1584,21 @@
         ]
       }
     ],
-    "Д": [
+    "5": [
       {
         "sequence": [
           {
-            "key": "KeyL",
+            "key": "Digit5",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "*": [
+      {
+        "sequence": [
+          {
+            "key": "Digit8",
             "modifiers": [
               "Shift"
             ]
@@ -1125,21 +1606,23 @@
         ]
       }
     ],
-    "[": [
+    "Э": [
       {
         "sequence": [
           {
-            "key": "Backquote",
+            "key": "Quote",
             "modifiers": [
-              "Alt"
+              "Shift"
             ]
           }
         ]
-      },
+      }
+    ],
+    "њ": [
       {
         "sequence": [
           {
-            "key": "IntlRo",
+            "key": "KeyY",
             "modifiers": [
               "Alt"
             ]
@@ -1147,32 +1630,11 @@
         ]
       }
     ],
-    "8": [
+    "Ћ": [
       {
         "sequence": [
           {
-            "key": "Digit8",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "»": [
-      {
-        "sequence": [
-          {
-            "key": "BracketRight",
-            "modifiers": [
-              "Shift",
-              "Alt"
-            ]
-          }
-        ]
-      },
-      {
-        "sequence": [
-          {
-            "key": "Semicolon",
+            "key": "KeyD",
             "modifiers": [
               "Shift",
               "Alt"
@@ -1181,14 +1643,13 @@
         ]
       }
     ],
-    "¬": [
+    "З": [
       {
         "sequence": [
           {
-            "key": "Digit6",
+            "key": "KeyP",
             "modifiers": [
-              "Shift",
-              "Alt"
+              "Shift"
             ]
           }
         ]
@@ -1204,11 +1665,11 @@
         ]
       }
     ],
-    "\"": [
+    "У": [
       {
         "sequence": [
           {
-            "key": "Digit2",
+            "key": "KeyE",
             "modifiers": [
               "Shift"
             ]
@@ -1216,23 +1677,21 @@
         ]
       }
     ],
-    "+": [
+    "и": [
       {
         "sequence": [
           {
-            "key": "Equal",
-            "modifiers": [
-              "Shift"
-            ]
+            "key": "KeyB",
+            "modifiers": []
           }
         ]
       }
     ],
-    "°": [
+    "Џ": [
       {
         "sequence": [
           {
-            "key": "Digit8",
+            "key": "KeyW",
             "modifiers": [
               "Shift",
               "Alt"
@@ -1241,34 +1700,31 @@
         ]
       }
     ],
-    "†": [
+    " ": [
       {
         "sequence": [
           {
-            "key": "KeyT",
-            "modifiers": [
-              "Alt"
-            ]
+            "key": "Space",
+            "modifiers": []
           }
         ]
       },
       {
         "sequence": [
           {
-            "key": "KeyT",
+            "key": "Space",
             "modifiers": [
-              "Shift",
-              "Alt"
+              "Shift"
             ]
           }
         ]
       }
     ],
-    "Ъ": [
+    "Н": [
       {
         "sequence": [
           {
-            "key": "BracketRight",
+            "key": "KeyY",
             "modifiers": [
               "Shift"
             ]
@@ -1289,23 +1745,21 @@
         ]
       }
     ],
-    "И": [
-      {
-        "sequence": [
-          {
-            "key": "KeyB",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "Ї": [
+    ".": [
       {
         "sequence": [
           {
             "key": "Slash",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "{": [
+      {
+        "sequence": [
+          {
+            "key": "Digit9",
             "modifiers": [
               "Shift",
               "Alt"
@@ -1314,66 +1768,21 @@
         ]
       }
     ],
-    "0": [
+    "=": [
       {
         "sequence": [
           {
-            "key": "Digit0",
+            "key": "Equal",
             "modifiers": []
           }
         ]
       }
     ],
-    "ю": [
+    "\"": [
       {
         "sequence": [
           {
-            "key": "Period",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "г": [
-      {
-        "sequence": [
-          {
-            "key": "KeyU",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "'": [
-      {
-        "sequence": [
-          {
-            "key": "KeyO",
-            "modifiers": [
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "µ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyJ",
-            "modifiers": [
-              "Shift",
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "Ж": [
-      {
-        "sequence": [
-          {
-            "key": "Semicolon",
+            "key": "Digit2",
             "modifiers": [
               "Shift"
             ]
@@ -1381,11 +1790,53 @@
         ]
       }
     ],
-    "Ј": [
+    ")": [
       {
         "sequence": [
           {
-            "key": "KeyQ",
+            "key": "Digit0",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      },
+      {
+        "sequence": [
+          {
+            "key": "Digit0",
+            "modifiers": [
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "я": [
+      {
+        "sequence": [
+          {
+            "key": "KeyZ",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "ш": [
+      {
+        "sequence": [
+          {
+            "key": "KeyI",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "V": [
+      {
+        "sequence": [
+          {
+            "key": "KeyV",
             "modifiers": [
               "Shift",
               "Alt"
@@ -1394,11 +1845,11 @@
         ]
       }
     ],
-    "₽": [
+    "$": [
       {
         "sequence": [
           {
-            "key": "Digit8",
+            "key": "Digit4",
             "modifiers": [
               "Alt"
             ]
@@ -1406,33 +1857,11 @@
         ]
       }
     ],
-    "–": [
+    "£": [
       {
         "sequence": [
           {
-            "key": "Minus",
-            "modifiers": [
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "у": [
-      {
-        "sequence": [
-          {
-            "key": "KeyE",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "Џ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyW",
+            "key": "Digit3",
             "modifiers": [
               "Shift",
               "Alt"
@@ -1441,21 +1870,23 @@
         ]
       }
     ],
-    "э": [
+    "Ъ": [
       {
         "sequence": [
           {
-            "key": "Quote",
-            "modifiers": []
+            "key": "BracketRight",
+            "modifiers": [
+              "Shift"
+            ]
           }
         ]
       }
     ],
-    "І": [
+    "Љ": [
       {
         "sequence": [
           {
-            "key": "KeyB",
+            "key": "KeyK",
             "modifiers": [
               "Shift",
               "Alt"
@@ -1469,77 +1900,6 @@
         "sequence": [
           {
             "key": "KeyO",
-            "modifiers": [
-              "Shift",
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "m": [
-      {
-        "sequence": [
-          {
-            "key": "KeyM",
-            "modifiers": [
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "!": [
-      {
-        "sequence": [
-          {
-            "key": "Digit1",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      },
-      {
-        "sequence": [
-          {
-            "key": "Digit1",
-            "modifiers": [
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "/": [
-      {
-        "sequence": [
-          {
-            "key": "Backslash",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "≥": [
-      {
-        "sequence": [
-          {
-            "key": "Period",
-            "modifiers": [
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "{": [
-      {
-        "sequence": [
-          {
-            "key": "Digit9",
             "modifiers": [
               "Shift",
               "Alt"
@@ -1583,37 +1943,11 @@
         ]
       }
     ],
-    ">": [
+    "&": [
       {
         "sequence": [
           {
-            "key": "Period",
-            "modifiers": [
-              "Shift",
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "√": [
-      {
-        "sequence": [
-          {
-            "key": "KeyG",
-            "modifiers": [
-              "Shift",
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "@": [
-      {
-        "sequence": [
-          {
-            "key": "Digit2",
+            "key": "Digit7",
             "modifiers": [
               "Alt"
             ]
@@ -1621,35 +1955,58 @@
         ]
       }
     ],
-    "Ѓ": [
+    "ф": [
       {
         "sequence": [
           {
-            "key": "KeyU",
-            "modifiers": [
-              "Shift",
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "1": [
-      {
-        "sequence": [
-          {
-            "key": "Digit1",
+            "key": "KeyA",
             "modifiers": []
           }
         ]
       }
     ],
-    "ћ": [
+    "X": [
       {
         "sequence": [
           {
-            "key": "KeyD",
+            "key": "KeyX",
             "modifiers": [
+              "Shift",
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "ї": [
+      {
+        "sequence": [
+          {
+            "key": "Slash",
+            "modifiers": [
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    " ": [
+      {
+        "sequence": [
+          {
+            "key": "Space",
+            "modifiers": [
+              "Alt"
+            ]
+          }
+        ]
+      },
+      {
+        "sequence": [
+          {
+            "key": "Space",
+            "modifiers": [
+              "Shift",
               "Alt"
             ]
           }
@@ -1668,27 +2025,58 @@
         ]
       }
     ],
-    "∆": [
+    "х": [
       {
         "sequence": [
           {
-            "key": "KeyJ",
+            "key": "BracketLeft",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "с": [
+      {
+        "sequence": [
+          {
+            "key": "KeyC",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "™": [
+      {
+        "sequence": [
+          {
+            "key": "Digit1",
             "modifiers": [
+              "Shift",
               "Alt"
             ]
           }
         ]
       }
     ],
-    "’": [
+    "°": [
       {
         "sequence": [
           {
-            "key": "KeyP",
+            "key": "Digit8",
             "modifiers": [
               "Shift",
               "Alt"
             ]
+          }
+        ]
+      }
+    ],
+    "2": [
+      {
+        "sequence": [
+          {
+            "key": "Digit2",
+            "modifiers": []
           }
         ]
       }
@@ -1703,21 +2091,21 @@
         ]
       }
     ],
-    "(": [
+    "1": [
       {
         "sequence": [
           {
-            "key": "Digit9",
-            "modifiers": [
-              "Shift"
-            ]
+            "key": "Digit1",
+            "modifiers": []
           }
         ]
-      },
+      }
+    ],
+    "ѕ": [
       {
         "sequence": [
           {
-            "key": "Digit9",
+            "key": "KeyI",
             "modifiers": [
               "Alt"
             ]
@@ -1725,87 +2113,11 @@
         ]
       }
     ],
-    "п": [
+    "Ј": [
       {
         "sequence": [
           {
-            "key": "KeyG",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "к": [
-      {
-        "sequence": [
-          {
-            "key": "KeyR",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "А": [
-      {
-        "sequence": [
-          {
-            "key": "KeyF",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "џ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyW",
-            "modifiers": [
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "н": [
-      {
-        "sequence": [
-          {
-            "key": "KeyY",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "е": [
-      {
-        "sequence": [
-          {
-            "key": "KeyT",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "≠": [
-      {
-        "sequence": [
-          {
-            "key": "Equal",
-            "modifiers": [
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "L": [
-      {
-        "sequence": [
-          {
-            "key": "KeyL",
+            "key": "KeyQ",
             "modifiers": [
               "Shift",
               "Alt"
@@ -1814,41 +2126,11 @@
         ]
       }
     ],
-    "ж": [
+    "Т": [
       {
         "sequence": [
           {
-            "key": "Semicolon",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "ы": [
-      {
-        "sequence": [
-          {
-            "key": "KeyS",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "=": [
-      {
-        "sequence": [
-          {
-            "key": "Equal",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "Я": [
-      {
-        "sequence": [
-          {
-            "key": "KeyZ",
+            "key": "KeyN",
             "modifiers": [
               "Shift"
             ]
@@ -1879,200 +2161,6 @@
         ]
       }
     ],
-    "и": [
-      {
-        "sequence": [
-          {
-            "key": "KeyB",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    ")": [
-      {
-        "sequence": [
-          {
-            "key": "Digit0",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      },
-      {
-        "sequence": [
-          {
-            "key": "Digit0",
-            "modifiers": [
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "3": [
-      {
-        "sequence": [
-          {
-            "key": "Digit3",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "Ш": [
-      {
-        "sequence": [
-          {
-            "key": "KeyI",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "ѕ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyI",
-            "modifiers": [
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "Z": [
-      {
-        "sequence": [
-          {
-            "key": "KeyS",
-            "modifiers": [
-              "Shift",
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "9": [
-      {
-        "sequence": [
-          {
-            "key": "Digit9",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "њ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyY",
-            "modifiers": [
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    ";": [
-      {
-        "sequence": [
-          {
-            "key": "Digit4",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "l": [
-      {
-        "sequence": [
-          {
-            "key": "KeyL",
-            "modifiers": [
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "К": [
-      {
-        "sequence": [
-          {
-            "key": "KeyR",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "Э": [
-      {
-        "sequence": [
-          {
-            "key": "Quote",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "ф": [
-      {
-        "sequence": [
-          {
-            "key": "KeyA",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "Ћ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyD",
-            "modifiers": [
-              "Shift",
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "v": [
-      {
-        "sequence": [
-          {
-            "key": "KeyV",
-            "modifiers": [
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "ь": [
-      {
-        "sequence": [
-          {
-            "key": "KeyM",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
     "Ю": [
       {
         "sequence": [
@@ -2085,21 +2173,11 @@
         ]
       }
     ],
-    ".": [
+    "П": [
       {
         "sequence": [
           {
-            "key": "Slash",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "З": [
-      {
-        "sequence": [
-          {
-            "key": "KeyP",
+            "key": "KeyG",
             "modifiers": [
               "Shift"
             ]
@@ -2107,215 +2185,12 @@
         ]
       }
     ],
-    "о": [
+    "ъ": [
       {
         "sequence": [
           {
-            "key": "KeyJ",
+            "key": "BracketRight",
             "modifiers": []
-          }
-        ]
-      }
-    ],
-    "$": [
-      {
-        "sequence": [
-          {
-            "key": "Digit4",
-            "modifiers": [
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "®": [
-      {
-        "sequence": [
-          {
-            "key": "Digit5",
-            "modifiers": [
-              "Shift",
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "Г": [
-      {
-        "sequence": [
-          {
-            "key": "KeyU",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "Ф": [
-      {
-        "sequence": [
-          {
-            "key": "KeyA",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "а": [
-      {
-        "sequence": [
-          {
-            "key": "KeyF",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "Л": [
-      {
-        "sequence": [
-          {
-            "key": "KeyK",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "<": [
-      {
-        "sequence": [
-          {
-            "key": "Comma",
-            "modifiers": [
-              "Shift",
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "љ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyK",
-            "modifiers": [
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "і": [
-      {
-        "sequence": [
-          {
-            "key": "KeyB",
-            "modifiers": [
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "‘": [
-      {
-        "sequence": [
-          {
-            "key": "KeyP",
-            "modifiers": [
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "Ѕ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyI",
-            "modifiers": [
-              "Shift",
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "4": [
-      {
-        "sequence": [
-          {
-            "key": "Digit4",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "Ђ": [
-      {
-        "sequence": [
-          {
-            "key": "KeyZ",
-            "modifiers": [
-              "Shift",
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "£": [
-      {
-        "sequence": [
-          {
-            "key": "Digit3",
-            "modifiers": [
-              "Shift",
-              "Alt"
-            ]
-          }
-        ]
-      }
-    ],
-    "ч": [
-      {
-        "sequence": [
-          {
-            "key": "KeyX",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "Ы": [
-      {
-        "sequence": [
-          {
-            "key": "KeyS",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "c": [
-      {
-        "sequence": [
-          {
-            "key": "KeyC",
-            "modifiers": [
-              "Alt"
-            ]
           }
         ]
       }
@@ -2327,6 +2202,18 @@
             "key": "KeyS",
             "modifiers": [
               "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "Я": [
+      {
+        "sequence": [
+          {
+            "key": "KeyZ",
+            "modifiers": [
+              "Shift"
             ]
           }
         ]
@@ -2345,11 +2232,125 @@
         ]
       }
     ],
-    "∞": [
+    "ў": [
       {
         "sequence": [
           {
-            "key": "KeyH",
+            "key": "KeyE",
+            "modifiers": [
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "0": [
+      {
+        "sequence": [
+          {
+            "key": "Digit0",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "з": [
+      {
+        "sequence": [
+          {
+            "key": "KeyP",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "н": [
+      {
+        "sequence": [
+          {
+            "key": "KeyY",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "_": [
+      {
+        "sequence": [
+          {
+            "key": "Minus",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "Д": [
+      {
+        "sequence": [
+          {
+            "key": "KeyL",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
+    "C": [
+      {
+        "sequence": [
+          {
+            "key": "KeyC",
+            "modifiers": [
+              "Shift",
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "м": [
+      {
+        "sequence": [
+          {
+            "key": "KeyV",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "–": [
+      {
+        "sequence": [
+          {
+            "key": "Minus",
+            "modifiers": [
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "І": [
+      {
+        "sequence": [
+          {
+            "key": "KeyB",
+            "modifiers": [
+              "Shift",
+              "Alt"
+            ]
+          }
+        ]
+      }
+    ],
+    "Њ": [
+      {
+        "sequence": [
+          {
+            "key": "KeyY",
             "modifiers": [
               "Shift",
               "Alt"

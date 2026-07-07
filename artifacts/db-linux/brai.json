@@ -2,9 +2,45 @@
   "metadata": {
     "platform": "linux",
     "layout_name": "brai",
-    "extracted_on": "2026-07-07T00:41:27Z"
+    "display_name": "Braille",
+    "extracted_on": "2026-07-07T01:15:29Z"
   },
   "mappings": {
+    "¦": [
+      {
+        "sequence": [
+          {
+            "key": "IntlBackslash",
+            "modifiers": [
+              "Shift",
+              "AltGraph"
+            ]
+          }
+        ]
+      }
+    ],
+    "<": [
+      {
+        "sequence": [
+          {
+            "key": "IntlBackslash",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    ">": [
+      {
+        "sequence": [
+          {
+            "key": "IntlBackslash",
+            "modifiers": [
+              "Shift"
+            ]
+          }
+        ]
+      }
+    ],
     "|": [
       {
         "sequence": [
@@ -27,37 +63,12 @@
         ]
       }
     ],
-    ">": [
+    "\\": [
       {
         "sequence": [
           {
-            "key": "IntlBackslash",
-            "modifiers": [
-              "Shift"
-            ]
-          }
-        ]
-      }
-    ],
-    "<": [
-      {
-        "sequence": [
-          {
-            "key": "IntlBackslash",
+            "key": "Backslash",
             "modifiers": []
-          }
-        ]
-      }
-    ],
-    "¦": [
-      {
-        "sequence": [
-          {
-            "key": "IntlBackslash",
-            "modifiers": [
-              "Shift",
-              "AltGraph"
-            ]
           }
         ]
       }
@@ -67,16 +78,6 @@
         "sequence": [
           {
             "key": "Space",
-            "modifiers": []
-          }
-        ]
-      }
-    ],
-    "\\": [
-      {
-        "sequence": [
-          {
-            "key": "Backslash",
             "modifiers": []
           }
         ]
